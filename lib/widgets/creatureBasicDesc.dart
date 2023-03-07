@@ -5,7 +5,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-Widget CreatureBasicDescription(){
+Widget CreatureBasicDescription(image, name, group, size, diet){
 
   return SingleChildScrollView(
       child: Container(
@@ -29,7 +29,7 @@ Widget CreatureBasicDescription(){
                   decoration: BoxDecoration(
                     color: Colors.black45,
                     image:  DecorationImage(
-                      image: AssetImage('assets/images/gerbobird.png'),
+                      image: AssetImage(image),
                     ),
                     shape: BoxShape.rectangle,
                     border: Border.all(
@@ -42,7 +42,7 @@ Widget CreatureBasicDescription(){
               ),
             const Divider(height: 30),
             Center(
-              child: Text('Jer-Jer',
+              child: Text(name,
                   style: GoogleFonts.alexBrush(
                       fontSize: 50,
                       color: Colors.black
@@ -54,7 +54,7 @@ Widget CreatureBasicDescription(){
             Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15),
             child:Center(
-              child: Text('Group:      Plumifera',
+              child: Text('Group:      '+group,
                   style: GoogleFonts.alexBrush(
                       fontSize: 40,
                       color: Colors.black
@@ -67,7 +67,7 @@ Widget CreatureBasicDescription(){
             Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
                 child:Center(
-                  child: Text('Size:           15 cm',
+                  child: Text('Size:'+size,
                       style: GoogleFonts.alexBrush(
                           fontSize: 40,
                           color: Colors.black
@@ -80,7 +80,7 @@ Widget CreatureBasicDescription(){
             Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
                 child:Center(
-                  child: Text('Diet:     Omnivorous',
+                  child: Text('Diet:   '+diet,
                       style: GoogleFonts.alexBrush(
                           fontSize: 40,
                           color: Colors.black

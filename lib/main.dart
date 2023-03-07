@@ -26,9 +26,42 @@ void main() async {
       'assets/images/gerbobird.png');
 
    */
+  /*addSmallCreature(
+      'Bounder',
+      'Amphibian',
+      '1.50m tall, 2.50m long',
+      'Insectivorous',
+      'Docile creatures from the marshlands. They are commonly used as mounts by intelligent inhabitants of the area.'
+          ' Only juveniles are chosen for this purpose, and older individuals are released back into the wild.'
+      '\n\n'
+          'These creatures undergo a life-long metamorphosis. They are born into an aquatic environment, and live completely'
+          ' submerged until they grow legs and reach maturity. Their tails and gills shrink as they grow, the oldest specimens'
+          ' nearly lacking them, while also being more heavy and muscular. At this point, they are fit for an almost completely'
+          ' terrestrial life. However, they return to the rivers and ponds during breeding season to lay their eggs',
+      'assets/images/bounder.png'
+  );
+  addSmallCreature(
+      'Abyssecter',
+      'Thalassus',
+      '10-18m',
+      'Carnivourous',
+      'Apex predators of Leviathan\'s Trench. They ambush prey from the dark, luring them in with the bioluminescent spots on their'
+          ' shell and inside their mouths, and grabbing onto them with their jaws and mandibles. Once Abyssecter has feasted on a sufficiently'
+          ' large creature, it will burrow through the seafloor and grow, leaving segments of it behind before it leaves once more. The segments'
+          ' grow into fully-fledged specimens in a matter of months.'
+          '\n\n'
+          'They are blind, for they live in an environment completely devoid of light. However, they sense prey through signals received by their'
+          ' antennae.Their body is covered in  rows of harpoon-like bristles, which contain powerful toxins. Many fin-like appendages aid them in'
+          ' their locomotion, which reaches considerable speed.'
+      ,
+      'assets/images/abyssecter.png'
+  );
+
   /*var small = Boxes.getSmallCreatures();
   final creatures = small.values.toList().cast<SmallCreature>();
   print(creatures[0].description);
+
+   */
 
    */
   runApp(NavApp());

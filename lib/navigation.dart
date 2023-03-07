@@ -55,7 +55,7 @@ class _NavAppState extends State<NavApp> {
         '/': (context) => const Creatures_Page(),
         '/first': (context) => const FirstScreen(),
         '/second': (context) => const SecondScreen(),
-        '/creature': (context) => const Creature_Page(),
+        //'/creature': (context) => const Creature_Page(),
       },
     );
   }

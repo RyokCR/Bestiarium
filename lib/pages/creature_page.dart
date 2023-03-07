@@ -1,6 +1,7 @@
 
 
 
+import 'package:bestiarium/model/small_creature.dart';
 import 'package:bestiarium/themes/icons/my_flutter_app_icons.dart';
 import 'package:bestiarium/widgets/ItemBox.dart';
 import 'package:bestiarium/widgets/pageBox.dart';
@@ -13,13 +14,19 @@ import '../widgets/creatureBasicDesc.dart';
 import '../widgets/largeTextWidget.dart';
 
 class Creature_Page extends StatefulWidget {
-  const Creature_Page({Key? key}) : super(key: key);
+  Creature_Page({Key? key, required this.creature}) : super(key: key);
 
+  SmallCreature creature;
   @override
-  State<Creature_Page> createState() => _Creature_PageState();
+  State<Creature_Page> createState() => _Creature_PageState(creature: this.creature);
 }
 
 class _Creature_PageState extends State<Creature_Page> {
+
+  SmallCreature creature;
+
+  _Creature_PageState({required this.creature});
+
   @override
   Widget build(BuildContext context) {
     return
@@ -53,8 +60,8 @@ class _Creature_PageState extends State<Creature_Page> {
             ),
             body: TabBarView(
               children: [
-                CreatureBasicDescription(),
-                LargeText(),
+                CreatureBasicDescription(creature.icon, creature.name, creature.group, creature.size, creature.diet),
+                LargeText(creature.description),
                 Tab(icon: Image.asset(
                     'assets/images/map_icon.png',
                   scale: 2,

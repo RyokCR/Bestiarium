@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:bestiarium/model/small_creature.dart';
 import 'package:bestiarium/pages/creature_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
@@ -7,9 +8,9 @@ import 'package:flutter/material.dart';
 //#region TextFields
 
 //Common TextField used through de application for most of text data input
-Widget ItemBox() {
+Widget ItemBox(SmallCreature creature, context) {
 
-
+  TextTheme _textTheme = Theme.of(context).textTheme;
   return StreamBuilder(builder: (BuildContext context, AsyncSnapshot snapshot) {
     return Container(
         decoration: BoxDecoration(
@@ -50,7 +51,10 @@ Widget ItemBox() {
                       decoration: BoxDecoration(
                         color: Colors.black45,
                         image:  DecorationImage(
-                          image: AssetImage('assets/images/gerbobird.png'),
+                          //image: NetworkImage('https://github.com/RyokCR/RyokCR/raw/main/PicsArt_03-06-03.11.38.jpg',
+                          //scale: 50
+                          //),
+                          image: AssetImage(creature.icon),
                         ),
                         shape: BoxShape.rectangle,
                         border: Border.all(
@@ -74,9 +78,10 @@ Widget ItemBox() {
                               ),
                               child:
                            Text(
-                              'Jer-Jer',
-                              style: GoogleFonts.alexBrush(
-                                  fontSize: 30)
+                              creature.name,
+                              style: _textTheme.bodyMedium
+                              //GoogleFonts.alexBrush(
+                              //    fontSize: 30)
                           )
                       )
                     )
@@ -87,7 +92,7 @@ Widget ItemBox() {
 
                   Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Creature_Page()));
+                      MaterialPageRoute(builder: (context) => Creature_Page(creature: creature,)));
 
               },
             )
