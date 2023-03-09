@@ -3,13 +3,14 @@ import 'package:bestiarium/model/small_creature.dart';
 import 'package:bestiarium/pages/creature_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
-
+import 'dart:io';
 
 //#region TextFields
 
 //Common TextField used through de application for most of text data input
 Widget ItemBox(SmallCreature creature, context) {
 
+  var image = File('/data/user/0/sko.raym.bestiarium/app_flutter/PicsArt_03-06-03.11.38.jpg');
   TextTheme _textTheme = Theme.of(context).textTheme;
   return StreamBuilder(builder: (BuildContext context, AsyncSnapshot snapshot) {
     return Container(
@@ -44,17 +45,20 @@ Widget ItemBox(SmallCreature creature, context) {
                     ),
                     child:
                   //Image.asset('assets/images/gerbobird.png'),),
-                  Container(
+                    //Image.file(image),
+                      Container(
                     height: 80,
                       width: 90,
 
                       decoration: BoxDecoration(
                         color: Colors.black45,
-                        image:  DecorationImage(
+                        image:
+                        DecorationImage(
                           //image: NetworkImage('https://github.com/RyokCR/RyokCR/raw/main/PicsArt_03-06-03.11.38.jpg',
                           //scale: 50
                           //),
                           image: AssetImage(creature.icon),
+
                         ),
                         shape: BoxShape.rectangle,
                         border: Border.all(

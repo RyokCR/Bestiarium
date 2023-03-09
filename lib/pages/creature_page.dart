@@ -12,6 +12,8 @@ import 'package:google_fonts/google_fonts.dart';
 import '../drawer.dart';
 import '../widgets/creatureBasicDesc.dart';
 import '../widgets/largeTextWidget.dart';
+import '../widgets/photoView.dart';
+import '../widgets/pinchZoomImage.dart';
 
 class Creature_Page extends StatefulWidget {
   Creature_Page({Key? key, required this.creature}) : super(key: key);
@@ -21,11 +23,16 @@ class Creature_Page extends StatefulWidget {
   State<Creature_Page> createState() => _Creature_PageState(creature: this.creature);
 }
 
-class _Creature_PageState extends State<Creature_Page> {
+class _Creature_PageState extends State<Creature_Page>  {
+
 
   SmallCreature creature;
 
   _Creature_PageState({required this.creature});
+
+
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -68,7 +75,21 @@ class _Creature_PageState extends State<Creature_Page> {
                   color: Colors.grey,
                 )
                 ),
-                Tab(icon: Icon(Icons.directions_car, size: 200,)),
+                //Tab(icon: Icon(Icons.directions_car, size: 200,)),
+                Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: 0
+              ),
+              child: PinchZoomImage()
+              /*BuildImage(
+                  controller,
+                  tapDownDetails,
+                  animationController,
+                  animation,
+
+                  context)
+                  */
+                )
               ],
             ),
           ),

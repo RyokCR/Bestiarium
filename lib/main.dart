@@ -8,8 +8,13 @@ import 'navigation.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
+import 'utils/network.dart';
+import 'package:dio/dio.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+//await download('https://github.com/RyokCR/RyokCR/raw/main/PicsArt_03-06-03.11.38.jpg');
 
   await Hive.initFlutter();
 
@@ -23,9 +28,11 @@ void main() async {
       'Naturally curious, these creatures often come close to inspect any unusual beings or objects that enter their habitat. If startled however, they will quickly jump away with extreme speed. Catching one is no easy task. Jer-jers gather in large flocks, and are extremely social. They will perform highly synchronized flight patterns in flocks in order to confuse any perceived predators.'
           'Jer-Jers are monogamous, and construct large basket-like nests by weaving vegetation together. Call is similar to a rapid chattering, a distinctive jer-jer-jer that gives them their common name.\n\n'
           'They are well-known and respected by spirits and incarnates alike, as they are drawn to large sources of energy, which facilitates their location. They will often gather around powerful spirits as well.',
-      'assets/images/gerbobird.png');
+      'assets/images/gerbobird.png',
+    0,
+    'temporal');
+*/
 
-   */
   /*addSmallCreature(
       'Bounder',
       'Amphibian',

@@ -22,8 +22,11 @@ class SmallCreature extends HiveObject{
   @HiveField(5)
   late String icon;
 
-  //@HiveField(0)
-  //late String name;
+  @HiveField(6)
+  late int danger;
+
+  @HiveField(7)
+  late String url;
 
 
 
