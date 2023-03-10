@@ -32,6 +32,12 @@ Future<void> dio_download(String url) async{
   Dio dio = Dio();
   dio.download(
       url,
-      '${dir?.path}/gerbobird.jpg');
+      '${dir?.path}/gerbobird.jpg',
+      onReceiveProgress: (actualbytes, totalbytes){
+        /*setState(() {
+
+        })*/
+      }
+  );
 
 }
