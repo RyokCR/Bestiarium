@@ -2,33 +2,37 @@
 
 
 import 'package:bestiarium/model/small_creature.dart';
-import 'package:bestiarium/themes/icons/my_flutter_app_icons.dart';
-import 'package:bestiarium/widgets/ItemBox.dart';
-import 'package:bestiarium/widgets/pageBox.dart';
+import 'package:bestiarium/ui/themes/icons/my_flutter_app_icons.dart';
+import 'package:bestiarium/ui/widgets/ItemBox.dart';
+import 'package:bestiarium/ui/widgets/drawer.dart';
+import 'package:bestiarium/ui/widgets/pageBox.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../drawer.dart';
+
 import '../widgets/creatureBasicDesc.dart';
 import '../widgets/largeTextWidget.dart';
 import '../widgets/photoView.dart';
 import '../widgets/pinchZoomImage.dart';
 
 class Creature_Page extends StatefulWidget {
-  Creature_Page({Key? key, required this.creature}) : super(key: key);
+  Creature_Page({Key? key, required this.creature, required this.inStorage, required this.localUrl}) : super(key: key);
 
   SmallCreature creature;
+  final String localUrl;
+  bool inStorage;
   @override
-  State<Creature_Page> createState() => _Creature_PageState(creature: this.creature);
+  State<Creature_Page> createState() => _Creature_PageState(creature: this.creature, inStorage: this.inStorage, localUrl: localUrl);
 }
 
 class _Creature_PageState extends State<Creature_Page>  {
 
 
   SmallCreature creature;
-
-  _Creature_PageState({required this.creature});
+  bool inStorage;
+  final String localUrl;
+  _Creature_PageState({required this.creature, required this.inStorage, required this.localUrl});
 
 
 
@@ -80,7 +84,7 @@ class _Creature_PageState extends State<Creature_Page>  {
               padding: EdgeInsets.symmetric(
                 horizontal: 0
               ),
-              child: PinchZoomImage()
+              child: PinchZoomImage(inStorage: inStorage, url: creature.url, localUrl: localUrl,)
               /*BuildImage(
                   controller,
                   tapDownDetails,

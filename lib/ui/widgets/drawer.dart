@@ -1,8 +1,8 @@
 
+import 'package:bestiarium/navigation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'navigation.dart';
 
 class NavigationDrawer extends StatefulWidget{
   @override

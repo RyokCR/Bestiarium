@@ -1,6 +1,7 @@
 import 'dart:ui';
+import 'package:path_provider/path_provider.dart' as path_provider;
 import 'package:bestiarium/model/small_creature.dart';
-import 'package:bestiarium/pages/creature_page.dart';
+import 'package:bestiarium/ui/pages/creature_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
@@ -44,8 +45,6 @@ Widget ItemBox(SmallCreature creature, context) {
                       left: 10
                     ),
                     child:
-                  //Image.asset('assets/images/gerbobird.png'),),
-                    //Image.file(image),
                       Container(
                     height: 80,
                       width: 90,
@@ -54,9 +53,7 @@ Widget ItemBox(SmallCreature creature, context) {
                         color: Colors.black45,
                         image:
                         DecorationImage(
-                          //image: NetworkImage('https://github.com/RyokCR/RyokCR/raw/main/PicsArt_03-06-03.11.38.jpg',
-                          //scale: 50
-                          //),
+
                           image: AssetImage(creature.icon),
 
                         ),
@@ -94,9 +91,21 @@ Widget ItemBox(SmallCreature creature, context) {
               ),
               onTap: () async{
 
+                var dir = await path_provider.getExternalStorageDirectory();
+                var localPath = '${dir?.path}/${creature.name}.jpg';
+                bool inStorage;
+                try{
+                  inStorage = await File(localPath).exists();
+                  //im = Image.file(File(localPath));
+                  //inStorage = true;
+                }
+                catch(e){
+                  inStorage= false;
+                }
+
                   Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Creature_Page(creature: creature,)));
+                      MaterialPageRoute(builder: (context) => Creature_Page(creature: creature,localUrl: localPath, inStorage: inStorage,)));
 
               },
             )

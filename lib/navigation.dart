@@ -2,17 +2,17 @@
 
 
 import 'dart:ui';
+import 'package:bestiarium/ui/pages/creatures_page.dart';
+import 'package:bestiarium/ui/themes/theme_manager.dart';
+import 'package:bestiarium/ui/themes/theme_constants.dart';
+import 'package:bestiarium/ui/widgets/drawer.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart';
 import 'package:http/http.dart';
 
-import 'package:bestiarium/drawer.dart';
-import 'package:bestiarium/pages/creature_page.dart';
-import 'package:bestiarium/themes/theme_constants.dart';
-import 'package:bestiarium/themes/theme_manager.dart';
+
 import "package:flutter/material.dart";
 
-import 'pages/creatures_page.dart';
 
 void main() =>runApp(NavApp());
 
