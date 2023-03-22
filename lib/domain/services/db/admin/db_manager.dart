@@ -1,7 +1,7 @@
 
+import 'package:bestiarium/domain/entities/small_creature.dart';
 import 'package:hive/hive.dart';
 
-import '../../model/small_creature.dart';
 
 addSmallCreature(String name, String group, String size, String diet, String description, String icon, int danger, String url){
   final creature = SmallCreature()

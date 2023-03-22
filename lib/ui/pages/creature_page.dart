@@ -1,7 +1,7 @@
 
 
 
-import 'package:bestiarium/model/small_creature.dart';
+import 'package:bestiarium/domain/entities/small_creature.dart';
 import 'package:bestiarium/ui/themes/icons/my_flutter_app_icons.dart';
 import 'package:bestiarium/ui/widgets/ItemBox.dart';
 import 'package:bestiarium/ui/widgets/drawer.dart';

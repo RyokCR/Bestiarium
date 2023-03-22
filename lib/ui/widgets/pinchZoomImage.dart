@@ -1,9 +1,11 @@
 import 'dart:io';
 import 'dart:ui';
 
+import 'package:bestiarium/domain/repositories/download_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart' as path_provider;
 import 'package:dio/dio.dart';
+//import 'package:bestiarium/domain/repositories/download_manager.dart';
 
 class PinchZoomImage extends StatefulWidget {
   const PinchZoomImage({Key? key, required this.url,  required this.inStorage,required this.localUrl}) : super(key: key);
@@ -78,7 +80,7 @@ class _PinchZoomImageState extends State<PinchZoomImage> with SingleTickerProvid
                   var dir = await path_provider.getExternalStorageDirectory();
 
 
-                  Dio dio = Dio();
+                  /*Dio dio = Dio();
                   dio.download(
                     url,
                     //'${dir?.path}/gerbobird.jpg',
@@ -101,6 +103,29 @@ class _PinchZoomImageState extends State<PinchZoomImage> with SingleTickerProvid
                         }
                       }
                   );
+
+                   */
+                  DownloadsManager.download_file(
+                      url,
+                      localUrl,
+                          (actualbytes, totalbytes) {
+                        var percentage = actualbytes / totalbytes * 100;
+                        if (percentage < 100) {
+                          _percentage = percentage / 100;
+
+                          setState(() {
+                            downloadMessage =
+                            'Downloading... ${percentage.floor()} %';
+                          });
+                        }
+                        else {
+                          setState(() {
+                            downloadMessage = 'Done!';
+                            inStorage = true;
+                          });
+                        }
+                      }
+                      );
                 }
               },
               label: Text('Download'),

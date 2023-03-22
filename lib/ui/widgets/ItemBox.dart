@@ -1,6 +1,6 @@
 import 'dart:ui';
+import 'package:bestiarium/domain/entities/small_creature.dart';
 import 'package:path_provider/path_provider.dart' as path_provider;
-import 'package:bestiarium/model/small_creature.dart';
 import 'package:bestiarium/ui/pages/creature_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
@@ -80,13 +80,15 @@ Widget ItemBox(SmallCreature creature, context) {
                               child:
                            Text(
                               creature.name,
-                              style: _textTheme.bodyMedium
+                              style: GoogleFonts.alexBrush(
+                                      fontSize: 30)
+                              )//_textTheme.bodyMedium
                               //GoogleFonts.alexBrush(
                               //    fontSize: 30)
                           )
                       )
                     )
-                  )
+                  
                 ],
               ),
               onTap: () async{
