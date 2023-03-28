@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 
+import 'package:bestiarium/domain/entities/plant.dart';
 import 'package:bestiarium/domain/entities/small_creature.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +21,9 @@ void main() async {
   await Hive.initFlutter();
 
   Hive.registerAdapter(SmallCreatureAdapter());
+  Hive.registerAdapter(PlantAdapter());
   await Hive.openBox<SmallCreature>('small_creatures');
+  await Hive.openBox<Plant>('plants');
   //init_db();
 
 

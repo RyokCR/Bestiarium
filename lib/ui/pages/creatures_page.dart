@@ -14,6 +14,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 
+import 'map_drawer.dart';
+
 
 class Creatures_Page extends StatefulWidget {
   const Creatures_Page({Key? key}) : super(key: key);
@@ -37,12 +39,14 @@ class _Creatures_PageState extends State<Creatures_Page> {
       }*/
 
 
-  late List creatures;
+  late List creatures_small;
+  late List creatures_large;
   @override
   initState(){
 
     var small = Boxes.getSmallCreatures();
-    creatures = small.values.toList().cast<SmallCreature>();
+    creatures_small = small.values.where((element) => element.category == 'small').toList().cast<SmallCreature>();
+    creatures_large = small.values.where((element) => element.category == 'large').toList().cast<SmallCreature>();
     //add_url(small);
 
 
@@ -58,8 +62,10 @@ class _Creatures_PageState extends State<Creatures_Page> {
           actions: [
             //Navigate to the Search Screen
             IconButton(
-              onPressed: () => Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (_) => const SearchPage())),
+              onPressed: () => /*Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (_) => const SearchPage())),*/
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (_) => const MapDrawer())),
               icon: const Icon(Icons.search),
             )
           ],
@@ -100,24 +106,40 @@ class _Creatures_PageState extends State<Creatures_Page> {
         ),
         body: TabBarView(
           children: [
+
+
             Padding(
                 padding: const EdgeInsets.symmetric(
                     horizontal: 10, vertical: 5),
                 child: Scaffold(
                     body: ListView.builder(
 
-                        itemCount: creatures.length ,
+                        itemCount: creatures_large.length ,
                         scrollDirection: Axis.vertical,
                         shrinkWrap: true,
                         itemBuilder:
                             (BuildContext context, int index) {
                           return Padding(padding: const EdgeInsets.symmetric(
-                              vertical: 8), child:ItemBox(creatures[index], context));
+                              vertical: 8), child:ItemBox(creatures_large[index], context));
                         })
                 )
             ),
+            Padding(
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 10, vertical: 5),
+                child: Scaffold(
+                    body: ListView.builder(
 
-            Tab(icon: Icon(Icons.directions_transit, size: 200,)),
+                        itemCount: creatures_small.length ,
+                        scrollDirection: Axis.vertical,
+                        shrinkWrap: true,
+                        itemBuilder:
+                            (BuildContext context, int index) {
+                          return Padding(padding: const EdgeInsets.symmetric(
+                              vertical: 8), child:ItemBox(creatures_small[index], context));
+                        })
+                )
+            ),
             Tab(icon: Icon(Icons.directions_car, size: 200,)),
           ],
         ),

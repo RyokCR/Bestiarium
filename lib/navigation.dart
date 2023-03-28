@@ -3,6 +3,8 @@
 
 import 'dart:ui';
 import 'package:bestiarium/ui/pages/creatures_page.dart';
+import 'package:bestiarium/ui/pages/map_drawer.dart';
+import 'package:bestiarium/ui/pages/photo_edit.dart';
 import 'package:bestiarium/ui/themes/theme_manager.dart';
 import 'package:bestiarium/ui/themes/theme_constants.dart';
 import 'package:bestiarium/ui/widgets/drawer.dart';
@@ -56,8 +58,11 @@ class _NavAppState extends State<NavApp> {
       initialRoute: '/',
       routes: {
         '/': (context) => const Creatures_Page(),
+        //'/': (context) => const MapDrawer(),
+        //'/': (context) => const PhotoEdit(),
         '/first': (context) => const FirstScreen(),
         '/second': (context) => const SecondScreen(),
+
         //'/creature': (context) => const Creature_Page(),
       },
     );

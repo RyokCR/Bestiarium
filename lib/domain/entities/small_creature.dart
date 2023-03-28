@@ -28,6 +28,17 @@ class SmallCreature extends HiveObject{
   @HiveField(7)
   late String url;
 
+  @HiveField(8)
+  late String type;
+
+  @HiveField(9)
+  late String weakness;
+
+  @HiveField(10)
+  late String rarity;
+
+  @HiveField(11)
+  late String category;
   //Habitat
   //@HiveField(8)
   //late String url;

@@ -36,12 +36,17 @@ class _PinchZoomImageState extends State<PinchZoomImage> with SingleTickerProvid
 
   bool inStorage ;
 
+  late double width;
+  late double height;
+
   _PinchZoomImageState({required this.url, required this.inStorage, required this.localUrl});
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
+
+
 
     controller = TransformationController();
     animationController = AnimationController(
@@ -66,6 +71,8 @@ class _PinchZoomImageState extends State<PinchZoomImage> with SingleTickerProvid
   @override
   Widget build(BuildContext context) {
 
+    width = MediaQuery.of(context).size.width;
+    height = MediaQuery.of(context).size.height;
     if (!inStorage) {
       return Center(
         child: Column(
@@ -151,28 +158,34 @@ class _PinchZoomImageState extends State<PinchZoomImage> with SingleTickerProvid
     return Container(
         decoration: BoxDecoration(
         image: DecorationImage(
-        image: AssetImage('assets/images/mesa.jpg'),
-    fit: BoxFit.cover
+        image: AssetImage('assets/images/work_table.png'),
+    fit: BoxFit.fill
 
     )
     ),
 
-    child: InteractiveViewer(
-      transformationController: controller,
-      panEnabled: false,
-      onInteractionEnd: (details){
-        resetAnimation();
-      },
-      child: AspectRatio(
-      aspectRatio: 1,
-      child: ClipRRect(
-        //child: Image.asset('assets/images/Jer-jer.jpg',
-        child: Image.file(File(localUrl),
-        fit: BoxFit.fitWidth
+    child:  InteractiveViewer(
+
+        transformationController: controller,
+        panEnabled: false,
+        onInteractionEnd: (details){
+          resetAnimation();
+        },
+        child: AspectRatio(
+
+        aspectRatio: 1,
+        child:Padding(
+          padding: EdgeInsets.symmetric(vertical: height*0.25),
+          child: ClipRRect(
+          //child: Image.asset('assets/images/Jer-jer.jpg',
+          child: Image.file(File(localUrl),
+          height: height * 0.5,
+          fit: BoxFit.contain
+          ),
+          ),
+        )
         ),
-        ),
-      )
-      )
+    )
     );
 
     }

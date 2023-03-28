@@ -24,13 +24,17 @@ class SmallCreatureAdapter extends TypeAdapter<SmallCreature> {
       ..description = fields[4] as String
       ..icon = fields[5] as String
       ..danger = fields[6] as int
-      ..url = fields[7] as String;
+      ..url = fields[7] as String
+      ..type = fields[8] as String
+      ..weakness = fields[9] as String
+      ..rarity = fields[10] as String
+      ..category = fields[11] as String;
   }
 
   @override
   void write(BinaryWriter writer, SmallCreature obj) {
     writer
-      ..writeByte(8)
+      ..writeByte(12)
       ..writeByte(0)
       ..write(obj.name)
       ..writeByte(1)
@@ -46,7 +50,15 @@ class SmallCreatureAdapter extends TypeAdapter<SmallCreature> {
       ..writeByte(6)
       ..write(obj.danger)
       ..writeByte(7)
-      ..write(obj.url);
+      ..write(obj.url)
+      ..writeByte(8)
+      ..write(obj.type)
+      ..writeByte(9)
+      ..write(obj.weakness)
+      ..writeByte(10)
+      ..write(obj.rarity)
+      ..writeByte(11)
+      ..write(obj.category);
   }
 
   @override

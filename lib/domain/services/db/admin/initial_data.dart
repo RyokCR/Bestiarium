@@ -14,7 +14,11 @@ void init_db(){
           'They are well-known and respected by spirits and incarnates alike, as they are drawn to large sources of energy, which facilitates their location. They will often gather around powerful spirits as well.',
       'assets/images/gerbobird.png',
       0,
-      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Jer-jer.jpg');
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Jer-jer.jpg',
+      'normal',
+      'fire',
+      'common',
+      'small');
 
 
   addSmallCreature(
@@ -31,7 +35,11 @@ void init_db(){
           ' terrestrial life. However, they return to the rivers and ponds during breeding season to lay their eggs',
       'assets/images/bounder.png',
       0,
-      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Bounder.jpg'
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Bounder.jpg',
+    'normal',
+    'fire',
+    'common',
+    'small'
   );
   addSmallCreature(
       'Abyssecter',
@@ -49,7 +57,11 @@ void init_db(){
       ,
       'assets/images/abyssecter.png',
       0,
-      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Abyssecter.jpg'
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Abyssecter.jpg',
+      'normal',
+      'fire',
+      'common',
+      'large'
 
   );
 
@@ -73,7 +85,11 @@ void init_db(){
       ,
       'assets/images/krokoskopas.png',
       4,
-      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Krokoskopas.jpg'
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Krokoskopas.jpg',
+      'normal',
+      'fire',
+      'common',
+      'large'
 
   );
 
@@ -95,7 +111,11 @@ void init_db(){
       ,
       'assets/images/kukkuru.png',
       2,
-      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Kukkuru.jpg'
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Kukkuru.jpg',
+      'normal',
+      'fire',
+      'common',
+      'small'
 
   );
 
@@ -119,7 +139,73 @@ void init_db(){
       ,
       'assets/images/gypsiena.png',
       3,
-      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Gypsiena.jpg'
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Gypsiena.jpg',
+      'normal',
+      'fire',
+      'common',
+      'small'
 
   );
+
+  addPlant(
+      'Soul Orchid',
+      '15 cm',
+      'Parasitic plants with luminous white blooms. Spirit orchids sprout near graves'
+          ' or recently deceased organisms, trapping any lingering spiritual energy. This'
+          ' essence is stored in the flowers, possibly sustaining the plant\'s life for many years.'
+  '\n\nSoul orchids play an important role in the formation of spirits. Small clumps of organized energy'
+          ' that exist in nature assimilate the essence contained in the flowers into their own, becoming'
+          ' more complex spirits. This, however, causes the plant to wilt, as its life force is consumed.'
+
+  '\n\nMore than a few Onyrians keep soul orchids safely guarded in their homes, believing them to contain'
+          ' the soul of a loved one.',
+      'assets/images/flower_icon.png',
+      0,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Soul_Orchid.jpg',
+      'flower',
+      ' Uncommon',
+    'Energy retention',
+    'Aeras-based'
+  );
+
+  addPlant(
+      'Psychelent',
+      '30 cm diameter',
+      'A small plant with an alluring smell. It grows only in places with abundant'
+          ' spiritual energy -such as the domains of a Greater Spirit- , which it draws sustenance from.'
+
+      '\n\nIts leaves produce a substance that induces hallucinations and euphoria in those who consume it.'
+          ' Shamans from certain tribes traditionally consume tea made from its leaves during rituals in'
+          ' order to look into the flow of the Aeras, and fortell events to come',
+      'assets/images/other_plants_icon.png',
+      0,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Psychelent.jpg',
+      'other',
+      'Uncommon',
+      'Hallucinogenic',
+      'Aeras-based'
+  );
+
+  addPlant(
+      'Fleshfruit Tree',
+      '10m tall, 3m wide at trunk',
+      'Large trees that grow in the fertile valley surrounding the Green Serpent,'
+          ' the Badlands\' only river. They are largely appreciated due to the shelter'
+          ' they offer from the unforgiving desert sun, and the food that they provide.'
+
+      'The Fleshfruit tree\'s sap is the color of blood, and it produces very large and'
+          ' heavy fruit. The skin of this fruit is considerably tough, and its pulp is'
+          ' very similar in texture and qualities to raw meat, hence its name. It is a'
+          ' delicacy food to local tribes, which prepare it in a variety of ways. Many'
+          ' jewelery items and accessories are also fashioned from the large seeds of'
+          ' the fleshfruit, similar to bone in color and hardness.',
+      'assets/images/tree_icon.png',
+      0,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Flesh_tree.jpg',
+      'tree',
+      'Locally common',
+      '-',
+      'Photosynthesis'
+  );
+
 }
