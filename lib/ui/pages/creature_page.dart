@@ -14,6 +14,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../widgets/creatureBasicDesc.dart';
 import '../widgets/largeTextWidget.dart';
+import '../widgets/mapShow.dart';
 import '../widgets/photoView.dart';
 import '../widgets/pinchZoomImage.dart';
 import '../widgets/plantBasicDesc.dart';
@@ -75,12 +76,13 @@ class _Creature_PageState extends State<Creature_Page>  {
               children: [
                 creature.runtimeType == SmallCreature ? CreatureBasicDescription(creature): PlantBasicDescription(creature),
                 LargeText(creature.description),
-                Tab(icon: Image.asset(
+                /*Tab(icon: Image.asset(
                     'assets/images/map_icon.png',
                   scale: 2,
                   color: Colors.grey,
                 )
-                ),
+                ),*/
+                MapShow(),
                 //Tab(icon: Icon(Icons.directions_car, size: 200,)),
                 Padding(
               padding: EdgeInsets.symmetric(

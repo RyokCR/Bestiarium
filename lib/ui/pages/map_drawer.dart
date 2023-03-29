@@ -128,9 +128,9 @@ class _MapDrawerState extends State<MapDrawer> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Container(
-                    width: width * 0.80,
+                    width: width,//width * 0.80,
                     height: height * 0.80,
-                    decoration: BoxDecoration(
+                    /*decoration: BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(20.0)),
                       boxShadow: [
                         BoxShadow(
@@ -139,6 +139,13 @@ class _MapDrawerState extends State<MapDrawer> {
                           spreadRadius: 1.0
                         )
                       ]
+                    ),*/
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage('assets/images/Map.png'),
+                            fit: BoxFit.fill
+
+                        )
                     ),
                     child: GestureDetector(
                       onPanStart: ((details) {
@@ -153,7 +160,9 @@ class _MapDrawerState extends State<MapDrawer> {
 
                           if(currentDrawingPoint == null) return; ///????
                           drawingPoints.add(currentDrawingPoint!);
+                          //historyDrawingPoints.add(currentDrawingPoint!);
                           historyDrawingPoints = List.of(drawingPoints);
+
                         });
 
                       }),
@@ -206,7 +215,7 @@ class _MapDrawerState extends State<MapDrawer> {
                       child: ClipRRect(
                         borderRadius: BorderRadius.all(Radius.circular(20.0)),
                         child: CustomPaint(
-                          painter: MyCustomPainter(points: points, drawingPoints: drawingPoints),
+                          painter: MyCustomPainter(drawingPoints: drawingPoints),
                         ),
                       ),
                     ),
@@ -289,11 +298,11 @@ class _MapDrawerState extends State<MapDrawer> {
 
 class MyCustomPainter extends CustomPainter{
 
-  List<DrawingArea?> points;
+  //List<DrawingArea?> points;
 
   final List<DrawingPoint> drawingPoints;
 
-  MyCustomPainter({required this.drawingPoints, required this.points});
+  MyCustomPainter({required this.drawingPoints});
   @override
   void paint(Canvas canvas, Size size) {
     /**
