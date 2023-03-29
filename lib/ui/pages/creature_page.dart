@@ -1,6 +1,7 @@
 
 
 
+import 'package:bestiarium/domain/entities/plant.dart';
 import 'package:bestiarium/domain/entities/small_creature.dart';
 import 'package:bestiarium/ui/themes/icons/my_flutter_app_icons.dart';
 import 'package:bestiarium/ui/widgets/ItemBox.dart';
@@ -15,11 +16,12 @@ import '../widgets/creatureBasicDesc.dart';
 import '../widgets/largeTextWidget.dart';
 import '../widgets/photoView.dart';
 import '../widgets/pinchZoomImage.dart';
+import '../widgets/plantBasicDesc.dart';
 
 class Creature_Page extends StatefulWidget {
   Creature_Page({Key? key, required this.creature, required this.inStorage, required this.localUrl}) : super(key: key);
 
-  SmallCreature creature;
+  var creature;
   final String localUrl;
   bool inStorage;
   @override
@@ -29,7 +31,7 @@ class Creature_Page extends StatefulWidget {
 class _Creature_PageState extends State<Creature_Page>  {
 
 
-  SmallCreature creature;
+  var creature;
   bool inStorage;
   final String localUrl;
   _Creature_PageState({required this.creature, required this.inStorage, required this.localUrl});
@@ -71,7 +73,7 @@ class _Creature_PageState extends State<Creature_Page>  {
             ),
             body: TabBarView(
               children: [
-                CreatureBasicDescription(creature.icon, creature.name, creature.group, creature.size, creature.diet),
+                creature.runtimeType == SmallCreature ? CreatureBasicDescription(creature): PlantBasicDescription(creature),
                 LargeText(creature.description),
                 Tab(icon: Image.asset(
                     'assets/images/map_icon.png',

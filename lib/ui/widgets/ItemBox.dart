@@ -9,7 +9,7 @@ import 'dart:io';
 //#region TextFields
 
 //Common TextField used through de application for most of text data input
-Widget ItemBox(SmallCreature creature, context) {
+Widget ItemBox(creature, context) {
 
   var image = File('/data/user/0/sko.raym.bestiarium/app_flutter/PicsArt_03-06-03.11.38.jpg');
   TextTheme _textTheme = Theme.of(context).textTheme;

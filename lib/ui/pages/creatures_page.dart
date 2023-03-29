@@ -14,6 +14,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 
+import '../../domain/entities/plant.dart';
 import 'map_drawer.dart';
 
 
@@ -41,12 +42,15 @@ class _Creatures_PageState extends State<Creatures_Page> {
 
   late List creatures_small;
   late List creatures_large;
+  late List plants;
   @override
   initState(){
 
     var small = Boxes.getSmallCreatures();
     creatures_small = small.values.where((element) => element.category == 'small').toList().cast<SmallCreature>();
     creatures_large = small.values.where((element) => element.category == 'large').toList().cast<SmallCreature>();
+    var plantBox = Boxes.getPlants();
+    plants = plantBox.values.toList().cast<Plant>();
     //add_url(small);
 
 
@@ -140,7 +144,22 @@ class _Creatures_PageState extends State<Creatures_Page> {
                         })
                 )
             ),
-            Tab(icon: Icon(Icons.directions_car, size: 200,)),
+        Padding(
+            padding: const EdgeInsets.symmetric(
+                horizontal: 10, vertical: 5),
+            child: Scaffold(
+                body: ListView.builder(
+
+                    itemCount: plants.length ,
+                    scrollDirection: Axis.vertical,
+                    shrinkWrap: true,
+                    itemBuilder:
+                        (BuildContext context, int index) {
+                      return Padding(padding: const EdgeInsets.symmetric(
+                          vertical: 8), child:ItemBox(plants[index], context));
+                    })
+            )
+        ),
           ],
         ),
       ),

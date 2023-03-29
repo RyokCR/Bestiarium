@@ -53,6 +53,8 @@ class _MapDrawerState extends State<MapDrawer> {
   var historyDrawingPoints = <DrawingPoint>[];
   var drawingPoints = <DrawingPoint>[];
 
+  DrawingPoint? currentDrawingPoint;
+
 
   @override
   void initState() {
@@ -139,8 +141,24 @@ class _MapDrawerState extends State<MapDrawer> {
                       ]
                     ),
                     child: GestureDetector(
+                      onPanStart: ((details) {
+                        /// NEW VERSION WITH HISTORY
+                        setState(() {
+                          currentDrawingPoint = DrawingPoint(
+                              id: DateTime.now().microsecondsSinceEpoch,
+                              offsets: [
+                                details.localPosition
+                              ]
+                          );
+
+                          if(currentDrawingPoint == null) return; ///????
+                          drawingPoints.add(currentDrawingPoint!);
+                          historyDrawingPoints = List.of(drawingPoints);
+                        });
+
+                      }),
                       onPanDown: (details){
-                        this.setState(() {
+                        /*this.setState(() {
                           //points.add(details.localPosition);
                           points.add(DrawingArea(
                               point: details.localPosition,
@@ -149,10 +167,10 @@ class _MapDrawerState extends State<MapDrawer> {
                           ..strokeWidth = strokeWidth
                           ..color = selectedColor
                           ..isAntiAlias = true));
-                      });
+                      });*/
                         },
                       onPanUpdate: (details){
-                        this.setState(() {
+                        /*this.setState(() {
                           //points.add(details.localPosition);
                           points.add(DrawingArea(
                               point: details.localPosition,
@@ -161,12 +179,29 @@ class _MapDrawerState extends State<MapDrawer> {
                                 ..strokeWidth = strokeWidth
                                 ..color = selectedColor
                                 ..isAntiAlias = true));
+                        });*/
+
+                        /// NEW VERSION WITH HISTORY
+                        setState(() {
+
+                          if(currentDrawingPoint == null) return;
+
+                          currentDrawingPoint = currentDrawingPoint?.copyWith(
+                              offsets: currentDrawingPoint!.offsets
+                                ..add(details.localPosition)
+                          );
+
+                          drawingPoints.last = currentDrawingPoint!;
+                          historyDrawingPoints = List.of(drawingPoints);
                         });
+
                       },
                       onPanEnd: (details ){
-                        this.setState(() {
+                        /*this.setState(() {
                           points.add(null);
-                        });
+                        });*/
+                        /// NEW VERSION WITH HISTORY
+                        currentDrawingPoint = null;
                       },
                       child: ClipRRect(
                         borderRadius: BorderRadius.all(Radius.circular(20.0)),
@@ -225,6 +260,11 @@ class _MapDrawerState extends State<MapDrawer> {
             heroTag: "Undo",
             onPressed: (){
 
+              if(drawingPoints.isNotEmpty && historyDrawingPoints.isNotEmpty){
+                setState(() {
+                  drawingPoints.removeLast();
+                });
+              }
             },
             child: const Icon(Icons.undo),
           ),
@@ -232,7 +272,12 @@ class _MapDrawerState extends State<MapDrawer> {
           FloatingActionButton(
             heroTag: "Redo",
             onPressed: (){
-
+              setState(() {
+                if(drawingPoints.length < historyDrawingPoints.length){
+                  final index = drawingPoints.length;
+                  drawingPoints.add(historyDrawingPoints[index]);
+                }
+              });
             },
             child: const Icon(Icons.redo),
           )
@@ -286,6 +331,14 @@ class MyCustomPainter extends CustomPainter{
 
       for (var i=0; i < drawingPoint.offsets.length; i++){
         var notLastOffset = i != drawingPoint.offsets.length - 1;
+
+        if(notLastOffset){
+          final current = drawingPoint.offsets[i];
+          final next = drawingPoint.offsets[i+1];
+          canvas.drawLine(current, next, paint);
+        }else{
+          //nothing
+        }
       }
     }
     
