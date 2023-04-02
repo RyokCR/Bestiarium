@@ -1,3 +1,4 @@
+import 'package:bestiarium/domain/entities/drawing_point.dart';
 import 'package:hive/hive.dart';
 part 'small_creature.g.dart';
 
@@ -39,9 +40,9 @@ class SmallCreature extends HiveObject{
 
   @HiveField(11)
   late String category;
-  //Habitat
-  //@HiveField(8)
-  //late String url;
+
+  @HiveField(12)
+  late List<DrawingPoint> habitat;
 
 
 

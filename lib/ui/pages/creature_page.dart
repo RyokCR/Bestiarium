@@ -3,6 +3,7 @@
 
 import 'package:bestiarium/domain/entities/plant.dart';
 import 'package:bestiarium/domain/entities/small_creature.dart';
+import 'package:bestiarium/ui/pages/map_drawer.dart';
 import 'package:bestiarium/ui/themes/icons/my_flutter_app_icons.dart';
 import 'package:bestiarium/ui/widgets/ItemBox.dart';
 import 'package:bestiarium/ui/widgets/drawer.dart';
@@ -45,7 +46,17 @@ class _Creature_PageState extends State<Creature_Page>  {
   Widget build(BuildContext context) {
     return
       Scaffold(
-        appBar: AppBar(title: Text('Description')),
+        appBar: AppBar(title: Text('Description'),
+            actions: [
+            //Navigate to the Search Screen
+            IconButton(
+            onPressed: () => /*Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (_) => const SearchPage())),*/
+          Navigator.of(context)
+          .push(MaterialPageRoute(builder: (_) =>  MapDrawer(creature_plant: creature))),
+    icon: const Icon(Icons.map),
+    )
+    ],),
         drawer: NavigationDrawer(),
       body:  DefaultTabController(
           length: 4,
@@ -82,7 +93,7 @@ class _Creature_PageState extends State<Creature_Page>  {
                   color: Colors.grey,
                 )
                 ),*/
-                MapShow(),
+                MapShow(creature),
                 //Tab(icon: Icon(Icons.directions_car, size: 200,)),
                 Padding(
               padding: EdgeInsets.symmetric(

@@ -2,7 +2,8 @@
 import 'package:bestiarium/domain/entities/small_creature.dart';
 import 'package:hive/hive.dart';
 
-import '../../../entities/plant.dart';
+//import 'package:bestiarium/ui/pages/map_drawer.dart';
+import 'package:bestiarium/domain/entities/plant.dart';
 
 
 addSmallCreature(String name, String group, String size, String diet, String description, String icon, int danger, String url, String type, String weakness, String rarity, String category){
@@ -19,6 +20,7 @@ addSmallCreature(String name, String group, String size, String diet, String des
       ..weakness = weakness
       ..rarity = rarity
       ..category = category
+      ..habitat = []
   ;
   //setState(() => small_creatures.add(creature));
   final box = Boxes.getSmallCreatures();
@@ -37,11 +39,18 @@ addPlant(String name, String size, String description, String icon, int danger, 
     ..rarity = rarity
     ..properties = properties
     ..sustainance = sustainance
-
+    ..habitat = []
   ;
   //setState(() => small_creatures.add(creature));
   final box = Boxes.getPlants();
   box.add(plant);
+}
+
+
+addHabitatToObject(object,  habitat){
+
+    object.habitat = habitat;
+    object.save();
 }
 
 class Boxes {

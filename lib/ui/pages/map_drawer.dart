@@ -1,11 +1,13 @@
 
 import 'dart:ui';
 
+import 'package:bestiarium/domain/entities/drawing_point.dart';
+import 'package:bestiarium/domain/services/db/admin/db_manager.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 
-class DrawingPoint {
+/*class DrawingPoint {
   int id;
   List<Offset> offsets;
   Color color;
@@ -27,6 +29,8 @@ class DrawingPoint {
     );
   }
 }
+*/
+
 
 class DrawingArea {
   late Offset point;
@@ -37,13 +41,16 @@ class DrawingArea {
 
 
 class MapDrawer extends StatefulWidget {
-  const MapDrawer({Key? key}) : super(key: key);
+  MapDrawer({Key? key, required this.creature_plant}) : super(key: key);
 
+  var creature_plant;
   @override
-  State<MapDrawer> createState() => _MapDrawerState();
+  State<MapDrawer> createState() => _MapDrawerState(creature_plant: creature_plant);
 }
 
 class _MapDrawerState extends State<MapDrawer> {
+
+  var creature_plant;
 
   List<DrawingArea?> points = [];
   late Color selectedColor;
@@ -55,6 +62,7 @@ class _MapDrawerState extends State<MapDrawer> {
 
   DrawingPoint? currentDrawingPoint;
 
+  _MapDrawerState({required this.creature_plant});
 
   @override
   void initState() {
@@ -72,7 +80,7 @@ class _MapDrawerState extends State<MapDrawer> {
       return AlertDialog(
         title: const Text('Color Chooser'),
         content: SingleChildScrollView(
-          child: BlockPicker(
+          child: ColorPicker(
             pickerColor: selectedColor,
             onColorChanged: (color){
               setState(() {
@@ -154,8 +162,10 @@ class _MapDrawerState extends State<MapDrawer> {
                           currentDrawingPoint = DrawingPoint(
                               id: DateTime.now().microsecondsSinceEpoch,
                               offsets: [
-                                details.localPosition
-                              ]
+                                MapOffset.parseOffset(details.localPosition)
+                              ],
+                            color_value: selectedColor.value,
+                            width: strokeWidth
                           );
 
                           if(currentDrawingPoint == null) return; ///????
@@ -197,7 +207,7 @@ class _MapDrawerState extends State<MapDrawer> {
 
                           currentDrawingPoint = currentDrawingPoint?.copyWith(
                               offsets: currentDrawingPoint!.offsets
-                                ..add(details.localPosition)
+                                ..add(MapOffset.parseOffset(details.localPosition))
                           );
 
                           drawingPoints.last = currentDrawingPoint!;
@@ -281,12 +291,14 @@ class _MapDrawerState extends State<MapDrawer> {
           FloatingActionButton(
             heroTag: "Redo",
             onPressed: (){
-              setState(() {
+              /*setState(() {
                 if(drawingPoints.length < historyDrawingPoints.length){
                   final index = drawingPoints.length;
                   drawingPoints.add(historyDrawingPoints[index]);
                 }
-              });
+              });*/
+
+              addHabitatToObject(creature_plant, drawingPoints);
             },
             child: const Icon(Icons.redo),
           )
@@ -333,7 +345,7 @@ class MyCustomPainter extends CustomPainter{
 
     for(var drawingPoint in drawingPoints){
       final paint = Paint()
-        ..color = drawingPoint.color
+        ..color =  Color(drawingPoint.color_value)
         ..isAntiAlias = true
         ..strokeWidth = drawingPoint.width
         ..strokeCap = StrokeCap.round;

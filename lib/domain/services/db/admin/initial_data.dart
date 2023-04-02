@@ -236,6 +236,207 @@ void init_db(){
 
   );
 
+  addSmallCreature(
+      'Barambuffel',
+      'Warm-blooded beast',
+      '2m tall',
+      'Herbivorous',
+      'Barambuffel live together in small groups, in forests of the northern'
+          ' mountains of Onyria. During a certain season, all young males will'
+          ' leave the group and search for other communities, establishing themselves'
+          ' in the new community after proving their strength in ritual battles.'
+
+      '\n\nBarambuffel are strictly monogamous. They are known for being gentle with creatures'
+          ' that are smaller or weaker than they are, and defending them from predator attacks.'
+          ' Despite this, they will brutally attack anything that they perceive as a threat to their group or habitat.'
+
+  '\n\nThey survive solely on eating plants and fruit, and are able to weave certain plants together in order to build'
+          ' some rudimentary tools and large shelter structures to protect their nests from harsh weather conditions.'
+      ,
+      'assets/images/barambuffel.png',
+      3,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Barambuffel.jpg',
+      'normal',
+      'fire',
+      'Common',
+      'large'
+
+  );
+
+  addSmallCreature(
+      'Schelpaca',
+      'Hydran',
+      '2.50 m tall',
+      'Mineral',
+      'These slow-moving beasts thrive in the highly inhospitable environment'
+          ' of the Flaming Steppe´s hot springs. Able to withstand scalding temperatures,'
+          ' they are protected by thick metallic shells and scales that grow throughout their'
+          ' lives as they feed. Their shells also produce unique gemstones, which are highly'
+          ' valued as jewels by locals due to their beauty, and how difficult they are to obtain.'
+
+      '\n\nTheir heavy shells weigh them down, allowing them to walk underwater. They graze'
+          ' the minerals that accumulate near the hydrothermal vents, and are able to draw nourishment'
+          ' from them through chemical reactions. This is possible due to its symbiosis with special'
+          ' bacteria that gather inside their shells. Excess substance and gas produced during this process'
+          ' is expelled through small openings atop the chimney-like structures on their shells.'
+      ,
+      'assets/images/schelpaca.png',
+      1,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Schelpaca.jpg',
+      'normal',
+      'fire',
+      'Locally common',
+      'small'
+
+  );
+
+  addSmallCreature(
+      'Alkarak',
+      'Arthropoda',
+      '10 cm',
+      'Insectivorous',
+      'Harmless spiders domesticated originally by the Undergrove'
+          ' tribes in order to obtain their silk, which is used to craft'
+          ' excellent quality fabric and threads. Alkarak silk is very resistant'
+          ' - a single strand being able to hold up very heavy objects - and always'
+          ' feels cool to the touch. The spiders are placed in large wooden frames,'
+          ' from which their webs may be easily harvested.'
+
+      '\n\nIf left unattended, Alkarak colonies will produce large nests, which appear'
+          ' as house-sized areas covered in thick layers of silk. These nests become'
+          ' quite dangerous, as other creatures may easily become trapped in them and be unable to escape.'
+
+  '\n\nTheir habit of waving their legs and shaking their colorful abdomens'
+          ' rhythmically when approached has led to some calling them'
+      ,
+      'assets/images/alkarak.png',
+      0,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Alkarak.jpg',
+      'normal',
+      'fire',
+      'Locally common',
+      'small'
+
+  );
+
+  addSmallCreature(
+      'Heremu',
+      'Saurian',
+      '15 cm length, 15 cm wingspan',
+      'Insectivorous',
+      'Small airborne creatures of the jungle. Heremu build tent-like nests inside'
+          ' large leaves and gather together in tight clumps while resting. Their'
+          ' body sports bioluminiscent pigments that attract some insects to their'
+          ' hideout, helping them occasionally catch easy prey.'
+
+      '\n\nTheir body has several suction cup structures scattered throughout,'
+          ' allowing Heremu to stick to a wide variety of surfaces from nearly'
+          ' any point of contact. They usually hang themselves upside-down from branches'
+          ' using only their tails for support.'
+
+      '\n\nAt dusk, they fly out of their shelters and catch their prey mid-flight,'
+          ' trapping insects with their wide mouths. Heremu have excellent night vision and hearing.'
+      ,
+      'assets/images/heremu.png',
+      0,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Heremu.jpg',
+      'normal',
+      'fire',
+      'Common',
+      'small'
+
+  );
+
+  addSmallCreature(
+      'Kaulaula',
+      'Plumiferan',
+      '1.20 m tall, 1.80 m long',
+      'Carnivorous',
+      'Strange, predatory plumiferans with a unique hunting tactic.'
+          ' They leap into the air with their powerful legs, and skewer'
+          ' prey below with their sharp, spear-like hooves. The strips'
+          ' that grow from their back produce an eerie whistling sound '
+          'as they fall, which mimics the sound of the wind blowing through '
+          'the mountains. Their pointed hooves also allow them to traverse the snow-filled cliffs they inhabit.'
+
+      '\n\nTheir dense plumage isolates and protects them from the cold, and their flattened,'
+          ' broad faces aid their excellent hearing. Kaulaula are capable even of successfully '
+          'killing prey that moves under the snow, locating the exact source of the sounds they produce'
+          ', and thrusting their long legs into the ground like a harpoon.'
+      ,
+      'assets/images/kaulaula.png',
+      2,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Kaulaula.jpg',
+      'normal',
+      'fire',
+      'Uncommon',
+      'large'
+
+  );
+
+  addSmallCreature(
+      'Wryguana',
+      'Saurian',
+      '2.30 m long',
+      'Carnivorous',
+      'Jungle-dwelling creatures with oddly shaped and extremely flexible bodies.'
+          ' They are able to dislocate any joint in order to pass through small openings,'
+          ' such as the burrows of smaller prey. They use their highly precise, elongated '
+          'forelimbs to reach into even more inaccessible pockets, and snatch whatever hides within.'
+
+      '\n\nWhen hunting for large prey, they stalk and ambush, quickly wrapping their flexible bodies'
+          ' and tails around the target, and squeezing until it suffocates. They are able to unhinge their'
+          ' jaws in order to swallow large objects whole. Their sharp teeth flatten against their gums in'
+          ' order to let ingested matter pass through, but deploy like hooks to grab anything that tries to escape.'
+
+      '\n\nGekkoku are also expert climbers. Their agility allows them to move quickly through dense forests,'
+          ' and their specially adapted pupils provide them with excellent night vision. The scaly protrusions'
+          ' on their back mimic vegetation, allowing them to blend in successfully with their surroundings.'
+          ' They are also able to deploy these protrusions in a threatening display to ward off anything they'
+          ' perceive as menacing.'
+      ,
+      'assets/images/wryguana.png',
+      3,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Wryguana.jpg',
+      'normal',
+      'fire',
+      'Common',
+      'large'
+
+  );
+
+  addSmallCreature(
+      'Cruscentid',
+      'Anthropoda',
+      '30 cm long',
+      'Carnivorous',
+      'Small, but respected inhabitants of Onyrian coasts. They climb rocks and cliffs with the aid'
+          ' of their many legs, searching for the small, shelled prey they feed upon. Their forelimbs'
+          ' are capable of delivering disproportionately powerful strikes, in a movement so quick that '
+          'is invisible to the naked eye. The punch reaches extremely high temperatures in an instant,'
+          ' and smashes shells with ease, usually also damaging the rock the animal was stuck to.'
+          ' Even larger creatures may suffer considerable damage from their attacks. '
+
+      '\n\nThey nest in burrows that they create by breaking and eroding solid rock with their punches. '
+          'Whole cliff sides and similar large natural formations have been known to collapse due to the'
+          ' damage caused by large numbers of Cruscentids burrowing within. They can also eventually cause'
+          ' large depressions in the seafloor due to the caving in of their excavated tunnels. According '
+          'to an local legend, the entirety of Leviathan´s Trench was created in ancient times by a gigantic'
+          ' specimen of Cruscentid and its offspring.'
+
+      '\n\nThey possess highly specialized eyes that can rotate full circle, granting them a full 360 degrees'
+          ' of vision, and are also able to perceive colors and hues that other beings cannot.'
+      ,
+      'assets/images/cruscentid.png',
+      3,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Cruscentid.jpg',
+      'normal',
+      'fire',
+      'Common',
+      'small'
+
+  );
+
   addPlant(
       'Soul Orchid',
       '15 cm',

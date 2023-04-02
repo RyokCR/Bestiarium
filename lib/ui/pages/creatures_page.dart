@@ -66,10 +66,9 @@ class _Creatures_PageState extends State<Creatures_Page> {
           actions: [
             //Navigate to the Search Screen
             IconButton(
-              onPressed: () => /*Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (_) => const SearchPage())),*/
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (_) => const MapDrawer())),
+              onPressed: () => Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (_) => const SearchPage())),
+
               icon: const Icon(Icons.search),
             )
           ],

@@ -1,3 +1,4 @@
+import 'package:bestiarium/domain/entities/drawing_point.dart';
 import 'package:hive/hive.dart';
 part 'plant.g.dart';
 
@@ -36,11 +37,8 @@ class Plant extends HiveObject{
   @HiveField(9)
   late String sustainance;
 
-
-
-//Habitat
-//@HiveField(10)
-//late String url;
+  @HiveField(10)
+  late List<DrawingPoint> habitat;
 
 
 

@@ -28,13 +28,14 @@ class SmallCreatureAdapter extends TypeAdapter<SmallCreature> {
       ..type = fields[8] as String
       ..weakness = fields[9] as String
       ..rarity = fields[10] as String
-      ..category = fields[11] as String;
+      ..category = fields[11] as String
+      ..habitat = (fields[12] as List).cast<DrawingPoint>();
   }
 
   @override
   void write(BinaryWriter writer, SmallCreature obj) {
     writer
-      ..writeByte(12)
+      ..writeByte(13)
       ..writeByte(0)
       ..write(obj.name)
       ..writeByte(1)
@@ -58,7 +59,9 @@ class SmallCreatureAdapter extends TypeAdapter<SmallCreature> {
       ..writeByte(10)
       ..write(obj.rarity)
       ..writeByte(11)
-      ..write(obj.category);
+      ..write(obj.category)
+      ..writeByte(12)
+      ..write(obj.habitat);
   }
 
   @override

@@ -26,13 +26,14 @@ class PlantAdapter extends TypeAdapter<Plant> {
       ..type = fields[6] as String
       ..rarity = fields[7] as String
       ..properties = fields[8] as String
-      ..sustainance = fields[9] as String;
+      ..sustainance = fields[9] as String
+      ..habitat = (fields[10] as List).cast<DrawingPoint>();
   }
 
   @override
   void write(BinaryWriter writer, Plant obj) {
     writer
-      ..writeByte(10)
+      ..writeByte(11)
       ..writeByte(0)
       ..write(obj.name)
       ..writeByte(1)
@@ -52,7 +53,9 @@ class PlantAdapter extends TypeAdapter<Plant> {
       ..writeByte(8)
       ..write(obj.properties)
       ..writeByte(9)
-      ..write(obj.sustainance);
+      ..write(obj.sustainance)
+      ..writeByte(10)
+      ..write(obj.habitat);
   }
 
   @override
