@@ -45,5 +45,10 @@ class SmallCreature extends HiveObject{
   late List<DrawingPoint> habitat;
 
 
+  @override
+  String toString() {
+    // TODO: implement toString
+    return name;
+  }
 
 }

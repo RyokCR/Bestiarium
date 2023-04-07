@@ -12,7 +12,7 @@ void init_db(){
       'Naturally curious, these creatures often come close to inspect any unusual beings or objects that enter their habitat. If startled however, they will quickly jump away with extreme speed. Catching one is no easy task. Jer-jers gather in large flocks, and are extremely social. They will perform highly synchronized flight patterns in flocks in order to confuse any perceived predators.'
           'Jer-Jers are monogamous, and construct large basket-like nests by weaving vegetation together. Call is similar to a rapid chattering, a distinctive jer-jer-jer that gives them their common name.\n\n'
           'They are well-known and respected by spirits and incarnates alike, as they are drawn to large sources of energy, which facilitates their location. They will often gather around powerful spirits as well.',
-      'assets/images/gerbobird.png',
+      'assets/images/icons/small_creatures/gerbobird.png',
       0,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Jer-jer.jpg',
       'normal',
@@ -33,7 +33,7 @@ void init_db(){
           ' submerged until they grow legs and reach maturity. Their tails and gills shrink as they grow, the oldest specimens'
           ' nearly lacking them, while also being more heavy and muscular. At this point, they are fit for an almost completely'
           ' terrestrial life. However, they return to the rivers and ponds during breeding season to lay their eggs',
-      'assets/images/bounder.png',
+      'assets/images/icons/small_creatures/bounder.png',
       0,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Bounder.jpg',
     'normal',
@@ -55,7 +55,7 @@ void init_db(){
           ' antennae.Their body is covered in  rows of harpoon-like bristles, which contain powerful toxins. Many fin-like appendages aid them in'
           ' their locomotion, which reaches considerable speed.'
       ,
-      'assets/images/abyssecter.png',
+      'assets/images/icons/large_creatures/abyssecter.png',
       0,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Abyssecter.jpg',
       'normal',
@@ -83,7 +83,7 @@ void init_db(){
           '\n\nThe eight eyes of Krokoskopas are highly sensitive to movement, and cover a broad range of sight around their heads. They usually keep half their snout'
           ' submerged underwater, and the rest of their eyes at the surface to watch the totality of their surroundings.'
       ,
-      'assets/images/krokoskopas.png',
+      'assets/images/icons/large_creatures/krokoskopas.png',
       4,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Krokoskopas.jpg',
       'normal',
@@ -109,7 +109,7 @@ void init_db(){
           '\n\nKukkuru are usually unafraid of other approaching creatures, and allow them to get close without fleeing. There are no known predators able'
           ' to withstand their poison upon consumption.'
       ,
-      'assets/images/kukkuru.png',
+      'assets/images/icons/small_creatures/kukkuru.png',
       2,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Kukkuru.jpg',
       'normal',
@@ -137,7 +137,7 @@ void init_db(){
           ' obtain all moisture they need from ingested matter.'
           ' to withstand their poison upon consumption.'
       ,
-      'assets/images/gypsiena.png',
+      'assets/images/icons/small_creatures/gypsiena.png',
       3,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Gypsiena.jpg',
       'normal',
@@ -163,7 +163,7 @@ void init_db(){
           ' to scare weak attacking animals away. Baa are also known to attract lightning'
           ' bolts if left unsheltered during thunderstorms, but suffer no damage after the strikes.'
       ,
-      'assets/images/baa.png',
+      'assets/images/icons/small_creatures/baa.png',
       0,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Baa.jpg',
       'normal',
@@ -196,7 +196,7 @@ void init_db(){
           ' trap for any non-adapted creatures. Like many other scavengers of Onyria,'
           ' they are also able to use their highly corrosive stomach acid as a weapon.'
       ,
-      'assets/images/cytuatara.png',
+      'assets/images/icons/large_creatures/cytuatara.png',
       4,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Cytuatara.jpg',
       'normal',
@@ -226,7 +226,7 @@ void init_db(){
           ' full length of their bodies, and will guard the more vulnerable head while'
           ' throwing kicks or shoving using their last pairs of legs.'
       ,
-      'assets/images/niluuq.png',
+      'assets/images/icons/large_creatures/niluuq.png',
       3,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Niluuq.jpg',
       'normal',
@@ -253,7 +253,7 @@ void init_db(){
   '\n\nThey survive solely on eating plants and fruit, and are able to weave certain plants together in order to build'
           ' some rudimentary tools and large shelter structures to protect their nests from harsh weather conditions.'
       ,
-      'assets/images/barambuffel.png',
+      'assets/images/icons/large_creatures/barambuffel.png',
       3,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Barambuffel.jpg',
       'normal',
@@ -280,7 +280,7 @@ void init_db(){
           ' bacteria that gather inside their shells. Excess substance and gas produced during this process'
           ' is expelled through small openings atop the chimney-like structures on their shells.'
       ,
-      'assets/images/schelpaca.png',
+      'assets/images/icons/small_creatures/schelpaca.png',
       1,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Schelpaca.jpg',
       'normal',
@@ -309,7 +309,7 @@ void init_db(){
   '\n\nTheir habit of waving their legs and shaking their colorful abdomens'
           ' rhythmically when approached has led to some calling them'
       ,
-      'assets/images/alkarak.png',
+      'assets/images/icons/small_creatures/alkarak.png',
       0,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Alkarak.jpg',
       'normal',
@@ -337,7 +337,7 @@ void init_db(){
       '\n\nAt dusk, they fly out of their shelters and catch their prey mid-flight,'
           ' trapping insects with their wide mouths. Heremu have excellent night vision and hearing.'
       ,
-      'assets/images/heremu.png',
+      'assets/images/icons/small_creatures/heremu.png',
       0,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Heremu.jpg',
       'normal',
@@ -364,7 +364,7 @@ void init_db(){
           'killing prey that moves under the snow, locating the exact source of the sounds they produce'
           ', and thrusting their long legs into the ground like a harpoon.'
       ,
-      'assets/images/kaulaula.png',
+      'assets/images/icons/large_creatures/kaulaula.png',
       2,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Kaulaula.jpg',
       'normal',
@@ -395,7 +395,7 @@ void init_db(){
           ' They are also able to deploy these protrusions in a threatening display to ward off anything they'
           ' perceive as menacing.'
       ,
-      'assets/images/wryguana.png',
+      'assets/images/icons/large_creatures/wryguana.png',
       3,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Wryguana.jpg',
       'normal',
@@ -427,7 +427,7 @@ void init_db(){
       '\n\nThey possess highly specialized eyes that can rotate full circle, granting them a full 360 degrees'
           ' of vision, and are also able to perceive colors and hues that other beings cannot.'
       ,
-      'assets/images/cruscentid.png',
+      'assets/images/icons/small_creatures/cruscentid.png',
       3,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Cruscentid.jpg',
       'normal',
@@ -437,7 +437,112 @@ void init_db(){
 
   );
 
-  addPlant(
+  addSmallCreature(
+      'Nessnaila',
+      'Hydran',
+      '5m tall, 10m long',
+      'Carnivorous',
+      'Rare sea creatures with very slow growth, but extremely long lifespans. They are most'
+          ' vulnerable in the early stages of their life, in which their size is small and they'
+          ' may be eaten by larger creatures. However, as they grow, the toxins they secrete gradually'
+          ' become more dangerous. Their tentacles, capable of delivering a painful sting to anything that'
+          ' comes into contact, become a lethal weapon once Nessnaila reaches considerable size. The strands'
+          ' become vastly long and difficult to detect, dangling below as the body drifts along the surface.'
+
+      '\n\nAny life form that becomes entangled in an adult Nessnaila\'s tentacles will be almost instantly'
+          'paralyzed. It will then tightly wrap its appendages around its prey, withdraw them, and retreat into its'
+          ' shell. The beast then distends its innards completely over the captured animal, and digests the body.'
+
+  '\n\nEach single specimen contains both sexes in its body, being able to reproduce asexually, Their eggs –produced'
+          ' very rarely and enveloped in a highly toxic, floating protective structure- are carried far away by oceanic'
+          ' currents.'
+
+      ,
+      'assets/images/icons/large_creatures/nessnaila.png',
+      4,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Nessnaila.jpg',
+      'normal',
+      'fire',
+      'Uncommon',
+      'large'
+
+  );
+
+  addSmallCreature(
+      'Drak\'sakara',
+      'Anthropoda',
+      '3 m tall, 6 m long',
+      'Carnivorous',
+      'Large predatory beasts from the Undergrove. They live and hunt alone, gathering only during'
+          ' mating seasons –in which many adult specimens lose their lives, either in ritual fights,'
+          ' or devoured while mating- and then part ways once again. They are extremely territorial and aggressive.'
+
+      '\n\nTheir massive scythe-like forelimbs are periodically sharpened by the creature, which grinds'
+          ' them against each other, or any nearby suitable stones. This results in deadly natural weapons'
+          ' capable of slicing through armor and flesh with ease. Accustomed to a perpetually dark and cool'
+          ' habitat, these creatures only flee from fire. They are, however, drawn to small sources of light'
+          ' and heat, such as lanterns carried by travelers.'
+
+      ,
+      'assets/images/icons/large_creatures/drak\'sakara.png',
+      4,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Drak\'sakara.jpg',
+      'normal',
+      'fire',
+      'Uncommon',
+      'large'
+
+  );
+
+  addSmallCreature(
+      'Giret\'hara',
+      'Warm-blooded beast',
+      ' 7 m tall',
+      'Frugivorous',
+      'Odd -some would say, ridiculous- creatures that thrive near the Green Serpent\'s oasis, in the Badlands.'
+          ' Their long necks are an adaptation that allows the beasts to eat Fleshfruit directly from the very'
+          ' tall trees that produce them. Their sharp teeth and spiked tongue allow them to break through the'
+          ' thick skin of the fruit, and consume the meat-like pulp. The seeds pass through Giret\'hara\'s'
+          ' digestive tract unharmed, making them the most important agents in the propagation of said trees.'
+
+  '\n\nThey are able to move at surprisingly high speeds despite their appearance, with very wide strides'
+          ' and extra traction provided by their claws. If threatened, they will swing their necks with force'
+          ' or kick to defend themselves. Male Giret´hara behave quite territorially and will often attack any'
+          ' approaching creatures.'
+      ,
+      'assets/images/icons/large_creatures/giret\'hara.png',
+      3,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Giret\'hara.jpg',
+      'normal',
+      'fire',
+      'Uncommon',
+      'large'
+
+  );
+
+  addSmallCreature(
+      'Zelenodon',
+      'Warm-blooded beast',
+      '8 m tall, 15 m long',
+      'Herbivorous',
+      'Commonly referred to as “Caretakers of the Wild”. These large, slow-moving herbivores are extremely docile,'
+          ' and allow other smaller creatures to use their bodies as shelter. Plants and algae grow on their antlers'
+          ' and skin, and many small arthropods and plumiferans nest inside their manes.'
+
+      '\n\nTheir sheer size is enough to ward off most predators, but they may swing their tails for defense'
+          ' if threatened.'
+  '\n\nThroughout their slow but steady journeys through the plains, they spread the seeds, pollen and spores'
+          ' of the organisms they carry on their body, making them a very valuable part of the ecosystems they inhabit'
+      ,
+      'assets/images/icons/small_creatures/zelenodon.png',
+      0,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Zelenodon.jpg',
+      'normal',
+      'fire',
+      'Common',
+      'small'
+  );
+      addPlant(
       'Soul Orchid',
       '15 cm',
       'Parasitic plants with luminous white blooms. Spirit orchids sprout near graves'
@@ -449,7 +554,7 @@ void init_db(){
 
   '\n\nMore than a few Onyrians keep soul orchids safely guarded in their homes, believing them to contain'
           ' the soul of a loved one.',
-      'assets/images/flower_icon.png',
+      'assets/images/icons/plants/flower_icon.png',
       0,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Soul_Orchid.jpg',
       'flower',
@@ -467,7 +572,7 @@ void init_db(){
       '\n\nIts leaves produce a substance that induces hallucinations and euphoria in those who consume it.'
           ' Shamans from certain tribes traditionally consume tea made from its leaves during rituals in'
           ' order to look into the flow of the Aeras, and fortell events to come',
-      'assets/images/other_plants_icon.png',
+      'assets/images/icons/plants/other_plants_icon.png',
       0,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Psychelent.jpg',
       'other',
@@ -489,13 +594,72 @@ void init_db(){
           ' delicacy food to local tribes, which prepare it in a variety of ways. Many'
           ' jewelery items and accessories are also fashioned from the large seeds of'
           ' the fleshfruit, similar to bone in color and hardness.',
-      'assets/images/tree_icon.png',
+      'assets/images/icons/plants/tree_icon.png',
       0,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Flesh_tree.jpg',
       'tree',
       'Locally common',
       '-',
       'Photosynthesis'
+  );
+
+  addPlant(
+      'Skybrush',
+      '5 m tall, 60 cm wide at trunk',
+      'Strange trees that produce very hard and inedible fruit. Skybrushes absorb moisture from the soil below,'
+          ' and create a fine mist that hydrates the surrounding area. They are a major component of the Geko'
+          ' area rainforests, where many amphibian species thrive.'
+
+      '\n\nIn large numbers, they create surreal misty landscapes with a uniform green-blue gradient. A mesmerizing'
+          ' rainbow effect is produced when sunlight shines on the mist they produce.',
+      'assets/images/icons/plants/tree_icon.png',
+      0,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Flesh_tree.jpg',
+      'tree',
+      'Locally common',
+      '-',
+      'Photosynthesis'
+  );
+
+  addPlant(
+      'Fountain Tree',
+      '3m tall, 5 m wide',
+      'Forest plants that gather water inside their unique, wide trunk structures. This attracts many small'
+          ' water-reliant organisms, as well as larger creatures in need of drinking. The plant continuously'
+          ' purifies the water it contains in order to help the small animals thrive, and in turn absorbs their'
+          ' vital energy in harmless amounts to sustain itself.'
+
+      '\n\nTravellers that drink from its water have said to feel exceptionally revitalized and cleansed'
+          ' after doing so.',
+      'assets/images/icons/plants/tree_icon.png',
+      0,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Fountain_tree.jpg',
+      'tree',
+      'Uncommon',
+      '-',
+      'Aeras-based'
+  );
+
+  addPlant(
+      'Moonflower',
+      ' 1.5 m tall, 30 cm diameter at bloom',
+      'Large flowers that bloom at night, believed to survive solely on moonlight. At the center of their petals,'
+          ' Moonflowers have a semi-liquid and black reflective surface, reminiscent of an eye\'s pupil, which is'
+          ' known to perfectly reflect the night sky above. On full-moon nights, their petals glow in a pale teal '
+          'color.'
+
+  '\n\nIf harvested while in this energy-charged state, a powerful medicinal extract may be distilled from the plant.'
+
+  '\n\nThe flowers follow the movement of the two moons of Onyria, rotating slowly to face them, and close their petals'
+          ' at sunrise. It is theorized that the sun\'s light would burn and destroy the delicate lens of the flower if'
+          ' it did not close.',
+      'assets/images/icons/plants/flower_icon.png',
+      0,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Moonflower.jpg',
+      'flower',
+      'Uncommon',
+      'Medicinal',
+      'Aeras-Based'
   );
 
 }

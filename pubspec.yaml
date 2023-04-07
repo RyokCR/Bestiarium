@@ -72,6 +72,9 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+    - assets/images/icons/large_creatures/
+    - assets/images/icons/small_creatures/
+    - assets/images/icons/plants/
 
   fonts:
     - family: MyFlutterApp

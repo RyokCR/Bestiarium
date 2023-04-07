@@ -107,14 +107,29 @@ class _Creatures_PageState extends State<Creatures_Page> {
           ),
           //title: Text('Tabs Demo'),
         ),
-        body: TabBarView(
+        body: Container(
+    decoration: BoxDecoration(
+    image: DecorationImage(
+    image: AssetImage('assets/images/Empty_BG.png'),
+    fit: BoxFit.fill
+    )
+    ),
+    child: TabBarView(
           children: [
 
 
-            Padding(
+    Container(
+    decoration: BoxDecoration(
+    image: DecorationImage(
+        image: AssetImage('assets/images/Bestiarium_BG.png'),
+            fit: BoxFit.fitWidth
+        )
+      ),
+        child: Padding(
                 padding: const EdgeInsets.symmetric(
                     horizontal: 10, vertical: 5),
                 child: Scaffold(
+                  backgroundColor: Colors.transparent,
                     body: ListView.builder(
 
                         itemCount: creatures_large.length ,
@@ -126,7 +141,15 @@ class _Creatures_PageState extends State<Creatures_Page> {
                               vertical: 8), child:ItemBox(creatures_large[index], context));
                         })
                 )
-            ),
+            )
+    ),
+        Container(
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage('assets/images/Bestiarium_BG.png'),
+                  fit: BoxFit.fitWidth
+              )
+          ),child:
             Padding(
                 padding: const EdgeInsets.symmetric(
                     horizontal: 10, vertical: 5),
@@ -142,8 +165,15 @@ class _Creatures_PageState extends State<Creatures_Page> {
                               vertical: 8), child:ItemBox(creatures_small[index], context));
                         })
                 )
-            ),
-        Padding(
+            )
+        ),
+        Container(
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage('assets/images/Bestiarium_BG.png'),
+                  fit: BoxFit.fitWidth
+              )
+          ),child:Padding(
             padding: const EdgeInsets.symmetric(
                 horizontal: 10, vertical: 5),
             child: Scaffold(
@@ -158,6 +188,7 @@ class _Creatures_PageState extends State<Creatures_Page> {
                           vertical: 8), child:ItemBox(plants[index], context));
                     })
             )
+        )
         ),
           ],
         ),
@@ -166,6 +197,7 @@ class _Creatures_PageState extends State<Creatures_Page> {
       )
 
 
-    );
+    )
+      );
   }
 }
