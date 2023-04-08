@@ -127,7 +127,7 @@ class _Creatures_PageState extends State<Creatures_Page> {
       ),
         child: Padding(
                 padding: const EdgeInsets.symmetric(
-                    horizontal: 10, vertical: 5),
+                    horizontal: 10, vertical: 0),
                 child: Scaffold(
                   backgroundColor: Colors.transparent,
                     body: ListView.builder(
@@ -152,8 +152,9 @@ class _Creatures_PageState extends State<Creatures_Page> {
           ),child:
             Padding(
                 padding: const EdgeInsets.symmetric(
-                    horizontal: 10, vertical: 5),
+                    horizontal: 10, vertical: 0),
                 child: Scaffold(
+                    backgroundColor: Colors.transparent,
                     body: ListView.builder(
 
                         itemCount: creatures_small.length ,
@@ -175,8 +176,9 @@ class _Creatures_PageState extends State<Creatures_Page> {
               )
           ),child:Padding(
             padding: const EdgeInsets.symmetric(
-                horizontal: 10, vertical: 5),
+                horizontal: 10, vertical: 0),
             child: Scaffold(
+                backgroundColor: Colors.transparent,
                 body: ListView.builder(
 
                     itemCount: plants.length ,

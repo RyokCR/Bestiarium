@@ -20,10 +20,7 @@ Widget ItemBox(creature, context) {
 
           //color: Colors.black12,
 
-          border: Border.all(
-            width: 1.5,
-            color: Colors.black54,
-          ),
+
         ),
         child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 8),
@@ -31,65 +28,87 @@ Widget ItemBox(creature, context) {
 
               //padding: const EdgeInsets.all(10),
 
-              child: Row(
+              child:  Container(
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage('assets/images/page_background.jpg'),
+                        fit: BoxFit.cover
 
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisSize: MainAxisSize.max,
-                children: [
-
-                  Flexible(
-                    child:
-                    Padding(
-                    padding: const EdgeInsets.only(
-                      left: 10
-                    ),
-                    child:
-                      Container(
-                    height: 80,
-                      width: 90,
-
-                      decoration: BoxDecoration(
-                        color: Colors.black45,
-                        image:
-                        DecorationImage(
-
-                          image: AssetImage(creature.icon),
-
-                        ),
-                        shape: BoxShape.rectangle,
-                        border: Border.all(
-                          width: 1
-                        ),
-                        //borderRadius: BorderRadius.circular(12),
-                        ),
-                      ),
-                  ),
-                  ),
-
-
-                  //SizedBox(width: 60),
-                  Container(
-
-                      child: Flexible(
-                          child:
-                          Padding(
-                              padding: const EdgeInsets.only(
-                                  right: 30
-                              ),
-                              child:
-                           Text(
-                              creature.name,
-                              style: GoogleFonts.alexBrush(
-                                      fontSize: 30)
-                              )//_textTheme.bodyMedium
-                              //GoogleFonts.alexBrush(
-                              //    fontSize: 30)
-                          )
-                      )
                     )
-                  
-                ],
+                ),
+                child: Row(
+
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+
+                    Flexible(
+                      child:
+                      Padding(
+                      padding: const EdgeInsets.only(
+                        left: 10
+                      ),
+                      child:
+                        Container(
+                      height: 80,
+                        width: 90,
+
+
+                            decoration: BoxDecoration(
+                              //color: Colors.black45,
+                              image:  DecorationImage(
+                                image: AssetImage('assets/images/Icon_BG.png'),
+                              ),
+                              shape: BoxShape.rectangle,
+                              //border: Border.all(width: 1),
+                              //borderRadius: BorderRadius.circular(12),
+                            ),
+
+                        child: Container(
+                        decoration: BoxDecoration(
+                          //color: Colors.black45,
+                          image:
+                          DecorationImage(
+
+                            image: AssetImage(creature.icon),
+
+                          ),
+                          shape: BoxShape.rectangle,
+
+                          //borderRadius: BorderRadius.circular(12),
+                          ),
+
+                        )
+                        ),
+                    ),
+                    ),
+
+
+                    //SizedBox(width: 60),
+                    Container(
+
+                        child: Flexible(
+                            child:
+                            Padding(
+                                padding: const EdgeInsets.only(
+                                    right: 30
+                                ),
+                                child:
+                             Text(
+                                creature.name,
+                                style: GoogleFonts.alexBrush(
+                                        fontSize: 30,
+                                color: Colors.black)
+                                )//_textTheme.bodyMedium
+                                //GoogleFonts.alexBrush(
+                                //    fontSize: 30)
+                            )
+                        )
+                      )
+
+                  ],
+                ),
               ),
               onTap: () async{
 
