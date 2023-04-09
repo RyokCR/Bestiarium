@@ -15,28 +15,49 @@ Widget ItemBox(creature, context) {
   TextTheme _textTheme = Theme.of(context).textTheme;
   return StreamBuilder(builder: (BuildContext context, AsyncSnapshot snapshot) {
     return Container(
-        decoration: BoxDecoration(
+      //width: 80,
+      height: 115,
+        decoration:  BoxDecoration(
+            //border: Border.all(width: 1),
+            image: DecorationImage(
+                alignment: Alignment.center,
+                /// If is a small create use group, If is plant use type
+                image: creature.runtimeType==SmallCreature?
+                AssetImage('assets/images/${creature.group}_BG.png',) :
+                AssetImage('assets/images/${creature.type}_BG.png'),
+                //AssetImage('assets/images/page_background.jpg'),
+                fit: BoxFit.cover,
 
 
-          //color: Colors.black12,
-
-
+            )
         ),
         child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 8),
+            padding: const EdgeInsets.symmetric(vertical: 0),
             child:GestureDetector(
 
               //padding: const EdgeInsets.all(10),
 
               child:  Container(
-                decoration: BoxDecoration(
+                //height: 100,
+
+                alignment: Alignment.center,
+                /*decoration: BoxDecoration(
+                    border: Border.all(width: 1),
                     image: DecorationImage(
-                        image: AssetImage('assets/images/page_background.jpg'),
-                        fit: BoxFit.cover
+                      alignment: Alignment.centerRight,
+                      /// If is a small create use group, If is plant use type
+                        image: creature.runtimeType==SmallCreature?
+                        AssetImage('assets/images/${creature.group}_BG.png',) :
+                        //AssetImage('assets/images/${creature.type}_BG.png'),
+                        AssetImage('assets/images/page_background.jpg'),
+                        fit: BoxFit.fitWidth,
+                        scale: 1
 
                     )
-                ),
-                child: Row(
+                ),*/
+
+                child: Padding(padding: EdgeInsets.only(top: 15)
+                    ,child: Row(
 
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -55,14 +76,13 @@ Widget ItemBox(creature, context) {
                         width: 90,
 
 
+
                             decoration: BoxDecoration(
                               //color: Colors.black45,
                               image:  DecorationImage(
                                 image: AssetImage('assets/images/Icon_BG.png'),
                               ),
                               shape: BoxShape.rectangle,
-                              //border: Border.all(width: 1),
-                              //borderRadius: BorderRadius.circular(12),
                             ),
 
                         child: Container(
@@ -108,6 +128,7 @@ Widget ItemBox(creature, context) {
                       )
 
                   ],
+                )
                 ),
               ),
               onTap: () async{

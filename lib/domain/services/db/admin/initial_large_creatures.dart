@@ -90,7 +90,7 @@ addLargeCreatures(){
 
   addSmallCreature(
       'Niluuq',
-      'Anthropoda',
+      'Arthropoda',
       '2.3 m tall, 8 m long',
       'Herbivorous',
       'Large creatures of the deepest areas of Onyrian forests. Their bizarre'
@@ -147,7 +147,7 @@ addLargeCreatures(){
 
   addSmallCreature(
       'Kaulaula',
-      'Plumiferan',
+      'Plumifera',
       '1.20 m tall, 1.80 m long',
       'Carnivorous',
       'Strange, predatory plumiferans with a unique hunting tactic.'
@@ -236,7 +236,7 @@ addLargeCreatures(){
 
   addSmallCreature(
       'Drak\'sakara',
-      'Anthropoda',
+      'Arthropoda',
       '3 m tall, 6 m long',
       'Carnivorous',
       'Large predatory beasts from the Undergrove. They live and hunt alone, gathering only during'
@@ -360,6 +360,55 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Uncommon',
+      'large'
+
+  );
+
+  addSmallCreature(
+      'Gluhenwyr',
+      'Lindwurm',
+      '3 m tall, 12 m long',
+      'Mineral',
+      'A blind lindwurm adapted to the flooded cave system that supports the Undergrove biome. Gluhenwyr is believed'
+          ' to be the force behind the excavation of these tunnels, and deviating the water\'s flow whenever necessary'
+          ' to avoid their collapse.'
+
+  '\n\nIt is said to be a calm beast, barely aknowledging those who come near it. However, old tales speak of it being '
+          'able to transfigure large bodies of water into a clear slime, trapping and suffocating everything contained'
+          ' inside it. Locals that have managed to spot Gluhenwyr\'s bioluminescent rings moving inside a cave are considered'
+          ' blessed.'
+      ,
+      'assets/images/icons/large_creatures/gluhenwyr.png',
+      4,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Gluhenwyr.jpg',
+      'normal',
+      'fire',
+      'Unique',
+      'large'
+
+  );
+
+
+  addSmallCreature(
+      'Danau',
+      'Primal aeru',
+      '???',
+      'Aeras-based',
+      'Considered the friendliest of the five Primal Aeru, she is also referred to as "the Monarch of Butterflies",'
+          ' and "World\'s Memory". Danau was the first God Spirit to approach and communicate with the original human'
+          ' civilization, who wished to learn from her. Thus, the Grand Archives of Onyria were created in order to transcribe'
+          ' and store her knowledge. However, Danau only allows access to those she deems worthy.'
+
+  '\n\nShe is believed to be the origin of all Arthropoda-class creatures, and her presence occupies the entirety'
+          ' of the largest forest in Onyria. Thousands of spiritual butterflies -easily identifiable due to their'
+          ' ethereal blue glow- act as her eyes, watching over her domains.'
+      ,
+      'assets/images/icons/large_creatures/danau.png',
+      5,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Danau.jpg',
+      'normal',
+      'fire',
+      'Unique',
       'large'
 
   );

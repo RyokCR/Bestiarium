@@ -122,4 +122,28 @@ addPlants(){
       'Medicinal',
       'Aeras-Based'
   );
+
+
+  addPlant(
+      'Rancordyceps',
+      '5-20 cm tall',
+      'Mushrooms found in damp forest biomes of Onyria. Local tales describe it as being the manifestation of grudges'
+          ' held by the dead, cursing any living thing that comes near.'
+
+      '\n\nRancordyceps grow from carcasses of infected organisms, and its size varies accordingly.'
+
+  '\n\nOnce a creature approaches an active instance of the fungi, it will shoot noxious fluids that contain'
+          ' spores at the target. If successful, the spores will infect the body and slowly spread, remaining in a dormant state.'
+
+      '\n\nIf not treated in time, rapid growth of Rancordyceps will occur spontaneously occur after a certain time has elapsed,'
+          ' with often fatal results for the victim. This mushroom is not capable of infecting larger organisms, but it is '
+          'believed to be slowly evolving into a larger, more dangerous form.',
+      'assets/images/icons/plants/fungi_icon.png',
+      3,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Rancordyceps.jpg',
+      'fungi',
+      'Uncommon',
+      'Toxic',
+      'Nutrient Absorption'
+  );
 }

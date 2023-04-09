@@ -138,7 +138,7 @@ class _Creatures_PageState extends State<Creatures_Page> {
                         itemBuilder:
                             (BuildContext context, int index) {
                           return Padding(padding: const EdgeInsets.symmetric(
-                              vertical: 8), child:ItemBox(creatures_large[index], context));
+                              vertical: 0), child:ItemBox(creatures_large[index], context));
                         })
                 )
             )
@@ -163,7 +163,7 @@ class _Creatures_PageState extends State<Creatures_Page> {
                         itemBuilder:
                             (BuildContext context, int index) {
                           return Padding(padding: const EdgeInsets.symmetric(
-                              vertical: 8), child:ItemBox(creatures_small[index], context));
+                              vertical: 0), child:ItemBox(creatures_small[index], context));
                         })
                 )
             )
@@ -187,7 +187,7 @@ class _Creatures_PageState extends State<Creatures_Page> {
                     itemBuilder:
                         (BuildContext context, int index) {
                       return Padding(padding: const EdgeInsets.symmetric(
-                          vertical: 8), child:ItemBox(plants[index], context));
+                          vertical: 0), child: ItemBox(plants[index], context));
                     })
             )
         )

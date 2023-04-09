@@ -27,7 +27,7 @@ void main() async {
   Hive.registerAdapter(MapOffsetAdapter());
   await Hive.openBox<SmallCreature>('small_creatures');
   await Hive.openBox<Plant>('plants');
-  //init_db();
+  init_db();
 
 
 

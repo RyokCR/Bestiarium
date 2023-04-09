@@ -212,7 +212,7 @@ addSmallCreatures(){
 
   addSmallCreature(
       'Cruscentid',
-      'Anthropoda',
+      'Arthropoda',
       '30 cm long',
       'Carnivorous',
       'Small, but respected inhabitants of Onyrian coasts. They climb rocks and cliffs with the aid'
