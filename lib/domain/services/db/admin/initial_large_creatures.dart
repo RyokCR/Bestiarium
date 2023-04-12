@@ -390,6 +390,50 @@ addLargeCreatures(){
 
 
   addSmallCreature(
+      'El\'aeru',
+      'Lesser aeru',
+      '1.5 - 3 m tall',
+      'Aeras-Based',
+      'Spirits formed mostly from the essence of a warm-blooded creature. El\'aeru usually begin their existence when'
+          ' powerful negative feelings, such as regret or rage persist in the world after the death of a beast or humanoid.'
+          ' They can be commonly found wandering around their place of death, not aggressive unless provoked.'
+
+      '\n\nEl\'aeru may agree to pact with summoners, or assist them if offered energy. They do not posess any specific'
+          ' elemental affinities.'
+      ,
+      'assets/images/icons/large_creatures/el\'aeru.png',
+      3,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/El\'aeru.jpg',
+      'normal',
+      'fire',
+      'Uncommon',
+      'large'
+
+  );
+
+  addSmallCreature(
+      'Ner\'aeru',
+      'Lesser aeru',
+      '2-15 m long',
+      'Aeras-Based',
+      'Spirits formed mostly from the essence of a Thalassus. They usually possess affinity with  water or wind energy,'
+          ' and roam the skies near large lakes.'
+
+      '\n\nOlder, more powerful Ner\'aeru are usually very proud and not quick to trust summoners. They will only'
+          ' comply to the will of a powerful presence'
+      ,
+      'assets/images/icons/large_creatures/ner\'aeru.png',
+      4,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Ner\'aeru.jpg',
+      'normal',
+      'fire',
+      'Uncommon',
+      'large'
+
+  );
+
+
+  addSmallCreature(
       'Danau',
       'Primal aeru',
       '???',

@@ -12,6 +12,8 @@ import 'navigation.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
+import 'package:bestiarium/domain/services/db/admin/db_manager.dart';
+
 import 'utils/network.dart';
 import 'package:dio/dio.dart';
 
@@ -27,7 +29,12 @@ void main() async {
   Hive.registerAdapter(MapOffsetAdapter());
   await Hive.openBox<SmallCreature>('small_creatures');
   await Hive.openBox<Plant>('plants');
-  init_db();
+
+  var small = Boxes.getSmallCreatures();
+  List creatures_small = small.values.where((element) => element.category == 'small').toList().cast<SmallCreature>();
+  if(creatures_small.isEmpty) {
+    init_db();
+  }
 
 
 

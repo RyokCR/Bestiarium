@@ -29,7 +29,7 @@ Widget MapShow(creature_plant){
        Container(
     decoration: BoxDecoration(
         image: DecorationImage(
-            image: AssetImage('assets/images/Map.png'),
+            image: AssetImage('assets/images/Map_v.2.png'),
             fit: BoxFit.fill
 
         )

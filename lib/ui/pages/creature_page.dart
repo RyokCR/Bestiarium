@@ -87,14 +87,7 @@ class _Creature_PageState extends State<Creature_Page>  {
               children: [
                 creature.runtimeType == SmallCreature ? CreatureBasicDescription(creature): PlantBasicDescription(creature),
                 LargeText(creature.description),
-                /*Tab(icon: Image.asset(
-                    'assets/images/map_icon.png',
-                  scale: 2,
-                  color: Colors.grey,
-                )
-                ),*/
                 MapShow(creature),
-                //Tab(icon: Icon(Icons.directions_car, size: 200,)),
                 Padding(
               padding: EdgeInsets.symmetric(
                 horizontal: 0

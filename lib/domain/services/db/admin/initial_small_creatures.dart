@@ -374,19 +374,29 @@ addSmallCreatures(){
       'small'
   );
 
+  addSmallCreature(
 
-  /*
-     name,
-     group,
-      size,
-      diet,
-      description,
-       icon,
-     danger,
-       url,
-         type,
-        weakness,
-       rarity,
-       category,
-  */
+      'Felcedallon',
+      'Arthropoda',
+      '30 cm long, 50 cm wingspan',
+      'Herbivorous',
+      'Nocturnal creatures known mostly for their larval stage, in which they cover entire trees and make them seem as though'
+          ' decorated with hundreds of tiny lights.'
+
+      '\n\nFelcedallon catterpillars cover themselves in a protective layer of leaves, and spend the rest of their time eating,'
+          ' growing very quickly. Once they have reached considerable size, they will enclose themselves inside a cocoon of'
+          ' leaf litter and twigs, and remain dormant while metamorphosis takes place. The leaves they once used as protection'
+          ' fully graft onto their bodies, and provide the emerging adult Felcedallon with sustenance via photosynthesis.'
+
+  '\n\nTheir fragile leaf "wings" are not fully capable of flight, but can help the creature glide from one tree to another.'
+          ' Felcedallon use their luminous organs to communicate with each other, glowing in synchronized patterns.'
+      ,
+      'assets/images/icons/small_creatures/felcedallon.png',
+      0,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Felcedallon.jpg',
+      'normal',
+      'fire',
+      'Common',
+      'small'
+  );
 }

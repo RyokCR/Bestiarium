@@ -54,7 +54,8 @@ class _SearchTableState extends State<SearchTable> {
 
       body: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: buildDataTable(),
+        child: SingleChildScrollView(
+            child: buildDataTable()),
       ),
 
     );
@@ -62,7 +63,7 @@ class _SearchTableState extends State<SearchTable> {
 
 
   Widget buildDataTable(){
-    final columns = ['Name', 'Group', 'Size'];
+    final columns = ['Name', 'Icon', 'Size'];
 
     return DataTable(
       sortAscending: isAscending,
@@ -83,7 +84,21 @@ class _SearchTableState extends State<SearchTable> {
   List<DataRow> getRows(List<SmallCreature> creatures) => creatures.map((SmallCreature creature) {
     final cells = [creature.name, creature.group, creature.size];
 
-    return DataRow(cells: getCells(cells));
+    final endCells = [
+    DataCell(FittedBox(
+      child: Text(creature.name,
+        style: TextStyle(fontSize: 17),),
+      fit: BoxFit.contain,)),
+      DataCell(FittedBox(
+        child: Image.asset(creature.icon))),
+      DataCell(FittedBox(
+        child: Text(creature.size,
+          style: TextStyle(fontSize: 17),),
+        fit: BoxFit.contain,)),
+
+    ];
+
+    return DataRow(cells: endCells/*getCells(cells)*/);
   }).toList();
 
   List<DataCell> getCells(List<dynamic> cells) => cells

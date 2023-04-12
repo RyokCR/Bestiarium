@@ -38,6 +38,7 @@ class _SearchPageState extends State<SearchPage> {
     super.initState();
   }
 
+  String dropdownValue = 'Group 1';
 
   @override
   Widget build(BuildContext context) {
@@ -91,17 +92,41 @@ class _SearchPageState extends State<SearchPage> {
           ),
         ),
       ),
-      body: /*ListView.builder(
+      body:
+      SearchTable(),
+      bottomNavigationBar: Container(
+        decoration: BoxDecoration(
+            /*image: DecorationImage(
+                image: AssetImage('assets/images/page_background.jpg'),
+                fit: BoxFit.cover
 
-          itemCount: results.length ,
-          scrollDirection: Axis.vertical,
-          shrinkWrap: true,
-          itemBuilder:
-              (BuildContext context, int index) {
-            return Padding(padding: const EdgeInsets.symmetric(
-                vertical: 8), child:ItemBox(results[index], context));
-          }),*/
-      SearchTable()
+            )*/
+          //borderRadius: BorderRadius.circular(16),
+          color: Colors.deepPurple
+        ),
+        child: Row(
+          children: [
+            DropdownButton<String>(
+              value: dropdownValue,
+              items: <String>['Group 1', 'Group 2'].map<DropdownMenuItem<String>>((String value) {
+                return DropdownMenuItem<String>(
+                    value: value,
+                    child: Text(
+                      value,
+                      style: TextStyle(fontSize: 20),
+                    )
+                );
+              }).toList(),
+              onChanged: (String? newValue){
+                setState(() {
+                  dropdownValue = newValue!;
+                });
+              },
+            ),
+          ],
+
+        ),
+      ),
     );
   }
 
