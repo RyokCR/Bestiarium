@@ -399,4 +399,55 @@ addSmallCreatures(){
       'Common',
       'small'
   );
+
+
+  addSmallCreature(
+
+      'Atlapalli',
+      'Amphibian',
+      '30 cm long',
+      'Insectivorous',
+      'Small aquatic creatures that only exist in the Gilded Lake of Geko Wetlands.'
+
+      '\n\nThey are considered sacred by local inhabitants, who view them as children and messengers of primal aeru Qul-Quetzatl.'
+
+      '\n\nAtlapalli are commonly found floating around, using their tails as a buoy. They are easily confused with lost jewelry'
+          ' due to the vivid golden color of their skin. This has most likely originated the legend of a great treasure hidden'
+          ' somewhere beneath the lake\'s waters.'
+
+      '\n\nFor unknown reasons, if removed from the Gilded Lake,  Atlapalli will quickly lose their golden color, fading into'
+          ' a dull gray.'
+      ,
+      'assets/images/icons/small_creatures/atlapalli.png',
+      1,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Atlapalli.jpg',
+      'normal',
+      'fire',
+      'Locally common',
+      'small'
+  );
+
+  addSmallCreature(
+
+      'Pinespook',
+      'Plumifera',
+      '80 cm tall, 1.8 m wingspan',
+      'Carnivourous',
+      'Predatory plumiferans from the woodlands. Their distinctive behavior of wearing skulls over their heads for protection '
+          'causes many to mistake them with aeru on sight.'
+
+      '\n\nPinespook are extremely cautious by nature, usually fleeing immediately from larger creatures. If cornered,'
+          ' however, they will display unique defensive behaviours. They  raise their feathers, taking on a more intimidating'
+          ' appearance, and revealing sharp spikes. These spikes are retractile, and emerge from the shaft of the feathers.'
+          ' Additionally, Pinespook can also screech loud enough to disrupt the sensitive hearing of most predators, driving '
+          'them away'
+      ,
+      'assets/images/icons/small_creatures/pinespook.png',
+      2,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Pinespook.jpg',
+      'normal',
+      'fire',
+      'Common',
+      'small'
+  );
 }

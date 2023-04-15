@@ -388,6 +388,29 @@ addLargeCreatures(){
 
   );
 
+  addSmallCreature(
+      'Nyktego',
+      'Lindwurm',
+      '15 m long',
+      '???',
+      'A lindwurm shrouded in mystery. Many people claim to have seen Nyktego in their dreams at some point despite not'
+          ' having heard of her before, and some even recall that the beast has attempted to communicate in an '
+          'incomprehensible tongue.'
+
+  '\n\nActual sightings of her are rare, but all have occured at night, in the area surrounding the Spine of the World.'
+          ' Faint unintelligible whispers can be heard when she is near, and her body is said to blend unnaturally well'
+          ' with the landscape and the night sky. All attempts to locate her during the day have failed.'
+      ,
+      'assets/images/icons/large_creatures/nyktego.png',
+      4,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Nyktego.jpg',
+      'normal',
+      'fire',
+      'Unique',
+      'large'
+
+  );
+
 
   addSmallCreature(
       'El\'aeru',
