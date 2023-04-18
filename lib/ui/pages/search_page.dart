@@ -5,10 +5,12 @@ import 'package:bestiarium/domain/entities/plant.dart';
 import 'package:bestiarium/domain/entities/small_creature.dart';
 import 'package:bestiarium/domain/services/db/admin/db_manager.dart';
 import 'package:bestiarium/ui/widgets/ItemBox.dart';
+import 'package:bestiarium/ui/widgets/creatureTable.dart';
+import 'package:bestiarium/ui/widgets/dropDownSort.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../widgets/creatureTable.dart';
+import '../../domain/services/db/util/db_query_handler.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({Key? key}) : super(key: key);
@@ -24,7 +26,10 @@ class _SearchPageState extends State<SearchPage> {
   late List creatures_small;
   late List creatures_large;
   late List plants;
+  late List all;
   List results = [];
+
+  late SearchTable _searchTable;
   @override
   initState(){
 
@@ -34,11 +39,17 @@ class _SearchPageState extends State<SearchPage> {
     var plantBox = Boxes.getPlants();
     plants = plantBox.values.toList().cast<Plant>();
 
+    all = [];
+    all.addAll(creatures_large);
+    all.addAll(creatures_small);
+    all.addAll(plants);
+
+    _searchTable = SearchTable(entries: all);
 
     super.initState();
   }
 
-  String dropdownValue = 'Group 1';
+  String dropdownValue = 'All';
 
   @override
   Widget build(BuildContext context) {
@@ -57,10 +68,7 @@ class _SearchPageState extends State<SearchPage> {
 
               onSubmitted: (String value) async {
                 print(controller.text);
-                var all = [];
-                all.addAll(creatures_large);
-                all.addAll(creatures_small);
-                all.addAll(plants);
+
 
 
                 setState(() {
@@ -92,37 +100,24 @@ class _SearchPageState extends State<SearchPage> {
           ),
         ),
       ),
-      body:
-      SearchTable(),
+      body: _searchTable,
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
-            /*image: DecorationImage(
-                image: AssetImage('assets/images/page_background.jpg'),
-                fit: BoxFit.cover
-
-            )*/
-          //borderRadius: BorderRadius.circular(16),
           color: Colors.deepPurple
         ),
         child: Row(
           children: [
-            DropdownButton<String>(
-              value: dropdownValue,
-              items: <String>['Group 1', 'Group 2'].map<DropdownMenuItem<String>>((String value) {
-                return DropdownMenuItem<String>(
-                    value: value,
-                    child: Text(
-                      value,
-                      style: TextStyle(fontSize: 20),
-                    )
-                );
-              }).toList(),
-              onChanged: (String? newValue){
-                setState(() {
+            SortButton(
+              dropdownValue,
+              ['All', 'Plumifera', 'Arthropoda'],
+              (String? newValue){
+                this.setState(() {
                   dropdownValue = newValue!;
+                  all = queryCreaturesByGroup(newValue);
+
                 });
-              },
-            ),
+              }
+            )
           ],
 
         ),

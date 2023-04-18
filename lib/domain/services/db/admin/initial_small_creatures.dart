@@ -432,7 +432,7 @@ addSmallCreatures(){
       'Pinespook',
       'Plumifera',
       '80 cm tall, 1.8 m wingspan',
-      'Carnivourous',
+      'Carnivorous',
       'Predatory plumiferans from the woodlands. Their distinctive behavior of wearing skulls over their heads for protection '
           'causes many to mistake them with aeru on sight.'
 
@@ -440,7 +440,7 @@ addSmallCreatures(){
           ' however, they will display unique defensive behaviours. They  raise their feathers, taking on a more intimidating'
           ' appearance, and revealing sharp spikes. These spikes are retractile, and emerge from the shaft of the feathers.'
           ' Additionally, Pinespook can also screech loud enough to disrupt the sensitive hearing of most predators, driving '
-          'them away'
+          'them away.'
       ,
       'assets/images/icons/small_creatures/pinespook.png',
       2,
@@ -448,6 +448,30 @@ addSmallCreatures(){
       'normal',
       'fire',
       'Common',
+      'small'
+  );
+
+  addSmallCreature(
+      'Argentolm',
+      'Amphibian',
+      '3 m long',
+      'Carnivorous',
+      'The longest-living amphibians known to exist in Onyria.'
+
+      '\n\nArgentolm inhabit the cool, damp caves surrounding the Undergrove. Lacking eyes, they locate the small prey that'
+          ' they feed on with sensors present on their snouts. Argentolm are best known for their behaviour of remaining still'
+          ' for most of their lives, and are said to only feed once every 10 years.'
+
+  '\n\nArgentolm are protected by their tough armor, comprised of large plate-like scales. While growing, -which they do'
+          ' very slowly- they eventually outgrow their armor, shedding it several times throughout their lives. The discarded'
+          ' shells are highly sought-after by local artisans.'
+      ,
+      'assets/images/icons/small_creatures/argentolm.png',
+      1,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Argentolm.jpg',
+      'normal',
+      'fire',
+      'Uncommon',
       'small'
   );
 }

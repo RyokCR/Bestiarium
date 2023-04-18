@@ -365,6 +365,34 @@ addLargeCreatures(){
   );
 
   addSmallCreature(
+      'Adamantaile',
+      'Arthropoda',
+      '8 m long, 6 m wingspan',
+      'Herbivorous',
+      'Large arthropodans with extreme resistance and longevity. While not immediately aggresive, they are treated with'
+          ' respect due to their considerable size and powerful bite.'
+
+      '\n\nAdamantaile feed on plant matter, moss and lichens, which they scrape off the surface of rocks and trees with'
+          ' their beak-shaped mouths. They require very high levels of moisture, or large sources of water to maintain'
+          ' their bodily functions. If not able to remain hydrated, Adamantaile will coil their bodies and crystalize into'
+          ' an extremely tough coccoon shape, becoming inactive.'
+
+  '\n\nThere is no known way to destroy a crystalized Adamantaile- they are able to withstand extreme heat, cold,'
+          ' lack of oxygen and all forms of physical damage. They may remain in this state for hundreds of years.'
+          ' The creature, however, may be immediately revived at any time simply by being exposed to water.'
+      ,
+      'assets/images/icons/large_creatures/adamantaile.png',
+      3,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Adamantaile.jpg',
+      'normal',
+      'fire',
+      'Uncommon',
+      'large'
+
+  );
+
+
+  addSmallCreature(
       'Gluhenwyr',
       'Lindwurm',
       '3 m tall, 12 m long',
@@ -407,6 +435,86 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Unique',
+      'large'
+
+  );
+
+
+
+  addSmallCreature(
+      'Nilneidr',
+      'Lindwurm',
+      '25 m long ',
+      'Carnivourous',
+      'An ancient lindwurm considered the personification of the Green Serpent river, largest in Onyria. Nilneidr has'
+          ' lost his legs, for he does not need them.'
+
+      '\n\nHe is thought to be a direct descendant of primal aeru Naja\'eret. Legends tell that when he was born -merely'
+          ' the size of a worm-, he slithered slowly from the center of the Badlands towards the sea, surviving the very'
+          ' harsh conditions of the desert.'
+
+      '\n\nOnce he finally reached the sea, he fed on fish and grew. But once a year, he always returns to the place where'
+          ' he was born, larger and stronger every time.'
+
+      '\n\nNilneidr\'s many journeys from land to sea and back are said to have sculpted the river named after him, which'
+          ' gives life to a lush oasis ecosystem. When it is time for Nilneidr to revisit his birthplace, locals throw'
+          ' precious metals, stones and food offerings into the river, grateful for the fertility he brings to an otherwise'
+          ' sterile land.'
+      ,
+      'assets/images/icons/large_creatures/nilneidr.png',
+      4,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Nilneidr.jpg',
+      'normal',
+      'fire',
+      'Unique',
+      'large'
+
+  );
+
+  addSmallCreature(
+      'Xyl\'aeru',
+      'Lesser aeru',
+      '30 cm - 2.5 m tall',
+      'Aeras-based',
+      'Spirits formed mostly from the essence of an Arthropodan.Their size and shape varies greatly according to the place they'
+          ' inhabit. Some come in the form of collective entities, comprised of many small individuals with a shared mind.'
+
+      '\n\nXyl\'aeru possess affinity with earth, wind or water energy. They behave quite neutrally, following repeated patterns,'
+          ' and may form symbiotic relationships with summoners if given enough time. They do not, however, offer sporadic help'
+          ' in exchange for energy as other spirits may do, as they cannot grasp the concept of a trade.'
+      ,
+      'assets/images/icons/large_creatures/xyl\'aeru.png',
+      3,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Xyl\'aeru.jpg',
+      'normal',
+      'fire',
+      'Uncommon',
+      'large'
+
+  );
+
+
+  addSmallCreature(
+      'Kyn\'aeru',
+      'Lesser aeru',
+      '1.5 - 3 m long',
+      'Aeras-based',
+      'Spirits formed mostly from the essence of a predator. Kyn\'aeru seek out any available sources of energy, even hunting'
+          ' down and assimilating weaker aeru.'
+
+  '\n\nAlthough they cannot inflict physical harm upon incarnate victims, they will chase and purposely torment their targets,'
+          ' feeding on the resulting energy from extreme negative emotions.'
+
+  '\n\nKyn\'aeru may posess affinity with fire energy. They usually behave with hostility or mistrust towards summoners,'
+          ' but may agree to pact if they percieve benefit for themselves. They are usually asked to help track down'
+          ' creatures, people or other aeru.'
+      ,
+      'assets/images/icons/large_creatures/kyn\'aeru.png',
+      3,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Kyn\'aeru.jpg',
+      'normal',
+      'fire',
+      'Uncommon',
       'large'
 
   );

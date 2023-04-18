@@ -12,7 +12,7 @@ Widget LargeText(text){
             Container(
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('assets/images/page_background.jpg'),
+                        image: AssetImage('assets/images/new_background.jpg'),
                         fit: BoxFit.cover
 
                     )

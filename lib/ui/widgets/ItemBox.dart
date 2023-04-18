@@ -108,7 +108,7 @@ Widget ItemBox(creature, context) {
                     //SizedBox(width: 60),
                     Container(
 
-                        child: Flexible(
+                        child: FittedBox(
                             child:
                             Padding(
                                 padding: const EdgeInsets.only(
@@ -123,7 +123,8 @@ Widget ItemBox(creature, context) {
                                 )//_textTheme.bodyMedium
                                 //GoogleFonts.alexBrush(
                                 //    fontSize: 30)
-                            )
+                            ),
+                          fit: BoxFit.contain,
                         )
                       )
 
