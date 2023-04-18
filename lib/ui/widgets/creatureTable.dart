@@ -6,7 +6,10 @@ import 'package:bestiarium/domain/entities/small_creature.dart';
 import 'package:bestiarium/domain/services/db/admin/db_manager.dart';
 import 'package:bestiarium/ui/widgets/ItemBox.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
+
+import '../../utils/search_creatures.dart';
 
 /*Widget monsterSearch(creatures_large){
 
@@ -29,20 +32,20 @@ import 'package:flutter/material.dart';
 }*/
 
 class SearchTable extends StatefulWidget {
-  SearchTable({Key? key, required this.entries}) : super(key: key);
+  SearchTable({Key? key}) : super(key: key);
 
 
-  List entries;
+  //List entries;
   @override
-  State<SearchTable> createState() => _SearchTableState(entries: entries);
+  State<SearchTable> createState() => _SearchTableState();
 }
 
 class _SearchTableState extends State<SearchTable> {
-  List entries;
+  //List entries;
   int? sortColumnIndex;
   bool isAscending = false;
 
-  _SearchTableState({required this.entries});
+  //_SearchTableState();
 
   //var small = Boxes.getSmallCreatures();
   //late List<SmallCreature> creatures;
@@ -74,7 +77,7 @@ class _SearchTableState extends State<SearchTable> {
       sortAscending: isAscending,
       sortColumnIndex: sortColumnIndex,
       columns: getColumns(columns),
-      rows: getRows(entries),
+      rows: getRows(context.watch<SearchEntries>()),
     );
   }
 
@@ -86,7 +89,7 @@ class _SearchTableState extends State<SearchTable> {
   ))
       .toList();
 
-  List<DataRow> getRows(List creatures) => creatures.map((creature) {
+  List<DataRow> getRows(SearchEntries entries) => entries.entries.map((creature) {
     //final cells = [creature.name, creature.group, creature.size];
 
     final endCells = [
@@ -114,14 +117,14 @@ class _SearchTableState extends State<SearchTable> {
 
 
     if(columnIndex == 0){
-      entries.sort((creat1, creat2) =>
+      context.watch<SearchEntries>().entries.sort((creat1, creat2) =>
       compareString(ascending, creat1.name, creat2.name));
     }
 
     setState(() {
       this.sortColumnIndex = columnIndex;
       this.isAscending = ascending;
-      print(entries);
+      //print(entries);
     });
 
   }
@@ -132,7 +135,7 @@ class _SearchTableState extends State<SearchTable> {
   updateValues(values){
 
     setState(() {
-      entries = values;
+      context.watch<SearchEntries>().updateEntries(values);
     });
   }
 }

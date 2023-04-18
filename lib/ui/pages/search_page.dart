@@ -9,8 +9,10 @@ import 'package:bestiarium/ui/widgets/creatureTable.dart';
 import 'package:bestiarium/ui/widgets/dropDownSort.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import '../../domain/services/db/util/db_query_handler.dart';
+import '../../utils/search_creatures.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({Key? key}) : super(key: key);
@@ -29,7 +31,7 @@ class _SearchPageState extends State<SearchPage> {
   late List all;
   List results = [];
 
-  late SearchTable _searchTable;
+  late SearchEntries _searchEntries;
   @override
   initState(){
 
@@ -44,7 +46,7 @@ class _SearchPageState extends State<SearchPage> {
     all.addAll(creatures_small);
     all.addAll(plants);
 
-    _searchTable = SearchTable(entries: all);
+    _searchEntries = SearchEntries(entries: all);
 
     super.initState();
   }
@@ -100,7 +102,8 @@ class _SearchPageState extends State<SearchPage> {
           ),
         ),
       ),
-      body: _searchTable,
+      body: MultiProvider(providers: [ChangeNotifierProvider(create: (_) => _searchEntries),],
+      child: SearchTable()),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           color: Colors.deepPurple
@@ -114,6 +117,7 @@ class _SearchPageState extends State<SearchPage> {
                 this.setState(() {
                   dropdownValue = newValue!;
                   all = queryCreaturesByGroup(newValue);
+                  _searchEntries.updateEntries(all);
 
                 });
               }
