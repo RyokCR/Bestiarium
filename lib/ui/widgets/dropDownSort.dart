@@ -3,7 +3,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-Widget SortButton(dropdownValue, values, callback){
+Widget SortButton(dropdownValue,List<String> values, callback){
 
   return DropdownButton<String>(
     value: dropdownValue,
@@ -12,7 +12,7 @@ Widget SortButton(dropdownValue, values, callback){
           value: value,
           child: Text(
             value,
-            style: TextStyle(fontSize: 20),
+            style: TextStyle(fontSize: 10),
           )
       );
     }).toList(),

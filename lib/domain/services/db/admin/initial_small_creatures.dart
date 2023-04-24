@@ -31,9 +31,9 @@ addSmallCreatures(){
           'These creatures undergo a life-long metamorphosis. They are born into an aquatic environment, and live completely'
           ' submerged until they grow legs and reach maturity. Their tails and gills shrink as they grow, the oldest specimens'
           ' nearly lacking them, while also being more heavy and muscular. At this point, they are fit for an almost completely'
-          ' terrestrial life. However, they return to the rivers and ponds during breeding season to lay their eggs',
+          ' terrestrial life. However, they return to the rivers and ponds during breeding season to lay their eggs.',
       'assets/images/icons/small_creatures/bounder.png',
-      0,
+      1,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Bounder.jpg',
       'normal',
       'fire',
@@ -84,7 +84,6 @@ addSmallCreatures(){
           '\n\nGypsiena roost in crevices of the mountains surrounding the Badlands,'
           ' and are capable of surviving without drinking barely any water. They'
           ' obtain all moisture they need from ingested matter.'
-          ' to withstand their poison upon consumption.'
       ,
       'assets/images/icons/small_creatures/gypsiena.png',
       3,
@@ -168,7 +167,7 @@ addSmallCreatures(){
           ' quite dangerous, as other creatures may easily become trapped in them and be unable to escape.'
 
           '\n\nTheir habit of waving their legs and shaking their colorful abdomens'
-          ' rhythmically when approached has led to some calling them'
+          ' rhythmically when approached has led to some calling them "dancing spiders".'
       ,
       'assets/images/icons/small_creatures/alkarak.png',
       0,
@@ -256,7 +255,7 @@ addSmallCreatures(){
           '\n\nTheir sheer size is enough to ward off most predators, but they may swing their tails for defense'
           ' if threatened.'
           '\n\nThroughout their slow but steady journeys through the plains, they spread the seeds, pollen and spores'
-          ' of the organisms they carry on their body, making them a very valuable part of the ecosystems they inhabit'
+          ' of the organisms they carry on their body, making them a very valuable part of the ecosystems they inhabit.'
       ,
       'assets/images/icons/small_creatures/zelenodon.png',
       0,
@@ -336,7 +335,7 @@ addSmallCreatures(){
           'spores, until they perish from inanition. The body may remain floating for several days after death, until'
           ' it begins to decompose and finally bursts.'
 
-  '\n\nSomagrus are highly flammable, and produce dangerous explosions if they catch fire while in their floating phase'
+  '\n\nSomagrus are highly flammable, and produce dangerous explosions if they catch fire while in their floating phase.'
       ,
       'assets/images/icons/small_creatures/somagrus.png',
       2,
@@ -380,7 +379,7 @@ addSmallCreatures(){
       'Arthropoda',
       '30 cm long, 50 cm wingspan',
       'Herbivorous',
-      'Nocturnal creatures known mostly for their larval stage, in which they cover entire trees and make them seem as though'
+      'Nocturnal creatures known best for their larval stage, in which they cover entire trees and make them seem as though'
           ' decorated with hundreds of tiny lights.'
 
       '\n\nFelcedallon catterpillars cover themselves in a protective layer of leaves, and spend the rest of their time eating,'
@@ -472,6 +471,58 @@ addSmallCreatures(){
       'normal',
       'fire',
       'Uncommon',
+      'small'
+  );
+
+
+  addSmallCreature(
+      'Wurmling',
+      'Amphibian',
+      '10 cm long',
+      'Omnivorous',
+      'Small, weak and defenseless creatures that inhabit all regions of Onyria. Their bodies  glow faintly,'
+          ' making them very easy to spot in the wild.'
+
+      '\n\nAlthough able to adapt to any type of terrain or food source -including fully aquatic environments-, they '
+          'are easy prey to many carnivorous or opportunistic creatures.'
+
+  '\n\nDespite surviving their first years only in very rare cases, wurmlings are able to grow almost indefinitely, '
+          'also developing extremely high inteligence. This, however, is a process that may take as long as a few '
+          'hundreds of years.'
+
+  '\n\nWurmlings take on unique appearances determined by the biome they inhabit, and the Aeras energy that they'
+          ' have been exposed to as they grow.'
+      ,
+      'assets/images/icons/small_creatures/wurmling.png',
+      0,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Wurmling.jpg',
+      'normal',
+      'fire',
+      'Common',
+      'small'
+  );
+
+  addSmallCreature(
+      'Un\'aeru',
+      'Lesser aeru',
+      '30 cm - 1 m long',
+      'Aeras-based',
+      'Smaller, weaker aeru that have most likely begun their existence not too long ago. They are mostly'
+          ' harmless and display curious behaviour.'
+
+      '\n\nUn\'aeru feed on energy that is readily available to them in the wild, and grow more complex with time,'
+          ' changing their appearance as they do. Because they are still vulnerable, predatory Kyn\'aeru may hunt '
+          'and assimilate them.'
+
+      '\n\nOut of all spirits, Un\'aeru are the most likely to form lasting bonds with summoners, becoming '
+          'familiars in exchange for protection and energy.'
+      ,
+      'assets/images/icons/small_creatures/un\'aeru.png',
+      0,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Un\'aeru.jpg',
+      'normal',
+      'fire',
+      'Common',
       'small'
   );
 }

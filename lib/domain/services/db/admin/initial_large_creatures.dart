@@ -7,7 +7,7 @@ addLargeCreatures(){
       'Abyssecter',
       'Thalassus',
       '10-18m',
-      'Carnivourous',
+      'Carnivorous',
       'Apex predators of Leviathan\'s Trench. They ambush prey from the dark, luring them in with the bioluminescent spots on their'
           ' shell and inside their mouths, and grabbing onto them with their jaws and mandibles. Once Abyssecter has feasted on a sufficiently'
           ' large creature, it will burrow through the seafloor and grow, leaving segments of it behind before it leaves once more. The segments'
@@ -18,7 +18,7 @@ addLargeCreatures(){
           ' their locomotion, which reaches considerable speed.'
       ,
       'assets/images/icons/large_creatures/abyssecter.png',
-      0,
+      4,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Abyssecter.jpg',
       'normal',
       'fire',
@@ -33,7 +33,7 @@ addLargeCreatures(){
       'Krokoskopas',
       'Saurian',
       '7 m',
-      'Carnivourous',
+      'Carnivorous',
       'Successful, large ambush predators of the marshlands. They are able to stay completely still for hours,'
           ' camouflaged by the algae that grows on their backs and their spotted hide. Once a prey creature comes'
           ' close enough, Krokoskopas moves surprisingly fast and bites down with great force on any limb within its reach.'
@@ -160,10 +160,10 @@ addLargeCreatures(){
           '\n\nTheir dense plumage isolates and protects them from the cold, and their flattened,'
           ' broad faces aid their excellent hearing. Kaulaula are capable even of successfully '
           'killing prey that moves under the snow, locating the exact source of the sounds they produce'
-          ', and thrusting their long legs into the ground like a harpoon.'
+          ', and thrusting their long legs into the ground like harpoons.'
       ,
       'assets/images/icons/large_creatures/kaulaula.png',
-      2,
+      3,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Kaulaula.jpg',
       'normal',
       'fire',
@@ -316,8 +316,8 @@ addLargeCreatures(){
       'Warm-blooded beast',
       '2. 3 m tall, 3.5 m wingspan',
       'Herbivorous',
-      'Large and powerful, Cornukapra are among the most formidable mountain creatures in Onyria. Highly territorial,'
-          ' they will dive and attempt to shove any invading creatures off the cliffs they patrol. Their wings, although'
+      'Large and powerful, Cornukapra are among the most formidable mountain creatures in Onyria. They are highly territorial,'
+          ' and will attempt to shove any invading creatures off the cliffs they patrol. Their wings, although'
           ' sturdy, are incapable of supporting the weight of their bodies for very long. Their hooves, however, are highly'
           ' specialized in climbing, each toe being capable of independent movement. Cornukapra traverse the unforgiving '
           'mountainous terrain with a combination of precise jumping and gliding, and often climb almost vertical stone'
@@ -445,7 +445,7 @@ addLargeCreatures(){
       'Nilneidr',
       'Lindwurm',
       '25 m long ',
-      'Carnivourous',
+      'Carnivorous',
       'An ancient lindwurm considered the personification of the Green Serpent river, largest in Onyria. Nilneidr has'
           ' lost his legs, for he does not need them.'
 
@@ -548,10 +548,12 @@ addLargeCreatures(){
       '2-15 m long',
       'Aeras-Based',
       'Spirits formed mostly from the essence of a Thalassus. They usually possess affinity with  water or wind energy,'
-          ' and roam the skies near large lakes.'
+          ' and roam the skies near large lakes. When they descend close to the ground, their sole presence usually alters'
+          ' weather conditions, bringing rain, hail, mist or '
+          'storms'
 
       '\n\nOlder, more powerful Ner\'aeru are usually very proud and not quick to trust summoners. They will only'
-          ' comply to the will of a powerful presence'
+          ' comply to the will of a powerful presence.'
       ,
       'assets/images/icons/large_creatures/ner\'aeru.png',
       4,
@@ -581,6 +583,32 @@ addLargeCreatures(){
       'assets/images/icons/large_creatures/danau.png',
       5,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Danau.jpg',
+      'normal',
+      'fire',
+      'Unique',
+      'large'
+
+  );
+
+  addSmallCreature(
+      'Rajavatra',
+      'Primal aeru',
+      '???',
+      'Aeras-based',
+      'A God Spirit also known as "The Burning Tyrant" or "The Raging King".'
+
+      '\n\nRajavatra rules over the Flaming Steppe region, one of the most inhospitable environments known'
+          ' to the Onyrian continent. He is said to test the willpower and physical endurance of all those'
+          ' who enter his territory- a land covered in volcanic ash, geisers and caustic hot springs where'
+          ' only the strongest and most adaptable survive.'
+
+  '\n\nHe often ignores attempts to communicate with him unless the visitor has proven their resilience both'
+          ' in body and spirit. Local inhabitants, gathered in mountain monasteries, undergo harsh training in'
+          ' order to be closer to Rajavatra, whom they worship.'
+      ,
+      'assets/images/icons/large_creatures/rajavatra.png',
+      5,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Rajavatra.jpg',
       'normal',
       'fire',
       'Unique',

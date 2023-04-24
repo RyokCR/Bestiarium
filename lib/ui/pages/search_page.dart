@@ -4,6 +4,7 @@
 import 'package:bestiarium/domain/entities/plant.dart';
 import 'package:bestiarium/domain/entities/small_creature.dart';
 import 'package:bestiarium/domain/services/db/admin/db_manager.dart';
+import 'package:bestiarium/domain/services/db/util/db_query_handler.dart';
 import 'package:bestiarium/ui/widgets/ItemBox.dart';
 import 'package:bestiarium/ui/widgets/creatureTable.dart';
 import 'package:bestiarium/ui/widgets/dropDownSort.dart';
@@ -11,7 +12,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../domain/services/db/util/db_query_handler.dart';
+import '../../domain/services/db/util/constant_values.dart';
 import '../../utils/search_creatures.dart';
 
 class SearchPage extends StatefulWidget {
@@ -51,7 +52,11 @@ class _SearchPageState extends State<SearchPage> {
     super.initState();
   }
 
-  String dropdownValue = 'All';
+  String dropdownValueGroup = 'All';
+  String dropdownValueDiet = 'All';
+  String dropdownValueRarity = 'All';
+  String dropdownValueDanger = 'All';
+
 
   @override
   Widget build(BuildContext context) {
@@ -74,7 +79,9 @@ class _SearchPageState extends State<SearchPage> {
 
 
                 setState(() {
-                  results = _searchText(controller.text, all);
+                  //results = _searchText(controller.text, all);
+                  _searchEntries.name = controller.text;
+                  _searchEntries.runQuery();
                 });
 
 
@@ -108,45 +115,79 @@ class _SearchPageState extends State<SearchPage> {
         decoration: BoxDecoration(
           color: Colors.deepPurple
         ),
-        child: Row(
-          children: [
-            SortButton(
-              dropdownValue,
-              ['All', 'Plumifera', 'Arthropoda'],
-              (String? newValue){
-                this.setState(() {
-                  dropdownValue = newValue!;
-                  all = queryCreaturesByGroup(newValue);
-                  _searchEntries.updateEntries(all);
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          padding: EdgeInsets.symmetric(horizontal: 10),
+          child: Row(
+            children: [
+              SortButton(
+                dropdownValueGroup,
+                DBConstantValues.group_type,
+                (String? newValue){
+                  setState(() {
+                    dropdownValueGroup = newValue!;
+                    //all = queryCreaturesByGroup(newValue);
+                    //_searchEntries.updateEntries(all);
+                    _searchEntries.group = newValue;
+                    _searchEntries.runQuery();
 
-                });
-              }
-            )
-          ],
+                  });
+                }
+              ),
+              SortButton(
+                  dropdownValueDiet,
+                  DBConstantValues.diet_substinance,
+                      (String? newValue){
+                    setState(() {
+                      dropdownValueDiet = newValue!;
+                      //all = queryCreaturesByDiet(newValue);
+                      //_searchEntries.updateEntries(all);
+                      _searchEntries.diet = newValue;
+                      _searchEntries.runQuery();
 
+                    });
+                  }
+              ),
+              SortButton(
+                  dropdownValueRarity,
+                  DBConstantValues.rarity,
+                      (String? newValue){
+                    setState(() {
+                      dropdownValueRarity = newValue!;
+                      //all = queryCreaturesByRarity(newValue);
+                      //_searchEntries.updateEntries(all);
+                      _searchEntries.rarity = newValue;
+                      _searchEntries.runQuery();
+
+                    });
+                  }
+              ),
+              SortButton(
+                  dropdownValueDanger,
+                  DBConstantValues.danger,
+                      (String? newValue){
+                    setState(() {
+                      dropdownValueDanger = newValue!;
+                      //all = queryCreaturesByDanger(newValue);
+                      //_searchEntries.updateEntries(all);
+                      _searchEntries.danger = newValue;
+                      _searchEntries.runQuery();
+
+                    });
+                  }
+              )
+            ],
+
+          ),
         ),
       ),
     );
   }
 
 
-  List _searchText(String text, List all){
-    var results = [];
-    for(var item in all){
-      for (int i=0;i<=item.name.length-1;i++){
-        for (int j=i;j<=item.name.length;j++){
-          ///  SUBSTRING COINCIDE
-          if(text==item.name.substring(i,j)){
-            results.add(item);
-            i=item.name.length-1;
-            j=item.name.length;
-          }
-        }
-      }
-    }
-    return results;
 
-  }
+
+
 }
 
 

@@ -32,7 +32,7 @@ addPlants(){
 
           '\n\nIts leaves produce a substance that induces hallucinations and euphoria in those who consume it.'
           ' Shamans from certain tribes traditionally consume tea made from its leaves during rituals in'
-          ' order to look into the flow of the Aeras, and fortell events to come',
+          ' order to look into the flow of the Aeras, and fortell events to come.',
       'assets/images/icons/plants/other_plants_icon.png',
       0,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Psychelent.jpg',

@@ -1,5 +1,6 @@
 
 
+import 'dart:math';
 import 'dart:ui';
 
 import 'package:bestiarium/domain/entities/small_creature.dart';
@@ -92,8 +93,15 @@ class _Creatures_PageState extends State<Creatures_Page> {
 
             tabs: [
               Tab(
-                icon:Image.asset('assets/images/monster_icon.png',
-                scale: 1,)
+                icon:/*Transform(
+                  alignment: Alignment.center,
+                  transform: Matrix4.rotationZ(pi/2),
+                  child:*/ Image.asset('assets/images/monster_icon.png',
+
+                    //fit: BoxFit.fitWidth,
+                    
+                  ),
+             //   )
                 
               ),
 

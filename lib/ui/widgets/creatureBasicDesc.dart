@@ -58,11 +58,14 @@ Widget CreatureBasicDescription(SmallCreature creature/*image, name, group, size
               ),
             const Divider(height: 30),
             Center(
-              child: Text(creature.name,
-                  style: GoogleFonts.alexBrush(
-                      fontSize: 50,
-                      color: Colors.black
-                  )
+              child: FittedBox(
+                fit: BoxFit.contain,
+                child: Text(creature.name,
+                    style: GoogleFonts.alexBrush(
+                        fontSize: 50,
+                        color: Colors.black
+                    )
+                ),
               ),
 
             ),
@@ -70,11 +73,14 @@ Widget CreatureBasicDescription(SmallCreature creature/*image, name, group, size
             Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15),
             child:Center(
-              child: Text('Group:      '+creature.group,
-                  style: GoogleFonts.alexBrush(
-                      fontSize: 40,
-                      color: Colors.black
-                  )
+              child: FittedBox(
+                fit: BoxFit.contain,
+                child: Text('Group:  '+creature.group,
+                    style: GoogleFonts.alexBrush(
+                        fontSize: 40,
+                        color: Colors.black
+                    )
+                ),
               ),
 
             )
@@ -83,11 +89,15 @@ Widget CreatureBasicDescription(SmallCreature creature/*image, name, group, size
             Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
                 child:Center(
-                  child: Text('Size:'+creature.size,
-                      style: GoogleFonts.alexBrush(
-                          fontSize: 40,
-                          color: Colors.black
-                      )
+                  child: FittedBox(
+                    fit: BoxFit.contain,
+                    child: Text('Size:'+creature.size,
+
+                        style: GoogleFonts.alexBrush(
+                            fontSize: 40,
+                            color: Colors.black
+                        )
+                    ),
                   ),
 
                 )
@@ -108,28 +118,35 @@ Widget CreatureBasicDescription(SmallCreature creature/*image, name, group, size
             Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
                 child:Center(
-                  child: Text('Diet:   '+creature.diet,
-                      style: GoogleFonts.alexBrush(
-                          fontSize: 40,
-                          color: Colors.black
-                      )
+                  child: FittedBox(
+                    fit: BoxFit.contain,
+                    child: Text('Diet: '+creature.diet,
+                        style: GoogleFonts.alexBrush(
+                            fontSize: 40,
+                            color: Colors.black
+                        )
+                    ),
                   ),
 
                 )
             ),
-            /*const Divider(height: 30),
+            const Divider(height: 30),
             Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
                 child:Center(
-                  child: Text('Diet:   '+creature.diet,
-                      style: GoogleFonts.alexBrush(
-                          fontSize: 40,
-                          color: Colors.black
-                      )
+                  child: FittedBox(
+                    fit: BoxFit.contain,
+                    child: Text('Rarity: '+creature.rarity,
+                        style: GoogleFonts.alexBrush(
+                            fontSize: 40,
+                            color: Colors.black
+                        )
+                    ),
                   ),
 
                 )
-            ),*/
+            ),
+
             const Divider(height: 120),
             ]
       ),
@@ -153,6 +170,14 @@ List<Widget> dangerLevel(creature){
 
   for(var i=0; i<creature.danger; i++){
     danLev.add(Icon(Icons.star,color: Colors.black,));
+  }
+  if(danLev.length==1){
+    danLev.add(Text('-',
+        style: GoogleFonts.alexBrush(
+            fontSize: 40,
+            color: Colors.black
+        )
+    ));
   }
 
   return danLev;

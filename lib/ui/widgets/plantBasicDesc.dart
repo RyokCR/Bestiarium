@@ -12,7 +12,7 @@ Widget PlantBasicDescription(Plant plant/*image, name, group, size, diet*/) {
       child: Container(
         decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('assets/images/page_background.jpg'),
+                image: AssetImage('assets/images/new_background.jpg'),
                 fit: BoxFit.cover
 
             )
@@ -43,11 +43,14 @@ Widget PlantBasicDescription(Plant plant/*image, name, group, size, diet*/) {
               ),
               const Divider(height: 30),
               Center(
-                child: Text(plant.name,
-                    style: GoogleFonts.alexBrush(
-                        fontSize: 50,
-                        color: Colors.black
-                    )
+                child: FittedBox(
+                  fit: BoxFit.contain,
+                  child: Text(plant.name,
+                      style: GoogleFonts.alexBrush(
+                          fontSize: 50,
+                          color: Colors.black
+                      )
+                  ),
                 ),
 
               ),
@@ -55,11 +58,14 @@ Widget PlantBasicDescription(Plant plant/*image, name, group, size, diet*/) {
               Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 15),
                   child: Center(
-                    child: Text('Type:      ' + plant.type,
-                        style: GoogleFonts.alexBrush(
-                            fontSize: 40,
-                            color: Colors.black
-                        )
+                    child: FittedBox(
+                      fit: BoxFit.contain,
+                      child: Text('Type: ' + plant.type,
+                          style: GoogleFonts.alexBrush(
+                              fontSize: 40,
+                              color: Colors.black
+                          )
+                      ),
                     ),
 
                   )
@@ -68,11 +74,14 @@ Widget PlantBasicDescription(Plant plant/*image, name, group, size, diet*/) {
               Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 15),
                   child: Center(
-                    child: Text('Size:' + plant.size,
-                        style: GoogleFonts.alexBrush(
-                            fontSize: 40,
-                            color: Colors.black
-                        )
+                    child: FittedBox(
+                      fit: BoxFit.contain,
+                      child: Text('Size: ' + plant.size,
+                          style: GoogleFonts.alexBrush(
+                              fontSize: 40,
+                              color: Colors.black
+                          )
+                      ),
                     ),
 
                   )
@@ -81,11 +90,14 @@ Widget PlantBasicDescription(Plant plant/*image, name, group, size, diet*/) {
               Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 15),
                   child: Center(
-                    child: Text('Sustainance:   ' + plant.sustainance,
-                        style: GoogleFonts.alexBrush(
-                            fontSize: 40,
-                            color: Colors.black
-                        )
+                    child: FittedBox(
+                      fit: BoxFit.contain,
+                      child: Text('Sustainance: ' + plant.sustainance,
+                          style: GoogleFonts.alexBrush(
+                              fontSize: 40,
+                              color: Colors.black
+                          )
+                      ),
                     ),
 
 
@@ -96,11 +108,14 @@ Widget PlantBasicDescription(Plant plant/*image, name, group, size, diet*/) {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
                 child: Center(
-                  child: Text('Properties:   ' + plant.properties,
-                      style: GoogleFonts.alexBrush(
-                          fontSize: 40,
-                          color: Colors.black
-                      )
+                  child: FittedBox(
+                    fit: BoxFit.contain,
+                    child: Text('Properties: ' + plant.properties,
+                        style: GoogleFonts.alexBrush(
+                            fontSize: 40,
+                            color: Colors.black
+                        )
+                    ),
                   ),
 
 
@@ -111,11 +126,14 @@ Widget PlantBasicDescription(Plant plant/*image, name, group, size, diet*/) {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
                 child: Center(
-                  child: Text('Rarity:   ' + plant.rarity,
-                      style: GoogleFonts.alexBrush(
-                          fontSize: 40,
-                          color: Colors.black
-                      )
+                  child: FittedBox(
+                    fit: BoxFit.contain,
+                    child: Text('Rarity: ' + plant.rarity,
+                        style: GoogleFonts.alexBrush(
+                            fontSize: 40,
+                            color: Colors.black
+                        )
+                    ),
                   ),
 
 
