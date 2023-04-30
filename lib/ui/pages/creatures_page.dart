@@ -96,7 +96,7 @@ class _Creatures_PageState extends State<Creatures_Page> {
                 icon:/*Transform(
                   alignment: Alignment.center,
                   transform: Matrix4.rotationZ(pi/2),
-                  child:*/ Image.asset('assets/images/monster_icon.png',
+                  child:*/ Image.asset('assets/images/large_monster_icon.png',
 
                     //fit: BoxFit.fitWidth,
                     

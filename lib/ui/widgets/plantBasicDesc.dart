@@ -20,7 +20,7 @@ Widget PlantBasicDescription(Plant plant/*image, name, group, size, diet*/) {
 
         child: Column(
             children: <Widget>[
-              Center(
+              /*Center(
                   child: Padding(
                       padding: const EdgeInsets.symmetric(vertical: 15),
                       child: Container(
@@ -40,7 +40,7 @@ Widget PlantBasicDescription(Plant plant/*image, name, group, size, diet*/) {
                         ),
                       )
                   )
-              ),
+              ),*/
               const Divider(height: 30),
               Center(
                 child: FittedBox(
@@ -140,7 +140,7 @@ Widget PlantBasicDescription(Plant plant/*image, name, group, size, diet*/) {
                 ),
 
               ),
-              const Divider(height: 120),
+              const Divider(height: 180),
             ]
         ),
 

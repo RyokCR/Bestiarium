@@ -337,6 +337,33 @@ addLargeCreatures(){
   );
 
   addSmallCreature(
+      'Mephitax',
+      'Warm-blooded beast',
+      '1.20 m tall, 2.5 m long',
+      'Carnivorous',
+      'Vicious and highly adaptable predatory creatures. They are found in almost any type of terrestrial habitat, and are'
+          ' able to climb and swim well.'
+
+      '\n\nMephitax hunt alone, and usually attack creatures far larger than they are. They use their long, bushy tails '
+          'for protection while doing this, cushioning heavy strikes or bites that come from above. If the larger creature '
+          'bites the tail decoy, Mephitax will quickly attack the throat while it is distracted.'
+
+  '\n\nThey have also been observed displaying several other hunting tactics, such as playing dead while secreting a foul'
+          ' smelling substance from the base of their tails to lure in and ambush scavengers.'
+      ,
+      'assets/images/icons/large_creatures/mephitax.png',
+      3,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Mephitax.jpg',
+      'normal',
+      'fire',
+      'Common',
+      'large'
+
+  );
+
+
+
+  addSmallCreature(
       'Heliursa',
       'Warm-blooded beast',
       '3 m',
@@ -391,6 +418,134 @@ addLargeCreatures(){
 
   );
 
+  addSmallCreature(
+      'Halskárabos',
+      'Arthropoda',
+      '8 m tall',
+      'Scavenging',
+      'One of the most recognizable creatures from the Swaying Plains\' Forest of Bone.'
+
+  '\n\nThese large arthropodans feed on decaying organic matter and chew on bones, extracting some necessary minerals'
+          ' from them. Their thick exoskeleton protects their whole bodies from predator attacks, making them quite'
+          ' difficult to take down. They possess small vestigial wings under their elytra, which they use to produce '
+          'high pitched screeching sounds to communicate with each other.'
+
+  '\n\nMale Halskárabos will fight in order to mate with females, but will rarely kill each other during these events.'
+          ' After laying eggs, females will place them in high, hard-to-reach places, attaching them to rocks or trees'
+          ' using a sticky substance produced by glands near the mouth.'
+      ,
+      'assets/images/icons/large_creatures/halskárabos.png',
+      3,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Halskárabos.jpg',
+      'normal',
+      'fire',
+      'Uncommon',
+      'large'
+
+  );
+
+  addSmallCreature(
+      'Myrmeleuka',
+      'Arthropoda',
+      '3 m long, 1.5 m tall',
+      'Carnivorous',
+      'Highly efficient predators from the Forest of Bone. '
+
+      '\n\nTheir long scissor-shaped tails aid them in overpowering prey, and constructing traps. Although they are '
+          'capable of chasing down other creatures, Myrmeleuka construct a number of pit traps in a circular area -covered '
+          'in a layer of silk mixed with plant litter- and patiently wait nearby. They may spend hours without moving at all,'
+          ' alert to ground vibrations indicating the presence of another creature. They also possess excellent vision.'
+
+  '\n\nOnce the unsuspecting victim steps on the trap, it falls into the pit, also becoming impeded by the sticky '
+          'silk, and can then be easily ambushed and killed.'
+      ,
+      'assets/images/icons/large_creatures/myrmeleuka.png',
+      3,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Myrmeleuka.jpg',
+      'normal',
+      'fire',
+      'Uncommon',
+      'large'
+
+  );
+
+  addSmallCreature(
+      'Ijskala',
+      'Warm-blooded beast',
+      '14 m',
+      'Carnivorous',
+      'One of Onyria\'s apex ocean predators. Ijskala thrive in the cold waters surrounding the Glacia regions and hunt'
+          ' in groups, being able to chase down, overpower and kill nearly any local sea creature.'
+
+  '\n\nIjskala use their horns to sense water temperature, groom one another and defend themselves. They are able to locate'
+          ' prey or navigate using echolocation, and can also produce high pitched sounds to stun other creatures.'
+
+      '\n\nWhen attacking schools of small fish, Ijskala expel all water from their mouths through the small openings '
+          'on the sides of their jaws, creating vacuum inside, and absorb all of them at once.'
+      ,
+      'assets/images/icons/large_creatures/ijskala.png',
+      4,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Ijskala.jpg',
+      'normal',
+      'fire',
+      'Uncommon',
+      'large'
+
+  );
+
+
+  addSmallCreature(
+      'Terásketos',
+      'Hydran',
+      '???',
+      'Carnivorous',
+      'A highly elusive, almost legendary creature, and possibly the largest incarnate organism to ever have existed in Onyria.'
+
+      '\n\nThere have been very few documented sightings of Terásketos. Based on descriptions given by witnesses, it is '
+          'speculated that its size surpasses 200 m in length- enough to swallow a fully grown Hvalketos whole.'
+
+  '\n\nIts dark hide is said to be nearly indistinguishable from the deep, dark waters it inhabits, and only its gargantuan,'
+          ' tusked jaws can be properly made out from a distance. It possesses trailing tentacles of unknown length, and'
+          ' often swims with its mouth open, swallowing everything in its wake. It is theorized that Terásketos is the'
+          ' origin of unexplained, impossibly strong sounds that sometimes echo across the ocean.'
+
+  '\n\nIts tusks are thought to be meant for fighting others of its kind, or defense against larger, unknown beasts'
+          ' that are, or were once able to prey upon it.'
+      ,
+      'assets/images/icons/large_creatures/terásketos.png',
+      5,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Terásketos.jpg',
+      'normal',
+      'fire',
+      'Uncommon',
+      'large'
+
+  );
+
+
+  addSmallCreature(
+      'Zephyrnos',
+      'Thalassus',
+      '12 m long, 6 m wingspan',
+      'Carnivorous',
+      'Described in old legends as one of the four children of Primal aeru Okyanos. In ancient times, they were thought'
+          ' to absorb the sun\'s heat in order to blow warm winds towards the land, and bring forth the season of spring.'
+
+          '\n\nZephyrnos attach themselves to cliffsides and large coraline structures as the tide rises, using their tails to grab'
+          ' onto them. Then, they spread their specially adapted fins, and bask in the sun before returning to the water.'
+
+          '\n\nThey are capable of changing the texture and color of their bodies, camouflaging expertly upon nearly any surface.'
+          ' Once their prey comes close enough, they thrust forwards and quickly absorb the unsuspecting creature.'
+      ,
+      'assets/images/icons/large_creatures/zephyrnos.png',
+      4,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Zephyrnos.jpg',
+      'normal',
+      'fire',
+      'Uncommon',
+      'large'
+
+  );
 
   addSmallCreature(
       'Gluhenwyr',

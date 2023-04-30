@@ -502,6 +502,58 @@ addSmallCreatures(){
       'small'
   );
 
+
+  addSmallCreature(
+      'Cydiopteryx',
+      'Saurian',
+      '30 cm long',
+      'Carnivorous',
+      'Small, nocturnal predatory saurians. They are expert climbers and jumpers, travelling through their forest '
+          'habitats without ever leaving the trees.'
+
+      '\n\nTheir elongated fingers help them search for the grubs and larvae that they feed upon, usually hidden'
+          ' under tree bark. Their acute sense of touch is able to perceive vibrations created by their prey while'
+          ' moving, and once they have located it, they introduce their fingers into the small cavities created by'
+          ' the larvae, and easily pull them out.'
+
+      '\n\nCydiopteryx construct circular nests, in which they rest during the day.'
+      ,
+      'assets/images/icons/small_creatures/cydiopteryx.png',
+      1,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Cydiopteryx.jpg',
+      'normal',
+      'fire',
+      'Common',
+      'small'
+  );
+
+
+  addSmallCreature(
+      'Antevolant',
+      'Warm-blooded beast',
+      '1.80 m tall, 5 m wingspan ',
+      'Herbivorous',
+      'Creatures graceful in flight, but quite clumsy on land. Antevolant must use the angle of their wings for support'
+          ' while walking, and are highly vulnerable while doing so.'
+
+      '\n\nAntevolant fly across the wetlands in flocks, and feed on plants and algae that grow on the surface of the shallow'
+          ' waters. Their long, flexible hooves are specially adapted to keep them from sinking into the mud. Because flying'
+          ' consumes so much energy due to their weight, they usually move by leaping into the air with their powerful hind '
+          'legs, gliding for long distances, and leaping again upon touching down, maintaining their momentum.'
+
+      '\n\nTheir pelt, feathers and horns are highly valued due to their beautiful vibrant colors, and are used in traditional'
+          ' clothing and ceremonial objects.'
+      ,
+      'assets/images/icons/small_creatures/antevolant.png',
+      2,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Antevolant.jpg',
+      'normal',
+      'fire',
+      'Uncommon',
+      'small'
+  );
+
+
   addSmallCreature(
       'Un\'aeru',
       'Lesser aeru',
