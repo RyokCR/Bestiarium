@@ -1,13 +1,17 @@
 
 
 
+import 'package:bestiarium/ui/widgets/danger_level.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../domain/entities/plant.dart';
 
-Widget PlantBasicDescription(Plant plant/*image, name, group, size, diet*/) {
+Widget PlantBasicDescription(Plant plant) {
+
+  var dangerLevels = dangerLevel(plant);
+
   return SingleChildScrollView(
       child: Container(
         decoration: BoxDecoration(
@@ -83,6 +87,18 @@ Widget PlantBasicDescription(Plant plant/*image, name, group, size, diet*/) {
                           )
                       ),
                     ),
+
+                  )
+              ),
+              const Divider(height: 30),
+              Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
+                  child:Center(
+
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: dangerLevels,
+                      )
 
                   )
               ),

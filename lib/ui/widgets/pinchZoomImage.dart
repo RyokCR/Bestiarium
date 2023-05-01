@@ -83,6 +83,7 @@ class _PinchZoomImageState extends State<PinchZoomImage> with SingleTickerProvid
                 if (!_isDownloading) {
                   setState(() {
                     _isDownloading = !_isDownloading;
+
                   });
                   var dir = await path_provider.getExternalStorageDirectory();
 

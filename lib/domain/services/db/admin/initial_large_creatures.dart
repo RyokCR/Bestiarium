@@ -513,12 +513,13 @@ addLargeCreatures(){
           ' that are, or were once able to prey upon it.'
       ,
       'assets/images/icons/large_creatures/terásketos.png',
-      5,
+      4,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Terásketos.jpg',
       'normal',
       'fire',
       'Uncommon',
-      'large'
+      'large',
+    halfDanger: 1
 
   );
 
@@ -770,4 +771,29 @@ addLargeCreatures(){
       'large'
 
   );
+
+
+  addSmallCreature(
+      'Qul-Quetzatl',
+      'Primal aeru',
+      '???',
+      'Aeras-based',
+      'Also referred to as the "Bringer of Rain" and "The Gilded God". Possessing a personality often described as carefree '
+          'and childlike, Qul-Quetzatl\'s presence occupies the entire Geko Wetlands area and is strongest in the Gilded Lake;'
+          ' largest of its kind in the world.'
+
+  '\n\nQul-Quetzatl is believed to be the father of all amphibians and lindwurms that inhabit Onyria. He is allegedly generous and loving towards his worshippers, and shows his good will by placing gold nuggets in the many streams of the Wetlands for his people to find. Legend has it that he is able to transmute anything he touches into the precious metal.
+
+      He is, however, also a trickster, and has been known to decieve those who attempt to take advantage of his generosity. There are stories of pillagers leaving the Wetlands with as much gold as they can carry, only to find common river stones in their bags once they return home.'
+      ,
+      'assets/images/icons/large_creatures/rajavatra.png',
+      5,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Rajavatra.jpg',
+      'normal',
+      'fire',
+      'Unique',
+      'large'
+
+  );
+
 }

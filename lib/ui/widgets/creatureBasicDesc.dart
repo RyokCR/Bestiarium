@@ -2,7 +2,7 @@
 
 
 import 'package:bestiarium/domain/entities/small_creature.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:bestiarium/ui/widgets/danger_level.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -157,28 +157,3 @@ Widget CreatureBasicDescription(SmallCreature creature/*image, name, group, size
   );
 }
 
-List<Widget> dangerLevel(creature){
-
-  List<Widget> danLev = [
-    Text('Danger:   ',
-        style: GoogleFonts.alexBrush(
-            fontSize: 40,
-            color: Colors.black
-        )
-    ),
-  ];
-
-  for(var i=0; i<creature.danger; i++){
-    danLev.add(Icon(Icons.star,color: Colors.black,));
-  }
-  if(danLev.length==1){
-    danLev.add(Text('-',
-        style: GoogleFonts.alexBrush(
-            fontSize: 40,
-            color: Colors.black
-        )
-    ));
-  }
-
-  return danLev;
-}

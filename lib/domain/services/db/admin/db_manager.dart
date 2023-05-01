@@ -6,7 +6,7 @@ import 'package:hive/hive.dart';
 import 'package:bestiarium/domain/entities/plant.dart';
 
 
-addSmallCreature(String name, String group, String size, String diet, String description, String icon, int danger, String url, String type, String weakness, String rarity, String category){
+addSmallCreature(String name, String group, String size, String diet, String description, String icon, int danger, String url, String type, String weakness, String rarity, String category, {int halfDanger = 0}){
   final creature = SmallCreature()
       ..name = name
       ..group = group
@@ -21,13 +21,14 @@ addSmallCreature(String name, String group, String size, String diet, String des
       ..rarity = rarity
       ..category = category
       ..habitat = []
+      ..halfDanger = halfDanger
   ;
   //setState(() => small_creatures.add(creature));
   final box = Boxes.getSmallCreatures();
   box.add(creature);
 }
 
-addPlant(String name, String size, String description, String icon, int danger, String url, String type, String rarity, String properties, String sustainance){
+addPlant(String name, String size, String description, String icon, int danger, String url, String type, String rarity, String properties, String sustainance, {int halfDanger = 0}){
   final plant = Plant()
     ..name = name
     ..size = size
@@ -40,6 +41,7 @@ addPlant(String name, String size, String description, String icon, int danger, 
     ..properties = properties
     ..sustainance = sustainance
     ..habitat = []
+    ..halfDanger = halfDanger
   ;
   //setState(() => small_creatures.add(creature));
   final box = Boxes.getPlants();

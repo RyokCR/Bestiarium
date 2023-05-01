@@ -21,6 +21,9 @@ class Plant extends HiveObject{
   @HiveField(4)
   late int danger;
 
+  @HiveField(11)
+  late int halfDanger;
+
   @HiveField(5)
   late String url;
 
