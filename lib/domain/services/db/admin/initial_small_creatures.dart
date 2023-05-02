@@ -232,12 +232,13 @@ addSmallCreatures(){
           ' of vision, and are also able to perceive colors and hues that other beings cannot.'
       ,
       'assets/images/icons/small_creatures/cruscentid.png',
-      3,
+      2,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Cruscentid.jpg',
       'normal',
       'fire',
       'Common',
-      'small'
+      'small',
+      halfDanger: 1
 
   );
 
@@ -258,7 +259,7 @@ addSmallCreatures(){
           ' of the organisms they carry on their body, making them a very valuable part of the ecosystems they inhabit.'
       ,
       'assets/images/icons/small_creatures/zelenodon.png',
-      0,
+      1,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Zelenodon.jpg',
       'normal',
       'fire',
@@ -312,7 +313,8 @@ addSmallCreatures(){
       'normal',
       'fire',
       'Uncommon',
-      'small'
+      'small',
+      halfDanger: 1
   );
 
   addSmallCreature(
@@ -320,7 +322,7 @@ addSmallCreatures(){
       'Somagrus',
       'Plumifera',
       '2 m long, 4 m wingspan',
-      'Scavenging',
+      'Nutrient Absorption',
       'In reality, Somagrus are highly complex fungal organisms, but are included among plumiferans due to structural'
           ' similarities. They start their lives as ordinary, round mushrooms, which hatch like eggs once a certain'
           ' time has elapsed, revealing an animal-like body from within. The chick remains rooted to the ground,'
@@ -378,7 +380,7 @@ addSmallCreatures(){
       'Felcedallon',
       'Arthropoda',
       '30 cm long, 50 cm wingspan',
-      'Herbivorous',
+      'Herbivorous, Photosynthesis',
       'Nocturnal creatures known best for their larval stage, in which they cover entire trees and make them seem as though'
           ' decorated with hundreds of tiny lights.'
 
@@ -418,7 +420,7 @@ addSmallCreatures(){
           ' a dull gray.'
       ,
       'assets/images/icons/small_creatures/atlapalli.png',
-      1,
+      0,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Atlapalli.jpg',
       'normal',
       'fire',
@@ -447,7 +449,8 @@ addSmallCreatures(){
       'normal',
       'fire',
       'Common',
-      'small'
+      'small',
+      halfDanger: 1
   );
 
   addSmallCreature(
@@ -570,7 +573,7 @@ addSmallCreatures(){
           'familiars in exchange for protection and energy.'
       ,
       'assets/images/icons/small_creatures/un\'aeru.png',
-      0,
+      1,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Un\'aeru.jpg',
       'normal',
       'fire',

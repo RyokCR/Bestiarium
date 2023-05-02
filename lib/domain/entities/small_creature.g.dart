@@ -26,6 +26,7 @@ class SmallCreatureAdapter extends TypeAdapter<SmallCreature> {
       ..danger = fields[6] as int
       ..halfDanger = fields[13] as int
       ..url = fields[7] as String
+      ..fileTotalSize = fields[14] as int
       ..type = fields[8] as String
       ..weakness = fields[9] as String
       ..rarity = fields[10] as String
@@ -36,7 +37,7 @@ class SmallCreatureAdapter extends TypeAdapter<SmallCreature> {
   @override
   void write(BinaryWriter writer, SmallCreature obj) {
     writer
-      ..writeByte(14)
+      ..writeByte(15)
       ..writeByte(0)
       ..write(obj.name)
       ..writeByte(1)
@@ -55,6 +56,8 @@ class SmallCreatureAdapter extends TypeAdapter<SmallCreature> {
       ..write(obj.halfDanger)
       ..writeByte(7)
       ..write(obj.url)
+      ..writeByte(14)
+      ..write(obj.fileTotalSize)
       ..writeByte(8)
       ..write(obj.type)
       ..writeByte(9)

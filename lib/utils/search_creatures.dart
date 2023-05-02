@@ -39,7 +39,7 @@ class SearchEntries extends ChangeNotifier{
         if((group!='All' ? entries[i].group != group :false)
             ||(diet!='All' ? entries[i].diet != diet :false)
             ||(rarity!='All' ? entries[i].rarity != rarity: false)
-            ||(danger!='All' ? entries[i].danger!=int.parse(danger): false)){
+            ||(danger!='All' ? _compare_danger(entries[i], double.parse(danger))/*entries[i].danger!=double.parse(danger)*/: false)){
           entries.removeAt(i);
         }
       }else{
@@ -52,6 +52,12 @@ class SearchEntries extends ChangeNotifier{
       }
     }
     notifyListeners();
+
+  }
+
+  bool _compare_danger(entry, double comparingValue){
+    int base = comparingValue.toInt();
+    return !(entry.danger == base && (comparingValue > base ? entry.halfDanger>0: true));
 
   }
 

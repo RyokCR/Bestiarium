@@ -4,6 +4,8 @@ import 'package:path_provider/path_provider.dart' as path_provider;
 import 'package:bestiarium/ui/pages/creature_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
+import 'package:dio/dio.dart';
+import 'package:path/path.dart' as path;
 import 'dart:io';
 
 //#region TextFields
@@ -41,20 +43,7 @@ Widget ItemBox(creature, context) {
                 //height: 100,
 
                 alignment: Alignment.center,
-                /*decoration: BoxDecoration(
-                    border: Border.all(width: 1),
-                    image: DecorationImage(
-                      alignment: Alignment.centerRight,
-                      /// If is a small create use group, If is plant use type
-                        image: creature.runtimeType==SmallCreature?
-                        AssetImage('assets/images/${creature.group}_BG.png',) :
-                        //AssetImage('assets/images/${creature.type}_BG.png'),
-                        AssetImage('assets/images/page_background.jpg'),
-                        fit: BoxFit.fitWidth,
-                        scale: 1
 
-                    )
-                ),*/
 
                 child: Padding(padding: EdgeInsets.only(top: 15)
                     ,child: Row(
@@ -137,8 +126,24 @@ Widget ItemBox(creature, context) {
                 var dir = await path_provider.getExternalStorageDirectory();
                 var localPath = '${dir?.path}/${creature.name}.jpg';
                 bool inStorage;
+
+                /// CHECK IF THE FILE EXISTS AND ITS DOWNLOAD IS COMPLETE
+
                 try{
-                  inStorage = await File(localPath).exists();
+                  File localFile = File(localPath);
+                  inStorage = await localFile.exists();
+
+                  if(inStorage){
+                    //Dio dio = Dio();
+                    //var response = await dio.head(creature.url);
+                    ///GET FROM DB
+                    //int totalBytes = int.parse(response.headers.value('content-length')!);
+
+                    int localSize = localFile.lengthSync();
+
+                    int totalSize = creature.fileTotalSize;
+                    inStorage = localSize >= totalSize;
+                  }
                   //im = Image.file(File(localPath));
                   //inStorage = true;
                 }

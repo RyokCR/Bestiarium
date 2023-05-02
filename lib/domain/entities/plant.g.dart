@@ -24,6 +24,7 @@ class PlantAdapter extends TypeAdapter<Plant> {
       ..danger = fields[4] as int
       ..halfDanger = fields[11] as int
       ..url = fields[5] as String
+      ..fileTotalSize = fields[12] as int
       ..type = fields[6] as String
       ..rarity = fields[7] as String
       ..properties = fields[8] as String
@@ -34,7 +35,7 @@ class PlantAdapter extends TypeAdapter<Plant> {
   @override
   void write(BinaryWriter writer, Plant obj) {
     writer
-      ..writeByte(12)
+      ..writeByte(13)
       ..writeByte(0)
       ..write(obj.name)
       ..writeByte(1)
@@ -49,6 +50,8 @@ class PlantAdapter extends TypeAdapter<Plant> {
       ..write(obj.halfDanger)
       ..writeByte(5)
       ..write(obj.url)
+      ..writeByte(12)
+      ..write(obj.fileTotalSize)
       ..writeByte(6)
       ..write(obj.type)
       ..writeByte(7)

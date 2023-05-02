@@ -8,14 +8,15 @@ import 'package:dio/dio.dart';
 //import 'package:bestiarium/domain/repositories/download_manager.dart';
 
 class PinchZoomImage extends StatefulWidget {
-  const PinchZoomImage({Key? key, required this.url,  required this.inStorage,required this.localUrl}) : super(key: key);
+  const PinchZoomImage({Key? key, required this.entry,required this.url,  required this.inStorage,required this.localUrl}) : super(key: key);
 
+  final entry;
   final String url;
   final String localUrl;
   final bool inStorage;
 
   @override
-  State<PinchZoomImage> createState() => _PinchZoomImageState(url: url, inStorage: inStorage, localUrl: localUrl);
+  State<PinchZoomImage> createState() => _PinchZoomImageState(url: url, inStorage: inStorage, localUrl: localUrl, entry: entry);
 }
 
 class _PinchZoomImageState extends State<PinchZoomImage> with SingleTickerProviderStateMixin {
@@ -26,6 +27,7 @@ class _PinchZoomImageState extends State<PinchZoomImage> with SingleTickerProvid
   Animation<Matrix4>? animation;
 
   //CHANGE THIS
+  final entry;
   final String url;//= 'https://github.com/RyokCR/RyokCR/raw/main/PicsArt_03-06-03.11.38.jpg';
 
   final String localUrl ;//=  '/storage/emulated/0/Android/data/sko.raym.bestiarium/files/gerbobird.jpg';
@@ -39,7 +41,7 @@ class _PinchZoomImageState extends State<PinchZoomImage> with SingleTickerProvid
   late double width;
   late double height;
 
-  _PinchZoomImageState({required this.url, required this.inStorage, required this.localUrl});
+  _PinchZoomImageState({required this.entry, required this.url, required this.inStorage, required this.localUrl});
 
   @override
   void initState() {
@@ -71,6 +73,7 @@ class _PinchZoomImageState extends State<PinchZoomImage> with SingleTickerProvid
   @override
   Widget build(BuildContext context) {
 
+
     width = MediaQuery.of(context).size.width;
     height = MediaQuery.of(context).size.height;
     if (!inStorage) {
@@ -79,41 +82,17 @@ class _PinchZoomImageState extends State<PinchZoomImage> with SingleTickerProvid
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             FloatingActionButton.extended(
+
               onPressed: () async {
                 if (!_isDownloading) {
                   setState(() {
                     _isDownloading = !_isDownloading;
 
+
                   });
                   var dir = await path_provider.getExternalStorageDirectory();
 
-
-                  /*Dio dio = Dio();
-                  dio.download(
-                    url,
-                    //'${dir?.path}/gerbobird.jpg',
-                      localUrl,
-                      onReceiveProgress: (actualbytes, totalbytes) {
-                        var percentage = actualbytes / totalbytes * 100;
-                        if (percentage < 100) {
-                          _percentage = percentage / 100;
-
-                          setState(() {
-                            downloadMessage =
-                            'Downloading... ${percentage.floor()} %';
-                          });
-                        }
-                        else {
-                          setState(() {
-                            downloadMessage = 'Done!';
-                            inStorage = true;
-                          });
-                        }
-                      }
-                  );
-
-                   */
-                  DownloadsManager.download_file(
+                  DownloadsManager.download_file(entry,
                       url,
                       localUrl,
                           (actualbytes, totalbytes) {
@@ -136,6 +115,7 @@ class _PinchZoomImageState extends State<PinchZoomImage> with SingleTickerProvid
                       );
                 }
               },
+
               label: Text('Download'),
               icon: Icon(Icons.file_download),
             ),

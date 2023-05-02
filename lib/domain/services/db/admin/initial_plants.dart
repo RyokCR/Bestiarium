@@ -120,7 +120,7 @@ addPlants(){
       'flower',
       'Uncommon',
       'Medicinal',
-      'Aeras-Based'
+      'Aeras-based'
   );
 
 

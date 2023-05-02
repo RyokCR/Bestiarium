@@ -8,10 +8,14 @@ class DownloadsManager {
   static Dio _dio = Dio();
 
 
-  static Future download_file(String url, String localUrl, ProgressCallback onReceiveProgress) async {
+  static Future download_file(entry, String url, String localUrl, ProgressCallback onReceiveProgress) async {
 
     //String downloadMessage = 'Initializing...';
     //double _percentage = 0;
+
+
+    await _updateSizeDB(entry);
+
     _dio.download(
         url,
         //'${dir?.path}/gerbobird.jpg',
@@ -34,6 +38,14 @@ class DownloadsManager {
           }
         }*/
     );
+  }
+
+  static _updateSizeDB(entry, ) async{
+    var response = await _dio.head(entry.url);
+    int totalBytes = int.parse(response.headers.value('content-length')!);
+
+    entry.fileTotalSize = totalBytes;
+    entry.save();
   }
 
 }

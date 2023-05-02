@@ -140,22 +140,32 @@ class _SearchTableState extends State<SearchTable> {
 
 _onTap(creature, context) async{
 
-    var dir = await path_provider.getExternalStorageDirectory();
-    var localPath = '${dir?.path}/${creature.name}.jpg';
-    bool inStorage;
-    try{
-      inStorage = await File(localPath).exists();
-      //im = Image.file(File(localPath));
-      //inStorage = true;
-    }
-    catch(e){
-      inStorage= false;
+  var dir = await path_provider.getExternalStorageDirectory();
+  var localPath = '${dir?.path}/${creature.name}.jpg';
+  bool inStorage;
+
+  /// CHECK IF THE FILE EXISTS AND ITS DOWNLOAD IS COMPLETE
+
+  try{
+    File localFile = File(localPath);
+    inStorage = await localFile.exists();
+
+    if(inStorage){
+
+      int localSize = localFile.lengthSync();
+
+      int totalSize = creature.fileTotalSize;
+      inStorage = localSize >= totalSize;
     }
 
-    Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => Creature_Page(creature: creature,localUrl: localPath, inStorage: inStorage,)));
+  }
+  catch(e){
+    inStorage= false;
+  }
 
+  Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Creature_Page(creature: creature,localUrl: localPath, inStorage: inStorage,)));
 
 }
 

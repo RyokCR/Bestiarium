@@ -32,6 +32,9 @@ class SmallCreature extends HiveObject{
   @HiveField(7)
   late String url;
 
+  @HiveField(14)
+  late int fileTotalSize = 0;
+
   @HiveField(8)
   late String type;
 

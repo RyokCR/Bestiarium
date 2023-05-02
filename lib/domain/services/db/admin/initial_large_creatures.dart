@@ -46,12 +46,13 @@ addLargeCreatures(){
           ' submerged underwater, and the rest of their eyes at the surface to watch the totality of their surroundings.'
       ,
       'assets/images/icons/large_creatures/krokoskopas.png',
-      4,
+      3,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Krokoskopas.jpg',
       'normal',
       'fire',
       'Common',
-      'large'
+      'large',
+      halfDanger: 1
 
   );
 
@@ -225,12 +226,13 @@ addLargeCreatures(){
 
       ,
       'assets/images/icons/large_creatures/nessnaila.png',
-      4,
+      3,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Nessnaila.jpg',
       'normal',
       'fire',
       'Uncommon',
-      'large'
+      'large',
+      halfDanger: 1
 
   );
 
@@ -251,12 +253,13 @@ addLargeCreatures(){
 
       ,
       'assets/images/icons/large_creatures/drak\'sakara.png',
-      4,
+      3,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Drak\'sakara.jpg',
       'normal',
       'fire',
       'Uncommon',
-      'large'
+      'large',
+      halfDanger: 1
 
   );
 
@@ -366,7 +369,7 @@ addLargeCreatures(){
   addSmallCreature(
       'Heliursa',
       'Warm-blooded beast',
-      '3 m',
+      '3.5 m',
       'Mineral',
       'Large, intelligent beasts that thrive in the caves of the Flaming Steppe region. Due to the scarceness of plants'
           ' or other animals in the ash-covered land they inhabit, they have evolved to feed on ore and stone, with the '
@@ -387,7 +390,8 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Uncommon',
-      'large'
+      'large',
+      halfDanger: 1
 
   );
 
@@ -465,7 +469,8 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Uncommon',
-      'large'
+      'large',
+      halfDanger: 1
 
   );
 
@@ -484,12 +489,13 @@ addLargeCreatures(){
           'on the sides of their jaws, creating vacuum inside, and absorb all of them at once.'
       ,
       'assets/images/icons/large_creatures/ijskala.png',
-      4,
+      3,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Ijskala.jpg',
       'normal',
       'fire',
       'Uncommon',
-      'large'
+      'large',
+      halfDanger: 1
 
   );
 
@@ -539,12 +545,13 @@ addLargeCreatures(){
           ' Once their prey comes close enough, they thrust forwards and quickly absorb the unsuspecting creature.'
       ,
       'assets/images/icons/large_creatures/zephyrnos.png',
-      4,
+      3,
       'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Zephyrnos.jpg',
       'normal',
       'fire',
       'Uncommon',
-      'large'
+      'large',
+      halfDanger: 1
 
   );
 
@@ -623,7 +630,8 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Unique',
-      'large'
+      'large',
+      halfDanger: 1
 
   );
 
@@ -671,7 +679,8 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Uncommon',
-      'large'
+      'large',
+      halfDanger: 1
 
   );
 
@@ -680,7 +689,7 @@ addLargeCreatures(){
       'El\'aeru',
       'Lesser aeru',
       '1.5 - 3 m tall',
-      'Aeras-Based',
+      'Aeras-based',
       'Spirits formed mostly from the essence of a warm-blooded creature. El\'aeru usually begin their existence when'
           ' powerful negative feelings, such as regret or rage persist in the world after the death of a beast or humanoid.'
           ' They can be commonly found wandering around their place of death, not aggressive unless provoked.'
@@ -702,7 +711,7 @@ addLargeCreatures(){
       'Ner\'aeru',
       'Lesser aeru',
       '2-15 m long',
-      'Aeras-Based',
+      'Aeras-based',
       'Spirits formed mostly from the essence of a Thalassus. They usually possess affinity with  water or wind energy,'
           ' and roam the skies near large lakes. When they descend close to the ground, their sole presence usually alters'
           ' weather conditions, bringing rain, hail, mist or '
@@ -782,13 +791,74 @@ addLargeCreatures(){
           'and childlike, Qul-Quetzatl\'s presence occupies the entire Geko Wetlands area and is strongest in the Gilded Lake;'
           ' largest of its kind in the world.'
 
-  '\n\nQul-Quetzatl is believed to be the father of all amphibians and lindwurms that inhabit Onyria. He is allegedly generous and loving towards his worshippers, and shows his good will by placing gold nuggets in the many streams of the Wetlands for his people to find. Legend has it that he is able to transmute anything he touches into the precious metal.
+  '\n\nQul-Quetzatl is believed to be the father of all amphibians and lindwurms that inhabit Onyria. He is allegedly generous'
+          ' and loving towards his worshippers, and shows his good will by placing gold nuggets in the many streams of the'
+          ' Wetlands for his people to find. Legend has it that he is able to transmute anything he touches into the precious'
+          ' metal.'
 
-      He is, however, also a trickster, and has been known to decieve those who attempt to take advantage of his generosity. There are stories of pillagers leaving the Wetlands with as much gold as they can carry, only to find common river stones in their bags once they return home.'
+      '\n\nHe is, however, also a trickster, and has been known to decieve those who attempt to take advantage of his'
+          ' generosity. There are stories of pillagers leaving the Wetlands with as much gold as they can carry, only to'
+          ' find common river stones in their bags once they return home.'
       ,
-      'assets/images/icons/large_creatures/rajavatra.png',
+      'assets/images/icons/large_creatures/qul-Quetzatl.png',
       5,
-      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Rajavatra.jpg',
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Qul-Quetzatl.jpg',
+      'normal',
+      'fire',
+      'Unique',
+      'large'
+
+  );
+
+
+  addSmallCreature(
+      'Naja\'eret',
+      'Primal aeru',
+      '???',
+      'Aeras-based',
+      'A God Spirit also referred to as "The Earthshaper" and "Jaws of Life". '
+
+      '\n\nNaja\'eret, mother of all saurians, is said to have sculpted the unique landscape of the Badlands by crushing '
+          'the mountains between her coils, and folding the earth into valleys as she slithered across it.'
+
+  '\n\nShe is said to be the force tasked with taking the dead back to the earth from whence they came, so that they'
+          ' may live again in other forms; her body, woven between both realms, ties life and death together. Her'
+          ' territory, a land of both barren sands and lush oasis, is seen as a symbol of this perpetual cycle.'
+
+  '\n\nShe has a large number of worshippers scattered throughout her domains, which have built impressive arch-shaped'
+          ' monuments at the center of the Badlands, where her presence is felt strongest.'
+      ,
+      'assets/images/icons/large_creatures/naja\'eret.png',
+      5,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Naja\'eret.jpg',
+      'normal',
+      'fire',
+      'Unique',
+      'large'
+
+  );
+
+
+  addSmallCreature(
+      'Okyanos',
+      'Primal aeru',
+      '???',
+      'Aeras-based',
+      'A God Spirit also referred to as "The Endless One", thought to be long enough to wrap their body around the entire'
+          ' world. Their presence seems to originate from the depths of Leviathan\'s Trench, but they are able to extend '
+          'their vastly long body in order to reach any part of their territory.'
+
+  '\n\nOkyanos is arguably the most powerful and influential of the Primal aeru, being able to manifest their presence'
+          ' anywhere throughout the seas and oceans of Onyria. They are the origin of all thalassus and hydran creatures,'
+          ' and some even believe that all life emerged from their domains, later conquering the land and skies.'
+
+  '\n\nOkyanos does not communicate as other Primal aeru do, and has often been described as alien and incomprehensible.'
+          ' It is theorized that Okyanos is not a single mind, but a collective conscience of sorts; many smaller aeru'
+          ' chained together as one to create the largest known spirit.'
+      ,
+      'assets/images/icons/large_creatures/okyanos.png',
+      5,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Okyanos.jpg',
       'normal',
       'fire',
       'Unique',

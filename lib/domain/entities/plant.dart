@@ -27,6 +27,9 @@ class Plant extends HiveObject{
   @HiveField(5)
   late String url;
 
+  @HiveField(12)
+  late int fileTotalSize = 0;
+
   @HiveField(6)
   late String type;
 

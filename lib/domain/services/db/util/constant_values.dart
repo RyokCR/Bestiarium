@@ -11,7 +11,7 @@ class DBConstantValues{
 
   static List<String> rarity = ['All','Common','Locally common','Uncommon','Unique'];
 
-  static List<String> danger = ['All','0','1','2','3','4','5'];
+  static List<String> danger = ['All','0','0.5','1','1.5','2','2.5','3','3.5','4','4.5','5'];
 
 
 

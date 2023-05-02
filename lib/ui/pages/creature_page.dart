@@ -81,7 +81,7 @@ class _Creature_PageState extends State<Creature_Page>  {
                   ),
                 ],
               ),
-              //title: Text('Tabs Demo'),
+
             ),
             body: TabBarView(
               children: [
@@ -92,7 +92,7 @@ class _Creature_PageState extends State<Creature_Page>  {
               padding: EdgeInsets.symmetric(
                 horizontal: 0
               ),
-              child: PinchZoomImage(inStorage: inStorage, url: creature.url, localUrl: localUrl,)
+              child: PinchZoomImage(inStorage: inStorage, url: creature.url, localUrl: localUrl, entry: creature)
               /*BuildImage(
                   controller,
                   tapDownDetails,
