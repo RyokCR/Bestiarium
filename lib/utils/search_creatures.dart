@@ -57,7 +57,7 @@ class SearchEntries extends ChangeNotifier{
 
   bool _compare_danger(entry, double comparingValue){
     int base = comparingValue.toInt();
-    return !(entry.danger == base && (comparingValue > base ? entry.halfDanger>0: true));
+    return !(entry.danger == base && (comparingValue > base ? entry.halfDanger>0: !(entry.halfDanger>0)));
 
   }
 

@@ -7,6 +7,7 @@ import 'package:bestiarium/domain/services/db/admin/db_manager.dart';
 import 'package:bestiarium/domain/services/db/util/db_query_handler.dart';
 import 'package:bestiarium/ui/widgets/ItemBox.dart';
 import 'package:bestiarium/ui/widgets/creatureTable.dart';
+import 'package:bestiarium/ui/widgets/dropDownDanger.dart';
 import 'package:bestiarium/ui/widgets/dropDownSort.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -162,7 +163,7 @@ class _SearchPageState extends State<SearchPage> {
                     });
                   }
               ),
-              SortButton(
+              DangerSortButton(
                   dropdownValueDanger,
                   DBConstantValues.danger,
                       (String? newValue){
