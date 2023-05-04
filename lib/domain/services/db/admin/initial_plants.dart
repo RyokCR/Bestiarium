@@ -302,7 +302,7 @@ addPlants(){
           ' physical pain.',
       'assets/images/icons/plants/fungi_icon.png',
       2,
-      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Blue Parasol.jpg',
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Nightlace.jpg',
       'fungi',
       'Locally common',
       'Narcotic',
