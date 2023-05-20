@@ -556,6 +556,89 @@ addSmallCreatures(){
       'small'
   );
 
+  addSmallCreature(
+      'Hou\'ili',
+      'Plumifera',
+      '1 m wingspan, 25 cm long',
+      'Carnivorous',
+      'Marine plumiferans able to thrive both in the air and the sea. While submerged, they fold their wings and deploy small fins,'
+          ' swimming as a fish would, and being able to reach high speeds. They control their buoyancy by using their inflatable'
+          ' chest pouches as swim bladders, also being able to remain still while floating on the surface.'
+
+      '\n\nIf threatened however, Hou\'ili will leap out of the water and spread their wings, flying away from danger. From the'
+          ' air, they can effectively attack fish by surprise, diving into the water and catching them with their beaks. They are'
+          ' also known for stealing food from other predators.'
+
+      '\n\nHou\'ili nest and lay their eggs in ciffsides. Once the eggs hatch, the parents push their young towards the sea below,'
+          ' where the chicks will live a fully aquatic life until they mature and are ready to fly.'
+      ,
+      'assets/images/icons/small_creatures/hou\'ili.png',
+      1,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Hou\'ili.jpg',
+      'normal',
+      'fire',
+      'Common',
+      'small'
+  );
+
+
+  addSmallCreature(
+      'Entomoleon',
+      'Saurian',
+      '25 cm long',
+      'Carnivorous',
+      'Slow moving saurians that come in a wide variety of shapes and colors. Each specimen is able to change and adapt the '
+          'texture of its body to assume a form that allows it to camouflage better into the space they inhabit. They may'
+          ' resemble flowers, local arthropodans, or stone.'
+
+      '\n\nEntomoleon are expert ambush predators. They are able to stay completely still for hours, and once prey is detected,'
+          ' they use their extremely long, projectile-like tongues to catch it. Small arthropodans and plumiferans are easily'
+          ' trapped by their sticky saliva.'
+
+  '\n\nTheir body is protected by hard, sharp plates that make them difficult to swallow for predators. If moved to a new'
+          ' habitat, Entomoleon will immediately begin to adapt, and shed their skin to reveal a new appearance in a matter of days.'
+      ,
+      'assets/images/icons/small_creatures/entomoleon.png',
+      1,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Entomoleon.jpg',
+      'normal',
+      'fire',
+      'Common',
+      'small',
+    halfDanger: 1
+  );
+
+
+  addSmallCreature(
+      'Klasmoth',
+      'Lesser aeru',
+      ' 20 cm wingspan, 8 cm long ',
+      'Aeras-based',
+      'Small, insect-like aeru that act as Danau\'s eyes, ears and voice throughout her territory.'
+
+  '\n\nThey come into existence when the shed exoskeleton of an arthropodan becomes occupied by one of the countless'
+          ' small aeru created from Danau\'s energy. The empty husk then grows the blue spiritual wings that make'
+          ' Klasmoth easily identifiable. This shell, however, remains quite fragile and subject to normal deterioration.'
+
+      '\n\nKlasmoth share a collective mind, and are able to communicate directly to the thoughts and dreams of'
+          ' incarnates that come into direct contact with them. Many of those that venture into the forest have'
+          ' heard the primal aeru\'s voice in their dreams, and find a Klasmoth perched on their forehead once they wake up.'
+
+  '\n\nThey are often found resting on trees or fluttering around the forest. When many of them are near each other,'
+          ' they can be observed glowing in intricately organized patterns.'
+
+  '\n\nKlasmoth are also found in large numbers inside the Grand Archives, speaking Danau\'s knowledge into the minds'
+          ' of scribes that record it on paper for others to read.'
+      ,
+      'assets/images/icons/small_creatures/klasmoth.png',
+      0,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Klasmoth.jpg',
+      'normal',
+      'fire',
+      'Locally common',
+      'small'
+  );
+
 
   addSmallCreature(
       'Un\'aeru',

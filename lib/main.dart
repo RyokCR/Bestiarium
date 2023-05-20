@@ -7,6 +7,7 @@ import 'package:bestiarium/domain/entities/small_creature.dart';
 import 'package:flutter/material.dart';
 
 
+import 'domain/entities/coordinate.dart';
 import 'domain/services/db/admin/initial_data.dart';
 import 'navigation.dart';
 import 'package:hive/hive.dart';
@@ -27,6 +28,7 @@ void main() async {
   Hive.registerAdapter(PlantAdapter());
   Hive.registerAdapter(DrawingPointAdapter());
   Hive.registerAdapter(MapOffsetAdapter());
+  Hive.registerAdapter(CoordinateAdapter());
   await Hive.openBox<SmallCreature>('small_creatures');
   await Hive.openBox<Plant>('plants');
 

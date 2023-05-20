@@ -1,5 +1,7 @@
 import 'package:bestiarium/domain/entities/drawing_point.dart';
 import 'package:hive/hive.dart';
+
+import 'coordinate.dart';
 part 'small_creature.g.dart';
 
 @HiveType(typeId: 1)
@@ -47,8 +49,11 @@ class SmallCreature extends HiveObject{
   @HiveField(11)
   late String category;
 
+ // @HiveField(12)
+ // late List<DrawingPoint> habitat;
+
   @HiveField(12)
-  late List<DrawingPoint> habitat;
+  late List<Coordinate> habitat;
 
 
   @override

@@ -1,6 +1,7 @@
 
 
 
+import 'package:bestiarium/domain/entities/coordinate.dart';
 import 'package:bestiarium/domain/services/db/admin/db_manager.dart';
 
 import 'initial_large_creatures.dart';
@@ -15,3 +16,4 @@ void init_db(){
 
 
 }
+

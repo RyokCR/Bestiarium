@@ -2,6 +2,8 @@
 
 import 'package:bestiarium/domain/services/db/admin/db_manager.dart';
 
+import 'package:bestiarium/domain/entities/coordinate.dart';
+
 addLargeCreatures(){
   addSmallCreature(
       'Abyssecter',
@@ -23,7 +25,8 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Common',
-      'large'
+      'large',
+    habitat: [Coordinate(x: (.436 * 2 - 1).toString(), y: (.274 * 2 - 1).toString())]// x: '.872', y: '.548'//.436 * 2 - 1, .274 * 2 - 1
 
   );
 
@@ -499,6 +502,91 @@ addLargeCreatures(){
 
   );
 
+  addSmallCreature(
+      'Tuulrevon',
+      'Warm-blooded beast',
+      '2 m tall, 4 m long',
+      'Omnivorous',
+      'Elusive beasts of the Glacia regions and their surrounding tundras. They run swiftly across the land with their'
+          ' long, colorful tails trailing behind them, making them an almost magical sight to behold.'
+
+      '\n\nTuulrevon shed their fur every few months, and display a differently colored coat for every season in order'
+          ' to blend in better with their surroundings. Due to this, local legends often describe them as mythical beasts'
+          ' that control the change of seasons, each of them represented by their four tails.'
+
+  '\n\nTuulrevon\'s large antlers protect its body from attacks that come from the sides. Its elongated, flexible hooves'
+          ' allow them to walk easily over muddy or snow-covered terrain. They are opportunistic feeders, and are able'
+          ' to both hunt and forage.'
+      ,
+      'assets/images/icons/large_creatures/tuulrevon.png',
+      3,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Tuulrevon.jpg',
+      'normal',
+      'fire',
+      'Uncommon',
+      'large',
+      halfDanger: 0
+
+  );
+
+  addSmallCreature(
+      'Ansalicht',
+      'Hydran',
+      '1.8 m long',
+      'Carnivorous',
+      'Collective organisms formed from many small creatures of the same type -called Lumibranchs- fusing together'
+          ' into a single body. In order to do this, each of them takes on a role important to the new organism: one'
+          ' of them, attached to the main mass by thin stem, acts as a lure for potential prey. The rest form functional'
+          ' jaws with hardened "teeth", and appendages that move rhythmically and propel Ansalicht through the water.'
+          ' The individuals on the inside of the mass break down ingested organic matter and absorb nutrients from them.'
+          ' Discarded parts, such as bones, are regurgitated.'
+
+      '\n\nSeen from afar, a swimming Ansalicht looks very similar to a school of many small fish moving together,'
+          ' due to the contrasting dark skin and bioluminescent spots. When hunting, however, the body stops glowing,'
+          ' and only the lure remains visible.'
+
+  '\n\nAnsalicht repoduce by detaching a single specimen from the main body. As each of them contain both sexes, '
+          'a single lumibranch is able to produce another full Ansalicht if it succeeds in multiplying.'
+      ,
+      'assets/images/icons/large_creatures/ansalicht.png',
+      3,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Ansalicht.jpg',
+      'normal',
+      'fire',
+      'Uncommon',
+      'large',
+      halfDanger: 0
+
+  );
+
+
+  addSmallCreature(
+      'Dogouran',
+      'Warm-blooded beast',
+      '2.5 m',
+      'Carnivorous',
+      'Large beasts that live in communities, near the Flaming Steppe\'s volcanic mountains. Their thick fur protects them from'
+          ' the cold temperatures caused by the thick clouds of ashes and gas that prevent the sun from warming the surface of'
+          ' the area.'
+
+  '\n\nThey spend a lot of time grooming each other\'s manes, being one of the most important social behaviors they engage in.'
+          ' They hunt in packs, using complex tactics such as scaring prey so that they take flight only to be shot down by hidden,'
+          ' stone-flinging Dogouran, or leading them into dead ends where they may be easily overwhelmed and taken down.'
+
+  '\n\nDogouran packs are usually leaded by an older matriarch, which directs the rest of the pack while hunting, and shows the'
+          ' rest where to find water for drinking.'
+      ,
+      'assets/images/icons/large_creatures/dogouran.png',
+      3,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Dogouran.jpg',
+      'normal',
+      'fire',
+      'Locally common',
+      'large',
+      halfDanger: 1
+
+  );
+
 
   addSmallCreature(
       'Terásketos',
@@ -632,6 +720,71 @@ addLargeCreatures(){
       'Unique',
       'large',
       halfDanger: 1
+
+  );
+
+
+  addSmallCreature(
+      'Constellago',
+      'Lindwurm',
+      'Main body 1 m long, 15 m total length',
+      'Carnivorous',
+      'A marine lindwurm that has managed to survive by remaining in her juvenile form in order to maintain regenerative potential.'
+
+      '\n\nConstellago lives in symbiosis with other tiny organisms, which attach to the main body in tentacle-like structures.'
+          ' She is easily seen when approaching the surface due to the bright, trailing multicolor lights of her tail, reminiscent'
+          ' of a starry night sky.'
+
+  '\n\nHer tentacles are capable of delivering a powerful sting, even capable of disabling larger creatures that approach without'
+          ' caution. The tendrils ensnare small sea animals, which are pulled into the main body and digested.'
+
+  '\n\nIf Constellago were to suffer extensive damage, she is able to leave behind most of her mass and revert to a small,'
+          ' crystalized "egg" state, along with some of her symbionts. She may then begin growing once again.'
+      ,
+      'assets/images/icons/large_creatures/constellago.png',
+      3,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Constellago.jpg',
+      'normal',
+      'fire',
+      'Unique',
+      'large',
+      halfDanger: 1
+
+  );
+
+  addSmallCreature(
+      'Leukarax',
+      'Lindwurm',
+      '13 m long',
+      'Carnivorous, Scavenging',
+      'Leukarax is believed to be one of the most cunning lindwurms in existence. He is also a rare instance of a Wurm specimen'
+          ' with albinism, suffering from light sensitivity and partial blindness. This is made even more curious by the fact'
+          ' that he has managed to successfully survive to his adult form despite his condition.'
+
+    '\n\nLeukarax inhabits the Forest of Bone, where he reigns as an apex predator. He also feeds on any carcasses he'
+          ' encounters throughout his territory, completely stripping bones or exoskeletons of any remaining flesh, and'
+          ' using appropriately shaped pieces as weapons or tools.'
+
+  '\n\nHe often prefers to kill with the least possible effort, luring his victims into complex traps. He builds these'
+          ' traps by manipulating and making use of naturally available materials.'
+
+  '\n\nSome of his tactics for luring in victims include mimicking the cries of newborn animals from the surrounding plains.'
+          ' Unadapted beasts that hear the cries unknowingly enter the spore-filled forest, and often suffocate quickly, if not'
+          ' caught in a trap and finished off by Leukarax first. He has also been known to mimic human cries for help,'
+          ' particularly of children. It is rumored that he is capable of speech, but this is yet to be proven due to his hostility.'
+
+  '\n\nHe possesses special adaptations such as gill-like slits on his neck, which allow him to breathe in the tainted air of'
+          ' his territory, and an additional hand-like appendage at the tip of his tail, which he often uses to grab and'
+          ' manipulate objects while on the move.'
+      ,
+      'assets/images/icons/large_creatures/leukarax.png',
+      4,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Leukarax.jpg',
+      'normal',
+      'fire',
+      'Unique',
+      'large',
+
 
   );
 

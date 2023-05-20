@@ -4,9 +4,11 @@ import 'package:hive/hive.dart';
 
 //import 'package:bestiarium/ui/pages/map_drawer.dart';
 import 'package:bestiarium/domain/entities/plant.dart';
+import 'package:bestiarium/domain/entities/coordinate.dart';
 
 
-addSmallCreature(String name, String group, String size, String diet, String description, String icon, int danger, String url, String type, String weakness, String rarity, String category, {int halfDanger = 0}){
+
+addSmallCreature(String name, String group, String size, String diet, String description, String icon, int danger, String url, String type, String weakness, String rarity, String category, {int halfDanger = 0, List<Coordinate> habitat = const []}){
   final creature = SmallCreature()
       ..name = name
       ..group = group
@@ -20,7 +22,7 @@ addSmallCreature(String name, String group, String size, String diet, String des
       ..weakness = weakness
       ..rarity = rarity
       ..category = category
-      ..habitat = []
+      ..habitat = habitat
       ..halfDanger = halfDanger
   ;
   //setState(() => small_creatures.add(creature));

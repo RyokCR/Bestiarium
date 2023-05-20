@@ -29,7 +29,7 @@ class PlantAdapter extends TypeAdapter<Plant> {
       ..rarity = fields[7] as String
       ..properties = fields[8] as String
       ..sustainance = fields[9] as String
-      ..habitat = (fields[10] as List).cast<DrawingPoint>();
+      ..habitat = (fields[10] as List).cast<Coordinate>();
   }
 
   @override

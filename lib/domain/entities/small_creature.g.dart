@@ -31,7 +31,7 @@ class SmallCreatureAdapter extends TypeAdapter<SmallCreature> {
       ..weakness = fields[9] as String
       ..rarity = fields[10] as String
       ..category = fields[11] as String
-      ..habitat = (fields[12] as List).cast<DrawingPoint>();
+      ..habitat = (fields[12] as List).cast<Coordinate>();
   }
 
   @override
