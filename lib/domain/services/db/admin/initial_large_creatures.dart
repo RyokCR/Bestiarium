@@ -26,7 +26,7 @@ addLargeCreatures(){
       'fire',
       'Common',
       'large',
-    habitat: [Coordinate(x: (.436 * 2 - 1).toString(), y: (.274 * 2 - 1).toString())]// x: '.872', y: '.548'//.436 * 2 - 1, .274 * 2 - 1
+    habitat: [Coordinate(x: (.936 * 2 - 1).toString(), y: (.500 * 2 - 1).toString())]// x: '.872', y: '.548'//.436 * 2 - 1, .274 * 2 - 1
 
   );
 
@@ -55,8 +55,8 @@ addLargeCreatures(){
       'fire',
       'Common',
       'large',
-      halfDanger: 1
-
+      halfDanger: 1,
+      habitat: [Coordinate(x: (.726 * 2 - 1).toString(), y: (.400 * 2 - 1).toString())]
   );
 
   addSmallCreature(
@@ -88,7 +88,8 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Uncommon',
-      'large'
+      'large',
+      habitat: [Coordinate(x: (.726 * 2 - 1).toString(), y: (.400 * 2 - 1).toString())]
 
   );
 
@@ -118,7 +119,10 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Uncommon',
-      'large'
+      'large',
+      habitat: [Coordinate(x: (.570 * 2 - 1).toString(), y: (.670 * 2 - 1).toString()),
+        Coordinate(x: (.300 * 2 - 1).toString(), y: (.610 * 2 - 1).toString()),
+        Coordinate(x: (.690 * 2 - 1).toString(), y: (.350 * 2 - 1).toString())]
 
   );
 
@@ -145,8 +149,8 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Common',
-      'large'
-
+      'large',
+      habitat: [Coordinate(x: (.690 * 2 - 1).toString(), y: (.320 * 2 - 1).toString())]
   );
 
   addSmallCreature(
@@ -172,7 +176,9 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Uncommon',
-      'large'
+      'large',
+      habitat: [Coordinate(x: (.290 * 2 - 1).toString(), y: (.480 * 2 - 1).toString()),
+        Coordinate(x: (.726 * 2 - 1).toString(), y: (.400 * 2 - 1).toString())]
 
   );
 
@@ -203,7 +209,8 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Common',
-      'large'
+      'large',
+      habitat: [Coordinate(x: (.310 * 2 - 1).toString(), y: (.620 * 2 - 1).toString())]
 
   );
 
@@ -235,7 +242,9 @@ addLargeCreatures(){
       'fire',
       'Uncommon',
       'large',
-      halfDanger: 1
+      halfDanger: 1,
+      habitat: [Coordinate(x: (.910 * 2 - 1).toString(), y: (.420 * 2 - 1).toString()),
+        Coordinate(x: (.040 * 2 - 1).toString(), y: (.520 * 2 - 1).toString())]
 
   );
 
@@ -262,7 +271,8 @@ addLargeCreatures(){
       'fire',
       'Uncommon',
       'large',
-      halfDanger: 1
+      halfDanger: 1,
+      habitat: [Coordinate(x: (.690 * 2 - 1).toString(), y: (.350 * 2 - 1).toString())]
 
   );
 
@@ -288,7 +298,8 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Uncommon',
-      'large'
+      'large',
+      habitat: [Coordinate(x: (.790 * 2 - 1).toString(), y: (.620 * 2 - 1).toString())]
 
   );
 
@@ -313,7 +324,9 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Uncommon',
-      'large'
+      'large',
+      habitat: [Coordinate(x: (.790 * 2 - 1).toString(), y: (.570 * 2 - 1).toString()),
+        Coordinate(x: (.700 * 2 - 1).toString(), y: (.660 * 2 - 1).toString())]
 
   );
 
@@ -338,7 +351,10 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Uncommon',
-      'large'
+      'large',
+      habitat: [Coordinate(x: (.380 * 2 - 1).toString(), y: (.340 * 2 - 1).toString()),
+        Coordinate(x: (.160 * 2 - 1).toString(), y: (.460 * 2 - 1).toString()),
+        Coordinate(x: (.160 * 2 - 1).toString(), y: (.600 * 2 - 1).toString())]
 
   );
 
@@ -363,7 +379,11 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Common',
-      'large'
+      'large',
+      habitat: [Coordinate(x: (.500 * 2 - 1).toString(), y: (.670 * 2 - 1).toString()),
+        Coordinate(x: (.300 * 2 - 1).toString(), y: (.610 * 2 - 1).toString()),
+        Coordinate(x: (.350 * 2 - 1).toString(), y: (.510 * 2 - 1).toString()),
+        Coordinate(x: (.350 * 2 - 1).toString(), y: (.410 * 2 - 1).toString())]
 
   );
 
@@ -394,7 +414,8 @@ addLargeCreatures(){
       'fire',
       'Uncommon',
       'large',
-      halfDanger: 1
+      halfDanger: 1,
+      habitat: [Coordinate(x: (.350 * 2 - 1).toString(), y: (.350 * 2 - 1).toString())]
 
   );
 
@@ -421,7 +442,8 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Uncommon',
-      'large'
+      'large',
+      habitat: [Coordinate(x: (.750 * 2 - 1).toString(), y: (.400 * 2 - 1).toString())]
 
   );
 
@@ -447,8 +469,8 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Uncommon',
-      'large'
-
+      'large',
+      habitat: [Coordinate(x: (.600 * 2 - 1).toString(), y: (.670 * 2 - 1).toString())]
   );
 
   addSmallCreature(
@@ -473,7 +495,8 @@ addLargeCreatures(){
       'fire',
       'Uncommon',
       'large',
-      halfDanger: 1
+      halfDanger: 1,
+      habitat: [Coordinate(x: (.600 * 2 - 1).toString(), y: (.670 * 2 - 1).toString())]
 
   );
 
@@ -498,7 +521,9 @@ addLargeCreatures(){
       'fire',
       'Uncommon',
       'large',
-      halfDanger: 1
+      halfDanger: 1,
+      habitat: [Coordinate(x: (.650 * 2 - 1).toString(), y: (.240 * 2 - 1).toString()),
+        Coordinate(x: (.690 * 2 - 1).toString(), y: (.760 * 2 - 1).toString())]
 
   );
 
@@ -525,7 +550,8 @@ addLargeCreatures(){
       'fire',
       'Uncommon',
       'large',
-      halfDanger: 0
+      halfDanger: 0,
+      habitat: [Coordinate(x: (.500 * 2 - 1).toString(), y: (.300 * 2 - 1).toString())]
 
   );
 
@@ -555,7 +581,8 @@ addLargeCreatures(){
       'fire',
       'Uncommon',
       'large',
-      halfDanger: 0
+      halfDanger: 0,
+      habitat: [Coordinate(x: (.680 * 2 - 1).toString(), y: (.480 * 2 - 1).toString())]
 
   );
 
@@ -583,7 +610,9 @@ addLargeCreatures(){
       'fire',
       'Locally common',
       'large',
-      halfDanger: 1
+      halfDanger: 1,
+      habitat: [Coordinate(x: (.360 * 2 - 1).toString(), y: (.350 * 2 - 1).toString()),
+        Coordinate(x: (.320 * 2 - 1).toString(), y: (.400 * 2 - 1).toString())]
 
   );
 
@@ -613,7 +642,8 @@ addLargeCreatures(){
       'fire',
       'Uncommon',
       'large',
-    halfDanger: 1
+    halfDanger: 1,
+      habitat: [Coordinate(x: (.920 * 2 - 1).toString(), y: (.550 * 2 - 1).toString())]
 
   );
 
@@ -639,7 +669,8 @@ addLargeCreatures(){
       'fire',
       'Uncommon',
       'large',
-      halfDanger: 1
+      halfDanger: 1,
+      habitat: [Coordinate(x: (.035 * 2 - 1).toString(), y: (.500 * 2 - 1).toString())]
 
   );
 
@@ -663,7 +694,8 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Unique',
-      'large'
+      'large',
+      habitat: [Coordinate(x: (.700 * 2 - 1).toString(), y: (.350 * 2 - 1).toString())]
 
   );
 
@@ -686,7 +718,8 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Unique',
-      'large'
+      'large',
+      habitat: [Coordinate(x: (.170 * 2 - 1).toString(), y: (.500 * 2 - 1).toString())]
 
   );
 
@@ -719,7 +752,8 @@ addLargeCreatures(){
       'fire',
       'Unique',
       'large',
-      halfDanger: 1
+      halfDanger: 1,
+      habitat: [Coordinate(x: (.770 * 2 - 1).toString(), y: (.620 * 2 - 1).toString())]
 
   );
 
@@ -748,9 +782,43 @@ addLargeCreatures(){
       'fire',
       'Unique',
       'large',
-      halfDanger: 1
+      halfDanger: 1,
+      habitat: [Coordinate(x: (.570 * 2 - 1).toString(), y: (.580 * 2 - 1).toString())]
 
   );
+
+
+  addSmallCreature(
+      'Garamandara',
+      'Lindwurm',
+      '18 m ',
+      'Omnivorous',
+      'Garamandara is believed to have initially been a Wurmling subjected to experimentation by ancient human researchers,'
+          ' in order to study the effects of Aeras energy on living incarnate creatures.'
+
+    'Placed in the Kiln and bombarded with energy from different sources, Garamandara now displays mixed traits from many Onyrian'
+          ' creatures, and still continues to grow and mutate. He is able to feed on any available food source -including minerals-'
+          ' rather than specializing on one only. He is the best living example of just how extreme a Lindwurm\'s capacities for'
+          ' mutation can be.'
+
+  'He dwells in the depths of the Ark\'s research facilities -a place avoided by most creatures due to the unstable negative'
+          ' Aeras within- and appears to be very intelligent. He is not hostile, and is allegedly capable of communicating'
+          ' vocally in a crude version of the ancient human\'s dialect.'
+
+  'Garamandara is often seen as a divine entity by the tribes that have settled around the remains of the Ark, seeking long'
+          ' lost human artifacts to trade for goods.'
+      ,
+      'assets/images/icons/large_creatures/garamandara.png',
+      4,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Garamandara.jpg',
+      'normal',
+      'fire',
+      'Unique',
+      'large',
+
+
+  );
+
 
   addSmallCreature(
       'Leukarax',
@@ -784,7 +852,7 @@ addLargeCreatures(){
       'fire',
       'Unique',
       'large',
-
+      habitat: [Coordinate(x: (.610 * 2 - 1).toString(), y: (.670 * 2 - 1).toString())]
 
   );
 
@@ -806,7 +874,10 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Uncommon',
-      'large'
+      'large',
+      habitat: [Coordinate(x: (.610 * 2 - 1).toString(), y: (.670 * 2 - 1).toString()),
+        Coordinate(x: (.310 * 2 - 1).toString(), y: (.610 * 2 - 1).toString()),
+        Coordinate(x: (.750 * 2 - 1).toString(), y: (.410 * 2 - 1).toString())]
 
   );
 
@@ -833,7 +904,10 @@ addLargeCreatures(){
       'fire',
       'Uncommon',
       'large',
-      halfDanger: 1
+      halfDanger: 1,
+      habitat: [Coordinate(x: (.750 * 2 - 1).toString(), y: (.410 * 2 - 1).toString()),
+        Coordinate(x: (.350 * 2 - 1).toString(), y: (.410 * 2 - 1).toString()),
+        Coordinate(x: (.350 * 2 - 1).toString(), y: (.610 * 2 - 1).toString())]
 
   );
 
@@ -856,7 +930,10 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Uncommon',
-      'large'
+      'large',
+      habitat: [Coordinate(x: (.350 * 2 - 1).toString(), y: (.610 * 2 - 1).toString()),
+        Coordinate(x: (.360 * 2 - 1).toString(), y: (.500 * 2 - 1).toString()),
+        Coordinate(x: (.560 * 2 - 1).toString(), y: (.320 * 2 - 1).toString())]
 
   );
 
@@ -879,7 +956,10 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Uncommon',
-      'large'
+      'large',
+      habitat: [Coordinate(x: (.630 * 2 - 1).toString(), y: (.370 * 2 - 1).toString()),
+        Coordinate(x: (.660 * 2 - 1).toString(), y: (.550 * 2 - 1).toString()),
+        Coordinate(x: (.400 * 2 - 1).toString(), y: (.530 * 2 - 1).toString())]
 
   );
 
@@ -904,7 +984,8 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Unique',
-      'large'
+      'large',
+      habitat: [Coordinate(x: (.470 * 2 - 1).toString(), y: (.590 * 2 - 1).toString())]
 
   );
 
@@ -930,7 +1011,8 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Unique',
-      'large'
+      'large',
+      habitat: [Coordinate(x: (.370 * 2 - 1).toString(), y: (.350 * 2 - 1).toString())]
 
   );
 
@@ -959,7 +1041,8 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Unique',
-      'large'
+      'large',
+      habitat: [Coordinate(x: (.630 * 2 - 1).toString(), y: (.370 * 2 - 1).toString())]
 
   );
 
@@ -987,7 +1070,8 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Unique',
-      'large'
+      'large',
+      habitat: [Coordinate(x: (.700 * 2 - 1).toString(), y: (.660 * 2 - 1).toString())]
 
   );
 
@@ -1015,7 +1099,8 @@ addLargeCreatures(){
       'normal',
       'fire',
       'Unique',
-      'large'
+      'large',
+      habitat: [ Coordinate(x: (.850 * 2 - 1).toString(), y: (.490 * 2 - 1).toString())]
 
   );
 

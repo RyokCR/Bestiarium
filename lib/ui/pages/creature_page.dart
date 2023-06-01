@@ -87,7 +87,7 @@ class _Creature_PageState extends State<Creature_Page>  {
               children: [
                 creature.runtimeType == SmallCreature ? CreatureBasicDescription(creature): PlantBasicDescription(creature),
                 LargeText(creature.description),
-                MapShow(creature),
+                MapShow(creature, context),
                 Padding(
               padding: EdgeInsets.symmetric(
                 horizontal: 0

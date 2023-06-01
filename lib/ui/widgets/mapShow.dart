@@ -11,20 +11,30 @@ import 'package:flutter/material.dart';
 import '../../domain/entities/coordinate.dart';
 import '../pages/map_drawer.dart';
 
-Widget MapShow(creature_plant){
+Widget MapShow(creature_plant, context){
 
 
 
   //var drawingPoints = <DrawingPoint>[];
 
   var drawingPoints = creature_plant.habitat;
+  var width = MediaQuery.of(context).size.width;
+  var height = MediaQuery.of(context).size.height;
 
-  Widget con = 
-       Container(
+  Widget con =  Container(
+      decoration: BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage('assets/images/mesa.jpg'),
+              fit: BoxFit.fill
+
+          )
+      ),
+
+      child:Container(
     decoration: BoxDecoration(
         image: DecorationImage(
             image: AssetImage('assets/images/newMap.png'),
-            fit: BoxFit.fill
+            fit: BoxFit.fitWidth
 
         )
     ),
@@ -38,7 +48,7 @@ Widget MapShow(creature_plant){
       //painter: MyCustomPainter(drawingPoints: drawingPoints),
     ),*/
          
-  );
+  ));
 
       //),
 
@@ -52,15 +62,27 @@ Widget AllPoints(creature_plant){
 
   List<Align> pointShows = [];
 
+  //JUST TESTING
+  //var item = Coordinate(x: (.850 * 2 - 1).toString(), y: (.490 * 2 - 1).toString());
   for (Coordinate item in points){
+
     pointShows.add(Align(
         alignment: Alignment(double.parse(item.x), double.parse(item.y)),
-        child: Image.asset(
+        child: Container(
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage('assets/images/mapIconBG.png'),
+                    fit: BoxFit.fill
+
+                )
+            ),
+
+            child:Image.asset(
           creature_plant.icon,
-          width: 55,
-          height: 55,)
-    ));
-  }
+          width: 35,
+          height: 35,)
+    )));
+  }  //CHANGE BACK
 
   return Stack(
     children: pointShows,
