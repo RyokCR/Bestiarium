@@ -610,6 +610,33 @@ addSmallCreatures(){
 
 
   addSmallCreature(
+      'Koonswipe',
+      'Warm-blooded beast',
+      '1 m long',
+      'Omnivorous',
+      'Small, inteligent creatures that exhibit extremely adaptable and oportunistic behaviour. They steal from larger'
+          ' predators, tricking them into fleeing, and are infamous for breaking into homes and deposits to steal food.'
+
+      '\n\nKoonswipe possess hands that are shockingly similar to a human\'s, which are used to expertly manipulate'
+          ' objects. They move very stealthily, exhibit great balance and jumping power, flexibility for squeezing '
+          'into tight spaces and night vision. They are also equipped with cheek pouches in which they store food or'
+          ' any other scavenged items for easy transportation.'
+
+  '\n\nThey have been known to show curiosity for human tools, and have sometimes been found in posession of unusual'
+          ' items or artifacts.'
+      ,
+      'assets/images/icons/small_creatures/koonswipe.png',
+      2,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Koonswipe.jpg',
+      'normal',
+      'fire',
+      'Common',
+      'small',
+      halfDanger: 1
+  );
+
+
+  addSmallCreature(
       'Klasmoth',
       'Lesser aeru',
       ' 20 cm wingspan, 8 cm long ',
@@ -639,6 +666,33 @@ addSmallCreatures(){
       'small'
   );
 
+  addSmallCreature(
+      'Shinh\'aeru',
+      'Lesser aeru',
+      '30 cm - 1m diameter ',
+      'Aeras-based',
+      'Predatory aeru that remain stationary in places with high flow of aeras energy, assimilating some of it as it'
+          ' passes through them. Their unique body configuration allows them to hold an intricately woven silk web,'
+          ' which is tangible to incarnate creatures.'
+
+      '\n\nThe ability to materialize energy into tangible substance is extremely uncommon among aeru. The silk seeps '
+          'the energy of incarnate creatures that become trapped in the web, and is capable of trapping small aeru as '
+          'well. Due to its property of being tangible to both aeru and incarnates, it is has been seen since ancient '
+          'times as a sacred substance that binds both together.'
+
+      '\n\nIn larger amounts, this silk may be used to restrain even powerful aeru. However, objects fashioned from'
+          ' Shinh\'aeru silk are exceedingly rare, as these spirits themselves are a rare find, and it takes them a'
+          ' reasonable amount of time to produce their webs. It is believed that ancient humans had an effective way'
+          ' to harvest the silk, but the amount of shinh\'aeru artifacts found is extremely small.'
+      ,
+      'assets/images/icons/small_creatures/shinh\'aeru.png',
+      3,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Shinh\'aeru.jpg',
+      'normal',
+      'fire',
+      'Uncommon',
+      'small'
+  );
 
   addSmallCreature(
       'Un\'aeru',

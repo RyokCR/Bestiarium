@@ -618,6 +618,156 @@ addLargeCreatures(){
 
 
   addSmallCreature(
+      'Skiroptera',
+      'Warm-blooded beast',
+      '3 m long, 1.80 m tall, 4.5 m wingspan',
+      'Frugivorous',
+      'Important agents for pollination and seed dispersal of Onyrian plant life. Skiroptera feed exclusively on fruit, and'
+          ' as they do so, swallow many seeds that are later dropped intact. They are usually not aggressive, although they'
+          ' are equipped with sharp teeth used for breaking open tough-skinned fruit.'
+
+    '\n\nSkiroptera communicate with others of its kind mainly through scent. They rub their bodies against the fruit trees that'
+          ' they visit frequently in order to make their presence known. Through this process, seeds, pollen and spores become'
+          ' stuck in their fur. Skiroptera also posess special retractable organs at the tip of their tails, used to release'
+          ' pheromones into the air.'
+
+  '\n\nDue to their excellent sense of smell and chemical reception, they are expert trackers, and have been trained by natives '
+          'to do so. They also posess excellent vision, even at night, and are able to use echolocation to navigate difficult'
+          ' terrain.'
+      ,
+      'assets/images/icons/large_creatures/skiroptera.png',
+      3,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Skiroptera.jpg',
+      'normal',
+      'fire',
+      'Common',
+      'large',
+      halfDanger: 0,
+      //habitat:
+
+  );
+
+  addSmallCreature(
+    'Velmanta',
+    'Thalassus',
+    '20 m long, 12 m wingspan',
+    'Carnivorous',
+    'Very large, but peaceful sea beasts.'
+
+    '\n\nVelmanta filter water and feed on the tiny organisms that inhabit Onyria\'s central sea, many of which exhibit'
+        ' bioluminescence. Due to this, they develop intricate glowing patterns on their backs. Their manes grow longer,'
+        ' and paler as they age. Velmanta sometimes swim in tight circles, creating small whirlpools in order to siphon'
+        ' food towards them.'
+
+  '\n\nThere are many stories of Velmanta allowing people stranded at sea to climb onto their backs, and carrying them'
+        ' back to shore.'
+    ,
+    'assets/images/icons/large_creatures/velmanta.png',
+    2,
+    'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Velmanta.jpg',
+    'normal',
+    'fire',
+    'Uncommon',
+    'large',
+    halfDanger: 1,
+    //habitat:
+
+  );
+
+  addSmallCreature(
+    'Krypalium',
+    'Hydran',
+    '2-6 m long',
+    'Carnivorous',
+    'One of the most successful predators from the Forest of Bone, capable of hunting down and feeding on even the most'
+        ' dangerous creatures in the area.'
+
+    '\n\nKrypalium posess no bones and no exoskeleton. Due to this, they are able to elongate, contract or harden'
+        ' their bodies freely. They do, however, posess several small "teeth", inside their mouths and on the tips of their '
+        'toes. They are able to change their color and texture in order to blend into their surroundings.'
+
+  '\n\nKrypalium ambush prey and wrap around them, crushing and dissolving any armor with corrosive fluids that seep from'
+        ' the "beard" on the dominant end of their bodies. The prey organism is then sucked dry through any openings created.'
+
+   '\n\nKrypalium lack eyes, but sense prey very effectively through heat and chemical reception. They will not die even if cut'
+        ' in half, regenerating completely into two separate organisms. The tail contains a small brain, which will grow and'
+        ' become the dominant end of the newly generated Krypalium. Even small portions separated from the main body are able '
+        'to regenerate into full specimens. This is, however, their only known method of reproduction.'
+    ,
+    'assets/images/icons/large_creatures/krypalium.png',
+    3,
+    'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Krypalium.jpg',
+    'normal',
+    'fire',
+    'Locally common',
+    'large',
+    halfDanger: 1,
+    //habitat:
+
+  );
+
+  addSmallCreature(
+    'Megacoatlus',
+    'Plumifera',
+    '10 m long, 16 m wingspan',
+    'Carnivorous',
+    'The largest plumiferans known to exist in Onyria. Megacoatlus are extremely ancient creatures, and their evolutionary'
+        ' ties to saurians are evident through their lack of usual wing plumage, possessing thick membranes instead.'
+
+    '\n\nThese enormous creatures live near the inner sea of Onyria, nesting in the small islands of the Eternal Archipelago.'
+        ' They are vicious predators, being able to scoop up large creatures with their massive beaks. They glide over the sea'
+        ', diving near the surface and catching entire schools of fish in a single swoop. They posess an expanding throat pouch,'
+        ' which is used to capture or store prey. Megacoatlus attacks on small ships have also been documented.'
+
+  '\n\nIt takes them a large amount of energy to take off from the ground, but once they do, they are able to fly for extremely'
+        ' long periods of time without landing, locking their wings in place and drifting over the warm currents.'
+    ,
+    'assets/images/icons/large_creatures/megacoatlus.png',
+    3,
+    'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Megacoatlus.jpg',
+    'normal',
+    'fire',
+    'Uncommon',
+    'large',
+    halfDanger: 1,
+    //habitat:
+
+  );
+
+  addSmallCreature(
+    'Hvalketos',
+    'Warm-blooded beast',
+    '50 m long',
+    'Carnivorous',
+    'The largest well-documented creatures that exist in Onyria. Many popular folk tales speak of Hvalketos unknowingly'
+        ' swallowing people or entire ships.'
+
+    '\n\nHvalketos are peaceful creatures that filter water through their barbed mouths, and feed on the small organisms contained'
+        ' in it. They are important balancers for the ecosystem, as they eat large quantities of animals that would cause damage '
+        'if left to thrive out of control.'
+
+  '\n\nThey are remarkably intelligent, and communicate with others of their kind through songs that travel far across the sea.'
+        ' The sole sound of their heartbeat can be heard from afar.'
+
+  '\n\nTheir manes grow throughout their whole lives, and often serve as protection for other smaller creatures. Many of them '
+        'even lay their eggs in the strands, as Hvalketos\' sheer size is more than enough to scare away most predators.'
+
+  '\n\nHvalketos migrate yearly from warmer waters to the Glacia regions to feed on small aquatic arthropodans.'
+    ,
+    'assets/images/icons/large_creatures/hvalketos.png',
+    4,
+    'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Hvalketos.jpg',
+    'normal',
+    'fire',
+    'Uncommon',
+    'large',
+    halfDanger: 0,
+    //habitat:
+
+  );
+
+
+  addSmallCreature(
       'Terásketos',
       'Hydran',
       '???',
