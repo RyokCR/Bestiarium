@@ -766,6 +766,61 @@ addLargeCreatures(){
 
   );
 
+  addSmallCreature(
+      'Limulisqualo',
+      'Hydran',
+      '3 m long',
+      'Carnivorous',
+      'Large bottom feeders that usually remain close to the shore.'
+
+    '\n\nThey scour the seafloor for prey, using special Aeras-sensitive receptors to locate their usual food- small,'
+          ' bottom-dwelling hydrans or arthropodans. The thick armored plates on their heads protect many delicate organs'
+          ' from harm. Limulisqualo are also able to release a disrupting blast of Aeras energy if startled, temporarily'
+          ' stunning or scaring off potential threats. They have also been observed using this ability to hunt, but appear'
+          ' to refrain from doing so unless desperate to feed.'
+
+    '\n\nTheir blood is often harvested by scholars of healing as an important tool, as it clots in the presence'
+          ' of certain poisons and items that have been contaminated or infected with sicknesses.'
+      ,
+      'assets/images/icons/large_creatures/limulisqualo.png',
+      2,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Limulisqualo.jpg',
+      'normal',
+      'fire',
+      'Uncommon',
+      'large',
+      halfDanger: 0,
+      //habitat: [Coordinate(x: (.920 * 2 - 1).toString(), y: (.550 * 2 - 1).toString())]
+
+  );
+
+
+  addSmallCreature(
+    'Testuga',
+    'Saurian',
+    '7 m long, 5m wingspan',
+    'Omnivorous',
+    'Hard-shelled marine saurians that are capable of leaping out of the water and gliding for considerable distances.'
+        ' They feed upon small hydrans, algae and sometimes Hou’ili, which they are able to catch in midair.'
+
+    '\n\nTestuga are armed with strong, sharp beaks used for severing and scraping food off from difficult surfaces,'
+        ' such as shells or coral. They possess six flippers that aid in both aerial and underwater movement Their long'
+        ' necks maintain the beast’s balance while flying, and also help Testuga reach into tight spots.'
+
+  '\n\nTheir meat and shells are both sold or traded for considerable amounts of money and goods.'
+    ,
+    'assets/images/icons/large_creatures/testuga.png',
+    3,
+    'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Testuga.jpg',
+    'normal',
+    'fire',
+    'Uncommon',
+    'large',
+    halfDanger: 0,
+    //habitat: [Coordinate(x: (.920 * 2 - 1).toString(), y: (.550 * 2 - 1).toString())]
+
+  );
+
 
   addSmallCreature(
       'Terásketos',

@@ -309,5 +309,67 @@ addPlants(){
       'Nutrient Absorption'
   );
 
+  addPlant(
+      'Wurmfruit',
+      '1.8 tall',
+      'Small trees with stilted roots that produce brightly- colored fruit with a unique taste and aroma. This fruit is traditionally'
+          ' used by the Xie tribe in a wide variety of products and remedies. The most well-known of these is Xiecolatl, famed sweets'
+          ' manufactured in their settlements. Its fruit is also used to make powder and butter, both used in cooking or to treat'
+          ' afflictions such as dry skin and hair.'
+
+      '\n\nThere are many varieties of Wurmfruit, but the rarest and most prized is the golden wurmfruit, which only grows in the '
+          'area near the Gilded Lake.',
+
+      'assets/images/icons/plants/tree_icon.png',
+      0,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Wurmfruit.jpg',
+      'tree',
+      'Locally common',
+      'Nutritional',
+      'Photosynthesis'
+  );
+
+  addPlant(
+      'Snapperkelp',
+      '2-8 m long',
+      'Marine plants adapted to trapping and digesting sea creatures as a complementary method of sustenance.'
+
+      '\n\nEach "head" is equipped with a double jaw: the first pair quickly traps prey, while the second bites into the creature'
+          ' and retracts into the throat, swallowing it. Snapperkelp will remain limp, moving with the waters like common'
+          ' algae until their prey comes close enough. Then, all fully developed blades in the vicinity will lunge towards it,'
+          ' often causing serious damage.'
+
+  '\n\nNew "heads" will continue to grow from the stem as the plant feeds and becomes bigger.',
+
+      'assets/images/icons/plants/other_plants_icon.png',
+      3,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Snapperkelp.png',
+      'other',
+      'Common',
+      '-',
+      'Photosynthesis, Carnivorous'
+  );
+
+  addPlant(
+      'Jadebell',
+      '10 cm',
+      'Small, delicate flowers that bloom in the morning, releasing drops of sweet nectar.'
+
+      '\n\nJadebell is a major component in incenses used to ward off Kyn\'aeru and other potentially harmful spirits. The'
+          ' flowers are often dried, ground into powder and mixed with other ingredients to produce a fragrance that drives'
+          ' away both aeru and dangerous predators.'
+
+  '\n\nThe three-pointed flower is often associated with the balance between body, mind and soul, and have been used as a protective'
+          ' talisman since ancient times.',
+
+      'assets/images/icons/plants/flower_icon.png',
+      0,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Jadebell.png',
+      'flower',
+      'Uncommon',
+      'Protection',
+      'Photosynthesis'
+  );
+
 
 }

@@ -637,6 +637,106 @@ addSmallCreatures(){
 
 
   addSmallCreature(
+      'Hexaptera',
+      'Arthropoda',
+      '40 cm wingspan, 60 cm long ',
+      'Insectivorous',
+      'Winged arthropodans seen commonly in areas with mild weather. They are quick, agile fliers, and hunt small creatures while airborne.'
+          ' Hexaptera spend most of their lives in a wingless, water-based nymph form, preying on tiny aquatic creatures. Once they have grown'
+          ' big enough, they climb out of the water, shed their exoskeletons, and emerge in their final winged form. They then fly far and'
+          ' reproduce. Hexaptera come in a wide variety ofcolors and patterns, and are a popular motif in traditional onyrian art.'
+      ,
+      'assets/images/icons/small_creatures/hexaptera.png',
+      2,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Hexaptera.jpg',
+      'normal',
+      'fire',
+      'Common',
+      'small',
+      halfDanger: 0
+  );
+
+  addSmallCreature(
+      'Koelakoi',
+      'Hydran',
+      '40 cm long',
+      'Carnivorous',
+      'Iconic fish from the lagoons and ponds of the Shattered Crown mountains. Koelakoi are both kept in ornamental pools due to their'
+          ' beauty, and fished for consumption of their tasty meat. Their image can also be encountered as a common decoration in local'
+          ' artworks.'
+
+      '\n\nKoelakoi are also seen as a symbol of perseverance, as they will risk their lives to seek a new home if their pond becomes'
+          ' contaminated or simply scarce in food. When this occurs, they are capable of ascending waterfalls or even jumping out of'
+          ' the water and slithering across the ground. Thanks to vestigial lungs, they are capable of surviving outside for a considerable'
+          ' amount of time.'
+
+      '\n\nThey are considerably adaptable, feeding upon a wide variety of small creatures and sometimes, juveniles of their own species.'
+          ' Male Koelakoi commonly fight one another to defend their offspring and territories, often tearing their delicate fins in the process.'
+      ,
+      'assets/images/icons/small_creatures/koelakoi.png',
+      2,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Koelakoi.jpg',
+      'normal',
+      'fire',
+      'Locally common',
+      'small',
+      halfDanger: 0
+  );
+
+
+  addSmallCreature(
+      'Koko',
+      'Plumifera',
+      '60 cm',
+      'Omnivorous',
+      'Onyria´s most widespread livestock animal. Koko are appreciated far and wide throughout the Lyrian continent due to the valuable'
+          ' resources they provide: tasty and nutritious meat, eggs and feathers that are used as heat-retaining filling for coats and'
+          ' blankets, or simply as a decorative detail in clothing. The finest Koko are often traded for large amounts of goods or'
+          ' runestones at port areas.'
+
+      '\n\nKoko are highly social and mild-tempered creatures. Although most Koko now exist as domestic animals –carefully bred and'
+          ' provided with care- some flocks still exist in the wild, being a reliable food source for predators and explorers alike.'
+          ' They lay eggs frequently, and can be easily tricked into caring for eggs that are not their own.'
+
+  '\n\nKoko are highly adaptable and will feed on any available food source, such as plants, small creatures, mushrooms or even carrion.'
+      ,
+      'assets/images/icons/small_creatures/koko.png',
+      0,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Koko.jpg',
+      'normal',
+      'fire',
+      'Common',
+      'small',
+      halfDanger: 0
+  );
+
+
+
+  addSmallCreature(
+      'Gyn\'aeru',
+      'Lesser aeru',
+      '10 cm - 2m',
+      'Aeras-based',
+      'Spirits formed mostly from the essence of an Amphibian. Gyn\'aeru are usually playful, and seem to enjoy testing and teasing other'
+          ' creatures. Following a Gyn\'aeru may lead travelers to a hidden treasure, or a dangerous situation. Sometimes they will '
+          'simply attempt to offer gifts in exchange for energy.'
+
+      '\n\nGyn\'aeru posess affinity with the energy of metal, and will often agree to do favors in exchange for Aeras. Their help,'
+          ' however, may not go as expected.'
+      ,
+      'assets/images/icons/small_creatures/gyn\'aeru.png',
+      2,
+      'https://github.com/RyokCR/Bestiarium/raw/main/content/drawings/Gyn\'aeru.jpg',
+      'normal',
+      'fire',
+      'Uncommon',
+      'small',
+      halfDanger: 1
+  );
+
+
+
+  addSmallCreature(
       'Klasmoth',
       'Lesser aeru',
       ' 20 cm wingspan, 8 cm long ',
