@@ -1,7 +1,10 @@
 
 import 'package:bestiarium/navigation.dart';
+import 'package:bestiarium/ui/pages/creatures_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import '../pages/int_species_mainpage.dart';
 
 
 class NavigationDrawer extends StatefulWidget{
@@ -51,18 +54,24 @@ Widget buildMenuItems(BuildContext context, notifyParent) => Container(
     ),
     ListTile(
       //leading: const Icon(Icons.win),
-      title: const Text('Big Creatures'),
-      onTap: () {},
+      title: const Text('Creatures and Plants'),
+      onTap: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const Creatures_Page()));
+
+      },
     ),
+
     ListTile(
       //leading: const Icon(Icons.win),
-      title: const Text('Small Creatures'),
-      onTap: () {},
-    ),
-    ListTile(
-      //leading: const Icon(Icons.win),
-      title: const Text('Plants'),
-      onTap: () {},
+      title: const Text('Tribes'),
+      onTap: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const SpeciesMainPage()));
+
+      },
     ),
     const Divider(color: Colors.deepPurple),
     ListTile(
